@@ -1,0 +1,2758 @@
+{
+  "version": "4.0",
+  "exportedAt": "2026-09-22T15:56:45.887Z",
+  "system": "ERP-ITCPO",
+  "data": {
+    "config": {
+      "razon": "ITCPO",
+      "nit": "004754256",
+      "nrc": "1821935",
+      "giro": "Consultorías y gestión de administrativa",
+      "domicilio": "AVENIDA JOSE MATIAS DELGADO NORTE",
+      "dep": "02",
+      "mun": "15",
+      "tel": "78892315",
+      "email": "itconsultingpro@itcpo.com",
+      "moneda": "USD",
+      "ivaRate": 0.13,
+      "diasCredito": 30,
+      "serieV": "V",
+      "serieC": "C",
+      "nitUsuario": "0210-120678-101-0"
+    },
+    "contactos": [
+      {
+        "id": "c01",
+        "tipo": "cliente",
+        "nombre": "Almacén El Sol, S.A. de C.V.",
+        "nit": "06142106801010",
+        "nrc": "22594",
+        "email": "almacenelescorial@gmail.com",
+        "telefono": "78616172",
+        "domicilio": "14ª Av. Sur, Santa Ana"
+      },
+      {
+        "id": "c02",
+        "tipo": "cliente",
+        "nombre": "Distribuidora La Colmena, S.A. de C.V.",
+        "nit": "06140803671017",
+        "nrc": "15423",
+        "email": "ventas@lacolmena.com.sv",
+        "telefono": "22354455",
+        "domicilio": "Col. Escalón, San Salvador"
+      },
+      {
+        "id": "c03",
+        "tipo": "cliente",
+        "nombre": "Supermercados El Amigo",
+        "nit": "06141509781012",
+        "nrc": "45678",
+        "email": "compras@elamigo.com.sv",
+        "telefono": "25678900",
+        "domicilio": "Santa Tecla, La Libertad"
+      },
+      {
+        "id": "c04",
+        "tipo": "cliente",
+        "nombre": "Farmacia Santa Ana",
+        "nit": "06142304561018",
+        "nrc": "32145",
+        "email": "admin@farmaciasa.com",
+        "telefono": "24112233",
+        "domicilio": "4ª Calle Oriente, Santa Ana"
+      },
+      {
+        "id": "c05",
+        "tipo": "cliente",
+        "nombre": "Constructora del Valle, S.A.",
+        "nit": "06141208901015",
+        "nrc": "67890",
+        "email": "info@constructoravalle.com",
+        "telefono": "22223344",
+        "domicilio": "Antiguo Cuscatlán"
+      },
+      {
+        "id": "c06",
+        "tipo": "cliente",
+        "nombre": "Restaurante El Fogón",
+        "nit": "06149876541013",
+        "nrc": "11223",
+        "email": "elfogon@gmail.com",
+        "telefono": "23114455",
+        "domicilio": "Centro histórico, Santa Ana"
+      },
+      {
+        "id": "c07",
+        "tipo": "cliente",
+        "nombre": "Hotel Real de Santa Ana",
+        "nit": "06145566771019",
+        "nrc": "88990",
+        "email": "reservas@hotelsa.com",
+        "telefono": "24119988",
+        "domicilio": "5ª Av. Norte, Santa Ana"
+      },
+      {
+        "id": "c08",
+        "tipo": "cliente",
+        "nombre": "Librería Universitaria",
+        "nit": "06141122331014",
+        "nrc": "44556",
+        "email": "pedidos@libreriauni.edu.sv",
+        "telefono": "23456789",
+        "domicilio": "Ciudad Universitaria, San Salvador"
+      },
+      {
+        "id": "c09",
+        "tipo": "cliente",
+        "nombre": "Ferretería El Martillo",
+        "nit": "06149988771011",
+        "nrc": "77889",
+        "email": "ventas@elmartillo.com",
+        "telefono": "24445566",
+        "domicilio": "Sonsonate"
+      },
+      {
+        "id": "c10",
+        "tipo": "cliente",
+        "nombre": "Clínica Médica San José",
+        "nit": "06143344551016",
+        "nrc": "22334",
+        "email": "contacto@clinicasj.com",
+        "telefono": "22667788",
+        "domicilio": "San Miguel"
+      },
+      {
+        "id": "c11",
+        "tipo": "cliente",
+        "nombre": "Academia de Inglés ABC",
+        "nit": "06146677881010",
+        "nrc": "55667",
+        "email": "info@abcacademy.edu.sv",
+        "telefono": "22998877",
+        "domicilio": "Mejicanos"
+      },
+      {
+        "id": "c12",
+        "tipo": "cliente",
+        "nombre": "Panadería La Espiga Dorada",
+        "nit": "06142233441017",
+        "nrc": "99001",
+        "email": "laespiga@gmail.com",
+        "telefono": "24556677",
+        "domicilio": "Apopa"
+      },
+      {
+        "id": "c13",
+        "tipo": "cliente",
+        "nombre": "Tienda de Ropa Fashion SV",
+        "nit": "06145566111012",
+        "nrc": "33445",
+        "email": "fashion@modasv.com",
+        "telefono": "22778899",
+        "domicilio": "Metrocentro, San Salvador"
+      },
+      {
+        "id": "c14",
+        "tipo": "cliente",
+        "nombre": "Agencia de Viajes Tourist",
+        "nit": "06148899001018",
+        "nrc": "66778",
+        "email": "reservas@touristsv.com",
+        "telefono": "22112233",
+        "domicilio": "Zona Rosa, San Salvador"
+      },
+      {
+        "id": "c15",
+        "tipo": "cliente",
+        "nombre": "Imprenta Moderna",
+        "nit": "06144455661013",
+        "nrc": "12345",
+        "email": "imprenta@moderna.com.sv",
+        "telefono": "23223344",
+        "domicilio": "Soyapango"
+      },
+      {
+        "id": "p01",
+        "tipo": "proveedor",
+        "nombre": "COMPAÑIA DE TELECOMUNICACIONES EL SALVADOR S.A DE C.V. (CLARO)",
+        "nit": "06142102971044",
+        "nrc": "978957",
+        "email": "clientes@claro.com.sv",
+        "telefono": "22505555",
+        "domicilio": "Col. Roma, San Salvador"
+      },
+      {
+        "id": "p02",
+        "tipo": "proveedor",
+        "nombre": "TELEFONICA MOVISTEL EL SALVADOR (TIGO)",
+        "nit": "06140908761019",
+        "nrc": "876543",
+        "email": "empresas@tigo.com.sv",
+        "telefono": "22110011",
+        "domicilio": "San Benito, San Salvador"
+      },
+      {
+        "id": "p03",
+        "tipo": "proveedor",
+        "nombre": "Office Depot El Salvador",
+        "nit": "06141234561015",
+        "nrc": "543210",
+        "email": "ventas@officedepot.com.sv",
+        "telefono": "22445566",
+        "domicilio": "Multiplaza, San Salvador"
+      },
+      {
+        "id": "p04",
+        "tipo": "proveedor",
+        "nombre": "Computec S.A. de C.V.",
+        "nit": "06147890121018",
+        "nrc": "654321",
+        "email": "ventas@computec.com.sv",
+        "telefono": "22667788",
+        "domicilio": "Galerías, San Salvador"
+      },
+      {
+        "id": "p05",
+        "tipo": "proveedor",
+        "nombre": "Distribuidora de Papelería Central",
+        "nit": "06143456781012",
+        "nrc": "112233",
+        "email": "pedidos@papeleriacentral.com",
+        "telefono": "23112233",
+        "domicilio": "Soyapango"
+      },
+      {
+        "id": "p06",
+        "tipo": "proveedor",
+        "nombre": "Suministros Industriales del Pacífico",
+        "nit": "06149012341016",
+        "nrc": "223344",
+        "email": "ventas@suminipasa.com",
+        "telefono": "24113344",
+        "domicilio": "Acajutla, Sonsonate"
+      },
+      {
+        "id": "p07",
+        "tipo": "proveedor",
+        "nombre": "Distribuidora Eléctrica del Norte",
+        "nit": "06145678901010",
+        "nrc": "334455",
+        "email": "clientes@delnorte.com.sv",
+        "telefono": "22998877",
+        "domicilio": "Chalatenango"
+      },
+      {
+        "id": "p08",
+        "tipo": "proveedor",
+        "nombre": "Administración Nacional de Acueductos (ANDA)",
+        "nit": "06140000011014",
+        "nrc": "445566",
+        "email": "clientes@anda.gob.sv",
+        "telefono": "21324000",
+        "domicilio": "San Salvador Centro"
+      },
+      {
+        "id": "p09",
+        "tipo": "proveedor",
+        "nombre": "Inmobiliaria Santa Ana",
+        "nit": "06142233001019",
+        "nrc": "556677",
+        "email": "arriendos@inmosa.com",
+        "telefono": "24115566",
+        "domicilio": "Santa Ana Centro"
+      },
+      {
+        "id": "p10",
+        "tipo": "proveedor",
+        "nombre": "Transportes Rápidos S.A.",
+        "nit": "06146677001013",
+        "nrc": "667788",
+        "email": "logistica@transrapidos.com",
+        "telefono": "22334455",
+        "domicilio": "Ilopango"
+      },
+      {
+        "id": "p11",
+        "tipo": "proveedor",
+        "nombre": "Publicidad Digital SV",
+        "nit": "06148899111017",
+        "nrc": "778899",
+        "email": "hola@publidigital.sv",
+        "telefono": "78991122",
+        "domicilio": "Escalón, San Salvador"
+      },
+      {
+        "id": "p12",
+        "tipo": "proveedor",
+        "nombre": "Seguros Atlántico",
+        "nit": "06141122001011",
+        "nrc": "889900",
+        "email": "empresas@atlantico.com.sv",
+        "telefono": "22660011",
+        "domicilio": "Torre Atlántico, San Salvador"
+      },
+      {
+        "id": "p13",
+        "tipo": "proveedor",
+        "nombre": "Mantenimiento Técnico Pro",
+        "nit": "06143344001015",
+        "nrc": "990011",
+        "email": "servicio@manttecpo.com",
+        "telefono": "78112233",
+        "domicilio": "Santa Tecla"
+      },
+      {
+        "id": "p14",
+        "tipo": "proveedor",
+        "nombre": "Material de Oficina Express",
+        "nit": "06145566001018",
+        "nrc": "101122",
+        "email": "pedidos@ofiexpress.com",
+        "telefono": "22443322",
+        "domicilio": "Soyapango"
+      },
+      {
+        "id": "p15",
+        "tipo": "proveedor",
+        "nombre": "Servicios Legales Asociados",
+        "nit": "06147788001012",
+        "nrc": "212233",
+        "email": "legal@servilegas.com",
+        "telefono": "22776655",
+        "domicilio": "San Benito, San Salvador"
+      }
+    ],
+    "productos": [
+      {
+        "id": "pr01",
+        "sku": "TEC-001",
+        "nombre": "Laptop HP ProBook 450 G10",
+        "categoria": "Tecnología",
+        "precio": 850,
+        "costo": 650,
+        "stock": 8,
+        "minimo": 3
+      },
+      {
+        "id": "pr02",
+        "sku": "TEC-002",
+        "nombre": "Monitor Dell 24\" P2422H",
+        "categoria": "Tecnología",
+        "precio": 220,
+        "costo": 165,
+        "stock": 12,
+        "minimo": 5
+      },
+      {
+        "id": "pr03",
+        "sku": "TEC-003",
+        "nombre": "Teclado Logitech K120",
+        "categoria": "Tecnología",
+        "precio": 15,
+        "costo": 8,
+        "stock": 25,
+        "minimo": 10
+      },
+      {
+        "id": "pr04",
+        "sku": "TEC-004",
+        "nombre": "Mouse Inalámbrico Logitech M185",
+        "categoria": "Tecnología",
+        "precio": 18,
+        "costo": 10,
+        "stock": 30,
+        "minimo": 10
+      },
+      {
+        "id": "pr05",
+        "sku": "TEC-005",
+        "nombre": "Disco SSD Kingston 480GB",
+        "categoria": "Tecnología",
+        "precio": 45,
+        "costo": 30,
+        "stock": 15,
+        "minimo": 5
+      },
+      {
+        "id": "pr06",
+        "sku": "TEC-006",
+        "nombre": "Memoria RAM DDR4 8GB",
+        "categoria": "Tecnología",
+        "precio": 35,
+        "costo": 22,
+        "stock": 18,
+        "minimo": 5
+      },
+      {
+        "id": "pr07",
+        "sku": "TEC-007",
+        "nombre": "Impresora HP LaserJet Pro M404dn",
+        "categoria": "Tecnología",
+        "precio": 320,
+        "costo": 240,
+        "stock": 4,
+        "minimo": 2
+      },
+      {
+        "id": "pr08",
+        "sku": "TEC-008",
+        "nombre": "Webcam Logitech C920 HD",
+        "categoria": "Tecnología",
+        "precio": 85,
+        "costo": 55,
+        "stock": 10,
+        "minimo": 3
+      },
+      {
+        "id": "pr09",
+        "sku": "TEC-009",
+        "nombre": "Router TP-Link Archer C6",
+        "categoria": "Tecnología",
+        "precio": 55,
+        "costo": 35,
+        "stock": 7,
+        "minimo": 3
+      },
+      {
+        "id": "pr10",
+        "sku": "TEC-010",
+        "nombre": "Cable HDMI 2m",
+        "categoria": "Tecnología",
+        "precio": 8,
+        "costo": 3,
+        "stock": 50,
+        "minimo": 20
+      },
+      {
+        "id": "pr11",
+        "sku": "OFC-001",
+        "nombre": "Resma de papel bond A4",
+        "categoria": "Oficina",
+        "precio": 5.5,
+        "costo": 3.5,
+        "stock": 100,
+        "minimo": 30
+      },
+      {
+        "id": "pr12",
+        "sku": "OFC-002",
+        "nombre": "Tóner HP 58A (Negro)",
+        "categoria": "Oficina",
+        "precio": 75,
+        "costo": 50,
+        "stock": 6,
+        "minimo": 3
+      },
+      {
+        "id": "pr13",
+        "sku": "OFC-003",
+        "nombre": "Carpetas colgantes (caja 25)",
+        "categoria": "Oficina",
+        "precio": 12,
+        "costo": 7,
+        "stock": 20,
+        "minimo": 10
+      },
+      {
+        "id": "pr14",
+        "sku": "OFC-004",
+        "nombre": "Bolígrafos azules (caja 12)",
+        "categoria": "Oficina",
+        "precio": 4,
+        "costo": 2,
+        "stock": 40,
+        "minimo": 15
+      },
+      {
+        "id": "pr15",
+        "sku": "OFC-005",
+        "nombre": "Marcadores permanentes (set 4)",
+        "categoria": "Oficina",
+        "precio": 6,
+        "costo": 3,
+        "stock": 25,
+        "minimo": 10
+      },
+      {
+        "id": "pr16",
+        "sku": "OFC-006",
+        "nombre": "Grapadora de escritorio",
+        "categoria": "Oficina",
+        "precio": 9,
+        "costo": 5,
+        "stock": 15,
+        "minimo": 5
+      },
+      {
+        "id": "pr17",
+        "sku": "OFC-007",
+        "nombre": "Cinta adhesiva transparente",
+        "categoria": "Oficina",
+        "precio": 2.5,
+        "costo": 1,
+        "stock": 60,
+        "minimo": 20
+      },
+      {
+        "id": "pr18",
+        "sku": "OFC-008",
+        "nombre": "Tijeras de oficina",
+        "categoria": "Oficina",
+        "precio": 3.5,
+        "costo": 1.5,
+        "stock": 20,
+        "minimo": 10
+      },
+      {
+        "id": "pr19",
+        "sku": "CON-001",
+        "nombre": "Cartucho de tinta negro Epson",
+        "categoria": "Consumibles",
+        "precio": 18,
+        "costo": 12,
+        "stock": 12,
+        "minimo": 5
+      },
+      {
+        "id": "pr20",
+        "sku": "CON-002",
+        "nombre": "Papel fotográfico A4 (20 hojas)",
+        "categoria": "Consumibles",
+        "precio": 8,
+        "costo": 5,
+        "stock": 15,
+        "minimo": 5
+      },
+      {
+        "id": "pr21",
+        "sku": "CON-003",
+        "nombre": "CDs vírgenes (paquete 50)",
+        "categoria": "Consumibles",
+        "precio": 15,
+        "costo": 8,
+        "stock": 8,
+        "minimo": 3
+      },
+      {
+        "id": "pr22",
+        "sku": "CON-004",
+        "nombre": "Memoria USB 32GB",
+        "categoria": "Consumibles",
+        "precio": 12,
+        "costo": 7,
+        "stock": 20,
+        "minimo": 8
+      },
+      {
+        "id": "pr23",
+        "sku": "CON-005",
+        "nombre": "Baterías AA (paquete 4)",
+        "categoria": "Consumibles",
+        "precio": 4,
+        "costo": 2,
+        "stock": 35,
+        "minimo": 15
+      },
+      {
+        "id": "pr24",
+        "sku": "SRV-001",
+        "nombre": "Soporte técnico mensual básico",
+        "categoria": "Servicios",
+        "precio": 150,
+        "costo": 50,
+        "stock": 999,
+        "minimo": 0
+      },
+      {
+        "id": "pr25",
+        "sku": "SRV-002",
+        "nombre": "Soporte técnico mensual premium",
+        "categoria": "Servicios",
+        "precio": 350,
+        "costo": 120,
+        "stock": 999,
+        "minimo": 0
+      },
+      {
+        "id": "pr26",
+        "sku": "SRV-003",
+        "nombre": "Instalación de sistema operativo",
+        "categoria": "Servicios",
+        "precio": 35,
+        "costo": 10,
+        "stock": 999,
+        "minimo": 0
+      },
+      {
+        "id": "pr27",
+        "sku": "SRV-004",
+        "nombre": "Mantenimiento preventivo de PC",
+        "categoria": "Servicios",
+        "precio": 45,
+        "costo": 15,
+        "stock": 999,
+        "minimo": 0
+      },
+      {
+        "id": "pr28",
+        "sku": "SRV-005",
+        "nombre": "Recuperación de datos",
+        "categoria": "Servicios",
+        "precio": 120,
+        "costo": 40,
+        "stock": 999,
+        "minimo": 0
+      },
+      {
+        "id": "pr29",
+        "sku": "SRV-006",
+        "nombre": "Configuración de red empresarial",
+        "categoria": "Servicios",
+        "precio": 250,
+        "costo": 80,
+        "stock": 999,
+        "minimo": 0
+      },
+      {
+        "id": "pr30",
+        "sku": "SRV-007",
+        "nombre": "Consultoría en ciberseguridad",
+        "categoria": "Servicios",
+        "precio": 500,
+        "costo": 150,
+        "stock": 999,
+        "minimo": 0
+      },
+      {
+        "id": "pr31",
+        "sku": "SRV-008",
+        "nombre": "Desarrollo de sitio web básico",
+        "categoria": "Servicios",
+        "precio": 800,
+        "costo": 300,
+        "stock": 999,
+        "minimo": 0
+      },
+      {
+        "id": "pr32",
+        "sku": "SRV-009",
+        "nombre": "Capacitación en ofimática (8 horas)",
+        "categoria": "Servicios",
+        "precio": 200,
+        "costo": 60,
+        "stock": 999,
+        "minimo": 0
+      },
+      {
+        "id": "pr33",
+        "sku": "SRV-010",
+        "nombre": "Migración de correo a la nube",
+        "categoria": "Servicios",
+        "precio": 400,
+        "costo": 120,
+        "stock": 999,
+        "minimo": 0
+      },
+      {
+        "id": "pr34",
+        "sku": "SFT-001",
+        "nombre": "Licencia Microsoft Office 365 (anual)",
+        "categoria": "Software",
+        "precio": 120,
+        "costo": 85,
+        "stock": 20,
+        "minimo": 5
+      },
+      {
+        "id": "pr35",
+        "sku": "SFT-002",
+        "nombre": "Licencia Windows 11 Pro",
+        "categoria": "Software",
+        "precio": 180,
+        "costo": 130,
+        "stock": 15,
+        "minimo": 5
+      },
+      {
+        "id": "pr36",
+        "sku": "SFT-003",
+        "nombre": "Antivirus Kaspersky (1 año)",
+        "categoria": "Software",
+        "precio": 45,
+        "costo": 28,
+        "stock": 25,
+        "minimo": 10
+      },
+      {
+        "id": "pr37",
+        "sku": "SFT-004",
+        "nombre": "Licencia Adobe Acrobat Pro",
+        "categoria": "Software",
+        "precio": 150,
+        "costo": 100,
+        "stock": 10,
+        "minimo": 3
+      },
+      {
+        "id": "pr38",
+        "sku": "MOB-001",
+        "nombre": "Silla ergonómica de oficina",
+        "categoria": "Mobiliario",
+        "precio": 280,
+        "costo": 180,
+        "stock": 6,
+        "minimo": 2
+      },
+      {
+        "id": "pr39",
+        "sku": "MOB-002",
+        "nombre": "Escritorio ejecutivo 1.40m",
+        "categoria": "Mobiliario",
+        "precio": 350,
+        "costo": 220,
+        "stock": 4,
+        "minimo": 2
+      },
+      {
+        "id": "pr40",
+        "sku": "MOB-003",
+        "nombre": "Archivador metálico 4 gavetas",
+        "categoria": "Mobiliario",
+        "precio": 180,
+        "costo": 110,
+        "stock": 5,
+        "minimo": 2
+      },
+      {
+        "id": "pr41",
+        "sku": "RED-001",
+        "nombre": "Switch 8 puertos Gigabit",
+        "categoria": "Redes",
+        "precio": 45,
+        "costo": 28,
+        "stock": 10,
+        "minimo": 3
+      },
+      {
+        "id": "pr42",
+        "sku": "RED-002",
+        "nombre": "Cable de red Cat6 (30m)",
+        "categoria": "Redes",
+        "precio": 25,
+        "costo": 12,
+        "stock": 20,
+        "minimo": 8
+      },
+      {
+        "id": "pr43",
+        "sku": "RED-003",
+        "nombre": "Access Point Ubiquiti",
+        "categoria": "Redes",
+        "precio": 120,
+        "costo": 80,
+        "stock": 5,
+        "minimo": 2
+      },
+      {
+        "id": "pr44",
+        "sku": "RED-004",
+        "nombre": "Patch panel 24 puertos",
+        "categoria": "Redes",
+        "precio": 65,
+        "costo": 40,
+        "stock": 4,
+        "minimo": 2
+      },
+      {
+        "id": "pr45",
+        "sku": "ENE-001",
+        "nombre": "UPS 1000VA",
+        "categoria": "Energía",
+        "precio": 180,
+        "costo": 120,
+        "stock": 6,
+        "minimo": 2
+      },
+      {
+        "id": "pr46",
+        "sku": "ENE-002",
+        "nombre": "Regleta de 6 tomacorrientes",
+        "categoria": "Energía",
+        "precio": 15,
+        "costo": 8,
+        "stock": 25,
+        "minimo": 10
+      },
+      {
+        "id": "pr47",
+        "sku": "ENE-003",
+        "nombre": "Fuente de poder 500W",
+        "categoria": "Energía",
+        "precio": 65,
+        "costo": 40,
+        "stock": 8,
+        "minimo": 3
+      },
+      {
+        "id": "pr48",
+        "sku": "ACC-001",
+        "nombre": "Audífonos con micrófono USB",
+        "categoria": "Accesorios",
+        "precio": 35,
+        "costo": 20,
+        "stock": 15,
+        "minimo": 5
+      },
+      {
+        "id": "pr49",
+        "sku": "ACC-002",
+        "nombre": "Hub USB 4 puertos",
+        "categoria": "Accesorios",
+        "precio": 12,
+        "costo": 6,
+        "stock": 20,
+        "minimo": 8
+      },
+      {
+        "id": "pr50",
+        "sku": "ACC-003",
+        "nombre": "Soporte para laptop ajustable",
+        "categoria": "Accesorios",
+        "precio": 28,
+        "costo": 15,
+        "stock": 12,
+        "minimo": 5
+      }
+    ],
+    "ventas": [
+      {
+        "id": "v001",
+        "folio": "V-00001",
+        "fecha": "2026-09-05",
+        "vencimiento": "2026-10-05",
+        "cliente": "Almacén El Escorial, S.A. de C.V.",
+        "rfc": "06142106891010",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Servicios profesionales correspondiente a soporte de los equipos del almacén",
+            "cantidad": 1,
+            "precioUni": 75,
+            "ventaGravada": 75
+          }
+        ],
+        "subtotal": 75,
+        "iva": 9.75,
+        "total": 84.75,
+        "totalGravada": 75,
+        "pagado": 84.75,
+        "estado": "pagada",
+        "uuid": "MANUAL-CFZSLLVB",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06142106891010",
+        "receptorNombre": "Almacén El Escorial, S.A. de C.V.",
+        "observaciones": ""
+      },
+      {
+        "id": "v002",
+        "folio": "V-00002",
+        "fecha": "2026-09-10",
+        "vencimiento": "2026-10-10",
+        "cliente": "Distribuidora La Colmena, S.A. de C.V.",
+        "rfc": "06140803671017",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Crédito",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Instalación y configuración de red LAN 12 nodos",
+            "cantidad": 1,
+            "precioUni": 450,
+            "ventaGravada": 450
+          }
+        ],
+        "subtotal": 450,
+        "iva": 58.5,
+        "total": 508.5,
+        "totalGravada": 450,
+        "pagado": 0,
+        "estado": "emitida",
+        "uuid": "MANUAL-1ORAA0KV",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06140803671017",
+        "receptorNombre": "Distribuidora La Colmena, S.A. de C.V.",
+        "observaciones": ""
+      },
+      {
+        "id": "v003",
+        "folio": "V-00003",
+        "fecha": "2026-09-18",
+        "vencimiento": "2026-10-18",
+        "cliente": "Supermercados El Amigo",
+        "rfc": "06141509781012",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Crédito",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Mantenimiento preventivo de 8 equipos de cómputo",
+            "cantidad": 8,
+            "precioUni": 45,
+            "ventaGravada": 360
+          }
+        ],
+        "subtotal": 360,
+        "iva": 46.800000000000004,
+        "total": 406.8,
+        "totalGravada": 360,
+        "pagado": 200,
+        "estado": "emitida",
+        "uuid": "MANUAL-XHC0GKJ5",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06141509781012",
+        "receptorNombre": "Supermercados El Amigo",
+        "observaciones": ""
+      },
+      {
+        "id": "v004",
+        "folio": "V-00004",
+        "fecha": "2026-08-08",
+        "vencimiento": "2026-09-07",
+        "cliente": "Farmacia Santa Ana",
+        "rfc": "06142304561018",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Desarrollo de sistema de control de inventario",
+            "cantidad": 1,
+            "precioUni": 1200,
+            "ventaGravada": 1200
+          }
+        ],
+        "subtotal": 1200,
+        "iva": 156,
+        "total": 1356,
+        "totalGravada": 1200,
+        "pagado": 1356,
+        "estado": "pagada",
+        "uuid": "MANUAL-NPOQ155M",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06142304561018",
+        "receptorNombre": "Farmacia Santa Ana",
+        "observaciones": ""
+      },
+      {
+        "id": "v005",
+        "folio": "V-00005",
+        "fecha": "2026-08-22",
+        "vencimiento": "2026-09-21",
+        "cliente": "Constructora del Valle, S.A.",
+        "rfc": "06141208901015",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Consultoría en infraestructura TI",
+            "cantidad": 1,
+            "precioUni": 800,
+            "ventaGravada": 800
+          },
+          {
+            "nombre": "Licencia Microsoft Office 365 (anual)",
+            "cantidad": 5,
+            "precioUni": 120,
+            "ventaGravada": 600
+          }
+        ],
+        "subtotal": 1400,
+        "iva": 182,
+        "total": 1582,
+        "totalGravada": 1400,
+        "pagado": 1612,
+        "estado": "pagada",
+        "uuid": "MANUAL-NAB8WM3Y",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06141208901015",
+        "receptorNombre": "Constructora del Valle, S.A.",
+        "observaciones": ""
+      },
+      {
+        "id": "v006",
+        "folio": "V-00006",
+        "fecha": "2026-08-25",
+        "vencimiento": "2026-09-24",
+        "cliente": "Restaurante El Fogón",
+        "rfc": "06149876541013",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Crédito",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Instalación de sistema punto de venta",
+            "cantidad": 1,
+            "precioUni": 650,
+            "ventaGravada": 650
+          }
+        ],
+        "subtotal": 650,
+        "iva": 84.5,
+        "total": 734.5,
+        "totalGravada": 650,
+        "pagado": 0,
+        "estado": "emitida",
+        "uuid": "MANUAL-TK8C39MG",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06149876541013",
+        "receptorNombre": "Restaurante El Fogón",
+        "observaciones": ""
+      },
+      {
+        "id": "v007",
+        "folio": "V-00007",
+        "fecha": "2026-07-12",
+        "vencimiento": "2026-08-11",
+        "cliente": "Hotel Real de Santa Ana",
+        "rfc": "06145566771019",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Migración de correo a Microsoft 365",
+            "cantidad": 1,
+            "precioUni": 950,
+            "ventaGravada": 950
+          }
+        ],
+        "subtotal": 950,
+        "iva": 123.5,
+        "total": 1073.5,
+        "totalGravada": 950,
+        "pagado": 1073.5,
+        "estado": "pagada",
+        "uuid": "MANUAL-9GYX0XCC",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06145566771019",
+        "receptorNombre": "Hotel Real de Santa Ana",
+        "observaciones": ""
+      },
+      {
+        "id": "v008",
+        "folio": "V-00008",
+        "fecha": "2026-07-18",
+        "vencimiento": "2026-08-17",
+        "cliente": "Librería Universitaria",
+        "rfc": "06141122331014",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Laptop HP ProBook 450 G10",
+            "cantidad": 2,
+            "precioUni": 850,
+            "ventaGravada": 1700
+          },
+          {
+            "nombre": "Monitor Dell 24\" P2422H",
+            "cantidad": 2,
+            "precioUni": 220,
+            "ventaGravada": 440
+          }
+        ],
+        "subtotal": 2140,
+        "iva": 278.2,
+        "total": 2418.2,
+        "totalGravada": 2140,
+        "pagado": 2422.2,
+        "estado": "pagada",
+        "uuid": "MANUAL-SJ2TMZP4",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06141122331014",
+        "receptorNombre": "Librería Universitaria",
+        "observaciones": ""
+      },
+      {
+        "id": "v009",
+        "folio": "V-00009",
+        "fecha": "2026-07-28",
+        "vencimiento": "2026-08-27",
+        "cliente": "Ferretería El Martillo",
+        "rfc": "06149988771011",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Soporte técnico mensual premium",
+            "cantidad": 1,
+            "precioUni": 350,
+            "ventaGravada": 350
+          }
+        ],
+        "subtotal": 350,
+        "iva": 45.5,
+        "total": 395.5,
+        "totalGravada": 350,
+        "pagado": 395.5,
+        "estado": "pagada",
+        "uuid": "MANUAL-2GR3M366",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06149988771011",
+        "receptorNombre": "Ferretería El Martillo",
+        "observaciones": ""
+      },
+      {
+        "id": "v010",
+        "folio": "V-00010",
+        "fecha": "2026-06-05",
+        "vencimiento": "2026-07-05",
+        "cliente": "Clínica Médica San José",
+        "rfc": "06143344551016",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Implementación de sistema de expedientes digitales",
+            "cantidad": 1,
+            "precioUni": 2500,
+            "ventaGravada": 2500
+          }
+        ],
+        "subtotal": 2500,
+        "iva": 325,
+        "total": 2825,
+        "totalGravada": 2500,
+        "pagado": 2825,
+        "estado": "pagada",
+        "uuid": "MANUAL-W05KZZ05",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06143344551016",
+        "receptorNombre": "Clínica Médica San José",
+        "observaciones": ""
+      },
+      {
+        "id": "v011",
+        "folio": "V-00011",
+        "fecha": "2026-06-15",
+        "vencimiento": "2026-07-15",
+        "cliente": "Academia de Inglés ABC",
+        "rfc": "06146677881010",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Capacitación en ofimática (8 horas)",
+            "cantidad": 2,
+            "precioUni": 200,
+            "ventaGravada": 400
+          }
+        ],
+        "subtotal": 400,
+        "iva": 52,
+        "total": 452,
+        "totalGravada": 400,
+        "pagado": 452,
+        "estado": "pagada",
+        "uuid": "MANUAL-5XBG9OP2",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06146677881010",
+        "receptorNombre": "Academia de Inglés ABC",
+        "observaciones": ""
+      },
+      {
+        "id": "v012",
+        "folio": "V-00012",
+        "fecha": "2026-05-10",
+        "vencimiento": "2026-06-09",
+        "cliente": "Panadería La Espiga Dorada",
+        "rfc": "06142233441017",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Desarrollo de sitio web básico",
+            "cantidad": 1,
+            "precioUni": 800,
+            "ventaGravada": 800
+          }
+        ],
+        "subtotal": 800,
+        "iva": 104,
+        "total": 904,
+        "totalGravada": 800,
+        "pagado": 904,
+        "estado": "pagada",
+        "uuid": "MANUAL-GTTRIWDW",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06142233441017",
+        "receptorNombre": "Panadería La Espiga Dorada",
+        "observaciones": ""
+      },
+      {
+        "id": "v013",
+        "folio": "V-00013",
+        "fecha": "2026-05-20",
+        "vencimiento": "2026-06-19",
+        "cliente": "Tienda de Ropa Fashion SV",
+        "rfc": "06145566111012",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Consultoría en ciberseguridad",
+            "cantidad": 1,
+            "precioUni": 500,
+            "ventaGravada": 500
+          },
+          {
+            "nombre": "Antivirus Kaspersky (1 año)",
+            "cantidad": 3,
+            "precioUni": 45,
+            "ventaGravada": 135
+          }
+        ],
+        "subtotal": 635,
+        "iva": 82.55,
+        "total": 717.55,
+        "totalGravada": 635,
+        "pagado": 717.55,
+        "estado": "pagada",
+        "uuid": "MANUAL-38ZF1L1A",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06145566111012",
+        "receptorNombre": "Tienda de Ropa Fashion SV",
+        "observaciones": ""
+      },
+      {
+        "id": "v014",
+        "folio": "V-00014",
+        "fecha": "2026-04-08",
+        "vencimiento": "2026-05-08",
+        "cliente": "Agencia de Viajes Tourist",
+        "rfc": "06148899001018",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Configuración de red empresarial",
+            "cantidad": 1,
+            "precioUni": 250,
+            "ventaGravada": 250
+          }
+        ],
+        "subtotal": 250,
+        "iva": 32.5,
+        "total": 282.5,
+        "totalGravada": 250,
+        "pagado": 282.5,
+        "estado": "pagada",
+        "uuid": "MANUAL-H00VAUQ6",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06148899001018",
+        "receptorNombre": "Agencia de Viajes Tourist",
+        "observaciones": ""
+      },
+      {
+        "id": "v015",
+        "folio": "V-00015",
+        "fecha": "2026-04-22",
+        "vencimiento": "2026-05-22",
+        "cliente": "Imprenta Moderna",
+        "rfc": "06144455661013",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Impresora HP LaserJet Pro M404dn",
+            "cantidad": 1,
+            "precioUni": 320,
+            "ventaGravada": 320
+          },
+          {
+            "nombre": "Tóner HP 58A (Negro)",
+            "cantidad": 2,
+            "precioUni": 75,
+            "ventaGravada": 150
+          }
+        ],
+        "subtotal": 470,
+        "iva": 61.1,
+        "total": 531.1,
+        "totalGravada": 470,
+        "pagado": 530.6,
+        "estado": "pagada",
+        "uuid": "MANUAL-3AMJ58ZE",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06144455661013",
+        "receptorNombre": "Imprenta Moderna",
+        "observaciones": ""
+      },
+      {
+        "id": "v016",
+        "folio": "V-00016",
+        "fecha": "2026-07-15",
+        "vencimiento": "2026-08-14",
+        "cliente": "Distribuidora La Colmena, S.A. de C.V.",
+        "rfc": "06140803671017",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Crédito",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Venta de equipos - ANULADA",
+            "cantidad": 1,
+            "precioUni": 500,
+            "ventaGravada": 500
+          }
+        ],
+        "subtotal": 500,
+        "iva": 65,
+        "total": 565,
+        "totalGravada": 500,
+        "pagado": 0,
+        "estado": "cancelada",
+        "uuid": "MANUAL-20GPR369",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "006754754",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorNit": "06140803671017",
+        "receptorNombre": "Distribuidora La Colmena, S.A. de C.V.",
+        "observaciones": ""
+      },
+      {
+        "id": "v_dte2",
+        "folio": "V-99902",
+        "fecha": "2026-07-19",
+        "vencimiento": "2026-07-19",
+        "tipo": "venta",
+        "uuid": "F79CEC03-7B85-4B38-993C-7AF6F1A300A2",
+        "numeroControl": "DTE-03-M001P001-000000000000008",
+        "tipoDTE": "03",
+        "tipoDTEDesc": "Crédito Fiscal",
+        "ambiente": "01",
+        "moneda": "USD",
+        "emisorNit": "006754754",
+        "emisorNrc": "1806942",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "emisorGiro": "Consultorias y gestión de servicios informáticos",
+        "emisorEmail": "itconsultingpro@outlook.com",
+        "emisorTel": "78873322",
+        "emisorDireccion": "AVENIDA JOSE MATIAS DELGADO NORTE Y 12 CALLE PONIENTE, BO. SAN JUAN, # 6",
+        "receptorNit": "06142106891010",
+        "receptorNrc": "22594",
+        "receptorNombre": "Almacén El Escorial, S.A. de C.V.",
+        "receptorGiro": "Fabricación de prendas y accesorios de vestir n.c.p.",
+        "receptorEmail": "almacenelescorial@gmail.com",
+        "receptorTel": "78616172",
+        "receptorDireccion": "14ª Av. Sur, entre 29 y 31 Calle Poniente, Santa Ana",
+        "cliente": "Almacén El Escorial, S.A. de C.V.",
+        "proveedor": "Almacén El Escorial, S.A. de C.V.",
+        "rfc": "06142106891010",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "04",
+        "conceptos": [
+          {
+            "nombre": "Servicios profesionales correspondiente a soporte de los equipos del almacén y configuraciones varias del sistema operativo",
+            "cantidad": 1,
+            "precioUni": 75,
+            "precio": 75,
+            "ventaGravada": 75
+          }
+        ],
+        "totalGravada": 75,
+        "subtotal": 75,
+        "iva": 9.75,
+        "total": 84.75,
+        "totalLetras": "OCHENTA Y CUATRO DÓLARES CON SETENTA Y CINCO CENTAVOS",
+        "sello": "202620C1B818145642BE8DE90F4A58D13A38VJDB",
+        "firma": "eyJhbGciOiJSUzUxMiJ9...",
+        "pagos": [
+          {
+            "codigo": "04",
+            "montoPago": 84.75,
+            "referencia": ""
+          }
+        ],
+        "condicionOperacion": 1,
+        "numPagoElectronico": "",
+        "pagado": 84.75,
+        "estado": "pagada",
+        "observaciones": "",
+        "origen": "DTE-JSON"
+      },
+      {
+        "id": "v_dte3",
+        "folio": "V-99903",
+        "fecha": "2026-08-15",
+        "vencimiento": "2026-08-15",
+        "tipo": "venta",
+        "uuid": "A1B2C3D4-E5F6-7890-ABCD-EF1234567890",
+        "numeroControl": "DTE-03-M001P001-000000000000009",
+        "tipoDTE": "03",
+        "tipoDTEDesc": "Crédito Fiscal",
+        "ambiente": "01",
+        "moneda": "USD",
+        "emisorNit": "006754754",
+        "emisorNrc": "1806942",
+        "emisorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "emisorGiro": "Consultorias y gestión de servicios informáticos",
+        "emisorEmail": "itconsultingpro@outlook.com",
+        "emisorTel": "78873322",
+        "emisorDireccion": "AVENIDA JOSE MATIAS DELGADO NORTE Y 12 CALLE PONIENTE, BO. SAN JUAN, # 6",
+        "receptorNit": "06140803671017",
+        "receptorNrc": "22594",
+        "receptorNombre": "Distribuidora La Colmena, S.A. de C.V.",
+        "receptorGiro": "Fabricación de prendas y accesorios de vestir n.c.p.",
+        "receptorEmail": "ventas@lacolmena.com.sv",
+        "receptorTel": "78616172",
+        "receptorDireccion": "14ª Av. Sur, entre 29 y 31 Calle Poniente, Santa Ana",
+        "cliente": "Distribuidora La Colmena, S.A. de C.V.",
+        "proveedor": "Almacén El Escorial, S.A. de C.V.",
+        "rfc": "06140803671017",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "04",
+        "conceptos": [
+          {
+            "nombre": "Consultoría en transformación digital",
+            "cantidad": 1,
+            "precioUni": 350,
+            "precio": 350,
+            "ventaGravada": 350
+          }
+        ],
+        "totalGravada": 350,
+        "subtotal": 350,
+        "iva": 45.5,
+        "total": 395.5,
+        "totalLetras": "TRESCIENTOS NOVENTA Y CINCO CON 50/100 DOLARES",
+        "sello": "2026A1B2C3D4E5F67890ABCDEF123456TEST",
+        "firma": "eyJhbGciOiJSUzUxMiJ9...",
+        "pagos": [
+          {
+            "codigo": "03",
+            "montoPago": 395.5,
+            "referencia": "TRANSF-001"
+          }
+        ],
+        "condicionOperacion": 1,
+        "numPagoElectronico": "",
+        "pagado": 84.75,
+        "estado": "pagada",
+        "observaciones": "",
+        "origen": "DTE-JSON"
+      }
+    ],
+    "compras": [
+      {
+        "id": "co001",
+        "folio": "C-00001",
+        "fecha": "2026-09-03",
+        "vencimiento": "2026-10-03",
+        "proveedor": "COMPAÑIA DE TELECOMUNICACIONES EL SALVADOR S.A DE C.V. (CLARO)",
+        "rfc": "06142102971044",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "CARGO(S) MENSUAL(ES) TODOS LOS SERVICIOS - Internet empresarial",
+            "cantidad": 1,
+            "precioUni": 46.02,
+            "ventaGravada": 46.02
+          }
+        ],
+        "subtotal": 46.02,
+        "iva": 5.982600000000001,
+        "total": 52.0026,
+        "totalGravada": 46.02,
+        "pagado": 52,
+        "estado": "pagada",
+        "uuid": "MANUAL-Q64OXYTX",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "06142102971044",
+        "emisorNombre": "COMPAÑIA DE TELECOMUNICACIONES EL SALVADOR S.A DE C.V. (CLARO)",
+        "receptorNit": "006754754",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "observaciones": ""
+      },
+      {
+        "id": "co002",
+        "folio": "C-00002",
+        "fecha": "2026-08-05",
+        "vencimiento": "2026-09-04",
+        "proveedor": "COMPAÑIA DE TELECOMUNICACIONES EL SALVADOR S.A DE C.V. (CLARO)",
+        "rfc": "06142102971044",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "CARGO(S) MENSUAL(ES) TODOS LOS SERVICIOS",
+            "cantidad": 1,
+            "precioUni": 46.02,
+            "ventaGravada": 46.02
+          }
+        ],
+        "subtotal": 46.02,
+        "iva": 5.982600000000001,
+        "total": 52.0026,
+        "totalGravada": 46.02,
+        "pagado": 52,
+        "estado": "pagada",
+        "uuid": "MANUAL-K0D6IINB",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "06142102971044",
+        "emisorNombre": "COMPAÑIA DE TELECOMUNICACIONES EL SALVADOR S.A DE C.V. (CLARO)",
+        "receptorNit": "006754754",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "observaciones": ""
+      },
+      {
+        "id": "co003",
+        "folio": "C-00003",
+        "fecha": "2026-09-08",
+        "vencimiento": "2026-10-08",
+        "proveedor": "TELEFONICA MOVISTEL EL SALVADOR (TIGO)",
+        "rfc": "06140908761019",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Servicio de telefonía móvil empresarial",
+            "cantidad": 1,
+            "precioUni": 35,
+            "ventaGravada": 35
+          }
+        ],
+        "subtotal": 35,
+        "iva": 4.55,
+        "total": 39.55,
+        "totalGravada": 35,
+        "pagado": 39.55,
+        "estado": "pagada",
+        "uuid": "MANUAL-T0JOXKYR",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "06140908761019",
+        "emisorNombre": "TELEFONICA MOVISTEL EL SALVADOR (TIGO)",
+        "receptorNit": "006754754",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "observaciones": ""
+      },
+      {
+        "id": "co004",
+        "folio": "C-00004",
+        "fecha": "2026-09-15",
+        "vencimiento": "2026-10-15",
+        "proveedor": "Distribuidora Eléctrica del Norte",
+        "rfc": "06145678901010",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Servicio de energía eléctrica mensual",
+            "cantidad": 1,
+            "precioUni": 85,
+            "ventaGravada": 85
+          }
+        ],
+        "subtotal": 85,
+        "iva": 11.05,
+        "total": 96.05,
+        "totalGravada": 85,
+        "pagado": 96.05,
+        "estado": "pagada",
+        "uuid": "MANUAL-6TM1Z5VN",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "06145678901010",
+        "emisorNombre": "Distribuidora Eléctrica del Norte",
+        "receptorNit": "006754754",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "observaciones": ""
+      },
+      {
+        "id": "co005",
+        "folio": "C-00005",
+        "fecha": "2026-09-01",
+        "vencimiento": "2026-10-01",
+        "proveedor": "Inmobiliaria Santa Ana",
+        "rfc": "06142233001019",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Crédito",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Arrendamiento de oficina mensual",
+            "cantidad": 1,
+            "precioUni": 350,
+            "ventaGravada": 350
+          }
+        ],
+        "subtotal": 350,
+        "iva": 45.5,
+        "total": 395.5,
+        "totalGravada": 350,
+        "pagado": 0,
+        "estado": "emitida",
+        "uuid": "MANUAL-TPYRPENO",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "06142233001019",
+        "emisorNombre": "Inmobiliaria Santa Ana",
+        "receptorNit": "006754754",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "observaciones": ""
+      },
+      {
+        "id": "co006",
+        "folio": "C-00006",
+        "fecha": "2026-08-12",
+        "vencimiento": "2026-09-11",
+        "proveedor": "Office Depot El Salvador",
+        "rfc": "06141234561015",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Resma de papel bond A4",
+            "cantidad": 10,
+            "precioUni": 5.5,
+            "ventaGravada": 55
+          },
+          {
+            "nombre": "Tóner HP 58A (Negro)",
+            "cantidad": 2,
+            "precioUni": 75,
+            "ventaGravada": 150
+          }
+        ],
+        "subtotal": 205,
+        "iva": 26.650000000000002,
+        "total": 231.65,
+        "totalGravada": 205,
+        "pagado": 231.05,
+        "estado": "pagada",
+        "uuid": "MANUAL-EQXEJPIP",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "06141234561015",
+        "emisorNombre": "Office Depot El Salvador",
+        "receptorNit": "006754754",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "observaciones": ""
+      },
+      {
+        "id": "co007",
+        "folio": "C-00007",
+        "fecha": "2026-07-10",
+        "vencimiento": "2026-08-09",
+        "proveedor": "Computec S.A. de C.V.",
+        "rfc": "06147890121018",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Laptop HP ProBook 450 G10",
+            "cantidad": 3,
+            "precioUni": 650,
+            "ventaGravada": 1950
+          },
+          {
+            "nombre": "Monitor Dell 24\" P2422H",
+            "cantidad": 3,
+            "precioUni": 165,
+            "ventaGravada": 495
+          }
+        ],
+        "subtotal": 2445,
+        "iva": 317.85,
+        "total": 2762.85,
+        "totalGravada": 2445,
+        "pagado": 2785.35,
+        "estado": "pagada",
+        "uuid": "MANUAL-43OAXT9S",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "06147890121018",
+        "emisorNombre": "Computec S.A. de C.V.",
+        "receptorNit": "006754754",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "observaciones": ""
+      },
+      {
+        "id": "co008",
+        "folio": "C-00008",
+        "fecha": "2026-09-20",
+        "vencimiento": "2026-10-20",
+        "proveedor": "Administración Nacional de Acueductos (ANDA)",
+        "rfc": "06140000011014",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Servicio de agua potable mensual",
+            "cantidad": 1,
+            "precioUni": 18,
+            "ventaGravada": 18
+          }
+        ],
+        "subtotal": 18,
+        "iva": 2.34,
+        "total": 20.34,
+        "totalGravada": 18,
+        "pagado": 20.34,
+        "estado": "pagada",
+        "uuid": "MANUAL-2QANKE5T",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "06140000011014",
+        "emisorNombre": "Administración Nacional de Acueductos (ANDA)",
+        "receptorNit": "006754754",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "observaciones": ""
+      },
+      {
+        "id": "co009",
+        "folio": "C-00009",
+        "fecha": "2026-09-15",
+        "vencimiento": "2026-10-15",
+        "proveedor": "Publicidad Digital SV",
+        "rfc": "06148899111017",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Crédito",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Campaña publicitaria en redes sociales",
+            "cantidad": 1,
+            "precioUni": 280,
+            "ventaGravada": 280
+          }
+        ],
+        "subtotal": 280,
+        "iva": 36.4,
+        "total": 316.4,
+        "totalGravada": 280,
+        "pagado": 0,
+        "estado": "registrada",
+        "uuid": "MANUAL-CT3KY3VV",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "06148899111017",
+        "emisorNombre": "Publicidad Digital SV",
+        "receptorNit": "006754754",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "observaciones": ""
+      },
+      {
+        "id": "co010",
+        "folio": "C-00010",
+        "fecha": "2026-06-01",
+        "vencimiento": "2026-07-01",
+        "proveedor": "Seguros Atlántico",
+        "rfc": "06141122001011",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Póliza de seguro empresarial anual",
+            "cantidad": 1,
+            "precioUni": 650,
+            "ventaGravada": 650
+          }
+        ],
+        "subtotal": 650,
+        "iva": 84.5,
+        "total": 734.5,
+        "totalGravada": 650,
+        "pagado": 734.5,
+        "estado": "pagada",
+        "uuid": "MANUAL-P8PQHBR4",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "06141122001011",
+        "emisorNombre": "Seguros Atlántico",
+        "receptorNit": "006754754",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "observaciones": ""
+      },
+      {
+        "id": "co011",
+        "folio": "C-00011",
+        "fecha": "2026-08-25",
+        "vencimiento": "2026-09-24",
+        "proveedor": "Servicios Legales Asociados",
+        "rfc": "06147788001012",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Asesoría legal corporativa mensual",
+            "cantidad": 1,
+            "precioUni": 200,
+            "ventaGravada": 200
+          }
+        ],
+        "subtotal": 200,
+        "iva": 26,
+        "total": 226,
+        "totalGravada": 200,
+        "pagado": 226,
+        "estado": "pagada",
+        "uuid": "MANUAL-ZNKF9D0Q",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "06147788001012",
+        "emisorNombre": "Servicios Legales Asociados",
+        "receptorNit": "006754754",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "observaciones": ""
+      },
+      {
+        "id": "co012",
+        "folio": "C-00012",
+        "fecha": "2026-07-18",
+        "vencimiento": "2026-08-17",
+        "proveedor": "Mantenimiento Técnico Pro",
+        "rfc": "06143344001015",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Contado",
+        "formaPago": "03",
+        "conceptos": [
+          {
+            "nombre": "Mantenimiento de aires acondicionados",
+            "cantidad": 1,
+            "precioUni": 180,
+            "ventaGravada": 180
+          }
+        ],
+        "subtotal": 180,
+        "iva": 23.400000000000002,
+        "total": 203.4,
+        "totalGravada": 180,
+        "pagado": 203.4,
+        "estado": "pagada",
+        "uuid": "MANUAL-DF0O0LGL",
+        "numeroControl": "",
+        "moneda": "USD",
+        "origen": "MANUAL",
+        "emisorNit": "06143344001015",
+        "emisorNombre": "Mantenimiento Técnico Pro",
+        "receptorNit": "006754754",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "observaciones": ""
+      },
+      {
+        "id": "v_dte1",
+        "folio": "V-99901",
+        "fecha": "2026-06-12",
+        "vencimiento": "2026-06-12",
+        "tipo": "compra",
+        "uuid": "5413ACB4-3DD8-FAD4-E063-CD7418AC6B20",
+        "numeroControl": "DTE-03-M001P002-000000000158619",
+        "tipoDTE": "03",
+        "tipoDTEDesc": "Crédito Fiscal",
+        "ambiente": "01",
+        "moneda": "USD",
+        "emisorNit": "06142102971044",
+        "emisorNrc": "978957",
+        "emisorNombre": "COMPAÑIA DE TELECOMUNICACIONES EL SALVADOR S.A DE C.V.",
+        "emisorGiro": "Servicio de telefonia",
+        "emisorEmail": "clientes@claro.com.sv",
+        "emisorTel": "22505555",
+        "emisorDireccion": "FINAL CALLE EL PROGRESO Y AVENIDA LIVERPOOL, EDIFICIO E, SEGUNDO NIVEL, COL. ROMA",
+        "receptorNit": "02101505701010",
+        "receptorNrc": "1806942",
+        "receptorNombre": "CARLOS ALFREDO CASTILLO FLORES",
+        "receptorGiro": "Otros",
+        "receptorEmail": "itconsultingpro@outlook.com",
+        "receptorTel": "",
+        "receptorDireccion": "Distrito de Santa Ana12a. CALLE PTE # 6BO. SAN JUAN",
+        "cliente": "COMPAÑIA DE TELECOMUNICACIONES EL SALVADOR S.A DE C.V.",
+        "proveedor": "COMPAÑIA DE TELECOMUNICACIONES EL SALVADOR S.A DE C.V.",
+        "rfc": "06142102971044",
+        "usoCfdi": "DTE-SV",
+        "metodoPago": "Otros",
+        "formaPago": "01",
+        "conceptos": [
+          {
+            "nombre": "CARGO(S) MENSUAL(ES) TODOS LOS SERVICIOS",
+            "cantidad": 1,
+            "precioUni": 46.02,
+            "precio": 46.02,
+            "ventaGravada": 46.02
+          }
+        ],
+        "totalGravada": 46.02,
+        "subtotal": 46.02,
+        "iva": 5.98,
+        "total": 52,
+        "totalLetras": "CINCUENTA Y DOS CON 00/100 DOLARES",
+        "sello": "2026DD93310A4D334738BDAD2A13F7E51074DHOI",
+        "firma": "eyJhbGciOiJSUzUxMiJ9...",
+        "pagos": [],
+        "condicionOperacion": 3,
+        "numPagoElectronico": "1000520018316146",
+        "pagado": 52,
+        "estado": "pagada",
+        "observaciones": "",
+        "origen": "DTE-JSON"
+      }
+    ],
+    "notasCredito": [
+      {
+        "id": "nc01",
+        "folio": "NC-00001",
+        "fecha": "2026-08-20",
+        "facturaId": "v006",
+        "facturaFolio": "V-00006",
+        "cliente": "Restaurante El Fogón",
+        "motivo": "Descuento",
+        "monto": 100
+      },
+      {
+        "id": "nc02",
+        "folio": "NC-00002",
+        "fecha": "2026-07-25",
+        "facturaId": "v008",
+        "facturaFolio": "V-00008",
+        "cliente": "Librería Universitaria",
+        "motivo": "Devolución",
+        "monto": 220
+      },
+      {
+        "id": "nc03",
+        "folio": "NC-00003",
+        "fecha": "2026-09-12",
+        "facturaId": "v002",
+        "facturaFolio": "V-00002",
+        "cliente": "Distribuidora La Colmena, S.A. de C.V.",
+        "motivo": "Error en factura",
+        "monto": 50
+      }
+    ],
+    "polizas": [
+      {
+        "id": "pol1",
+        "numero": 1,
+        "fecha": "2026-09-05",
+        "concepto": "Venta V-00001 - Almacén El Escorial, S.A. de C.V.",
+        "tipo": "ingreso",
+        "cargo": 84.75,
+        "abono": 84.75,
+        "auto": true,
+        "invoiceId": "v001"
+      },
+      {
+        "id": "pol2",
+        "numero": 2,
+        "fecha": "2026-09-10",
+        "concepto": "Venta V-00002 - Distribuidora La Colmena, S.A. de C.V.",
+        "tipo": "ingreso",
+        "cargo": 508.5,
+        "abono": 508.5,
+        "auto": true,
+        "invoiceId": "v002"
+      },
+      {
+        "id": "pol3",
+        "numero": 3,
+        "fecha": "2026-09-18",
+        "concepto": "Venta V-00003 - Supermercados El Amigo",
+        "tipo": "ingreso",
+        "cargo": 406.8,
+        "abono": 406.8,
+        "auto": true,
+        "invoiceId": "v003"
+      },
+      {
+        "id": "pol4",
+        "numero": 4,
+        "fecha": "2026-08-08",
+        "concepto": "Venta V-00004 - Farmacia Santa Ana",
+        "tipo": "ingreso",
+        "cargo": 1356,
+        "abono": 1356,
+        "auto": true,
+        "invoiceId": "v004"
+      },
+      {
+        "id": "pol5",
+        "numero": 5,
+        "fecha": "2026-08-22",
+        "concepto": "Venta V-00005 - Constructora del Valle, S.A.",
+        "tipo": "ingreso",
+        "cargo": 1582,
+        "abono": 1582,
+        "auto": true,
+        "invoiceId": "v005"
+      },
+      {
+        "id": "pol6",
+        "numero": 6,
+        "fecha": "2026-08-25",
+        "concepto": "Venta V-00006 - Restaurante El Fogón",
+        "tipo": "ingreso",
+        "cargo": 734.5,
+        "abono": 734.5,
+        "auto": true,
+        "invoiceId": "v006"
+      },
+      {
+        "id": "pol7",
+        "numero": 7,
+        "fecha": "2026-07-12",
+        "concepto": "Venta V-00007 - Hotel Real de Santa Ana",
+        "tipo": "ingreso",
+        "cargo": 1073.5,
+        "abono": 1073.5,
+        "auto": true,
+        "invoiceId": "v007"
+      },
+      {
+        "id": "pol8",
+        "numero": 8,
+        "fecha": "2026-07-18",
+        "concepto": "Venta V-00008 - Librería Universitaria",
+        "tipo": "ingreso",
+        "cargo": 2418.2,
+        "abono": 2418.2,
+        "auto": true,
+        "invoiceId": "v008"
+      },
+      {
+        "id": "pol9",
+        "numero": 9,
+        "fecha": "2026-07-28",
+        "concepto": "Venta V-00009 - Ferretería El Martillo",
+        "tipo": "ingreso",
+        "cargo": 395.5,
+        "abono": 395.5,
+        "auto": true,
+        "invoiceId": "v009"
+      },
+      {
+        "id": "pol10",
+        "numero": 10,
+        "fecha": "2026-06-05",
+        "concepto": "Venta V-00010 - Clínica Médica San José",
+        "tipo": "ingreso",
+        "cargo": 2825,
+        "abono": 2825,
+        "auto": true,
+        "invoiceId": "v010"
+      },
+      {
+        "id": "pol11",
+        "numero": 11,
+        "fecha": "2026-06-15",
+        "concepto": "Venta V-00011 - Academia de Inglés ABC",
+        "tipo": "ingreso",
+        "cargo": 452,
+        "abono": 452,
+        "auto": true,
+        "invoiceId": "v011"
+      },
+      {
+        "id": "pol12",
+        "numero": 12,
+        "fecha": "2026-05-10",
+        "concepto": "Venta V-00012 - Panadería La Espiga Dorada",
+        "tipo": "ingreso",
+        "cargo": 904,
+        "abono": 904,
+        "auto": true,
+        "invoiceId": "v012"
+      },
+      {
+        "id": "pol13",
+        "numero": 13,
+        "fecha": "2026-05-20",
+        "concepto": "Venta V-00013 - Tienda de Ropa Fashion SV",
+        "tipo": "ingreso",
+        "cargo": 717.55,
+        "abono": 717.55,
+        "auto": true,
+        "invoiceId": "v013"
+      },
+      {
+        "id": "pol14",
+        "numero": 14,
+        "fecha": "2026-04-08",
+        "concepto": "Venta V-00014 - Agencia de Viajes Tourist",
+        "tipo": "ingreso",
+        "cargo": 282.5,
+        "abono": 282.5,
+        "auto": true,
+        "invoiceId": "v014"
+      },
+      {
+        "id": "pol15",
+        "numero": 15,
+        "fecha": "2026-04-22",
+        "concepto": "Venta V-00015 - Imprenta Moderna",
+        "tipo": "ingreso",
+        "cargo": 531.1,
+        "abono": 531.1,
+        "auto": true,
+        "invoiceId": "v015"
+      },
+      {
+        "id": "pol16",
+        "numero": 16,
+        "fecha": "2026-09-03",
+        "concepto": "Compra C-00001 - COMPAÑIA DE TELECOMUNICACIONES EL SALVADOR S.A DE C.V. (CLARO)",
+        "tipo": "egreso",
+        "cargo": 52.0026,
+        "abono": 52.0026,
+        "auto": true,
+        "invoiceId": "co001"
+      },
+      {
+        "id": "pol17",
+        "numero": 17,
+        "fecha": "2026-08-05",
+        "concepto": "Compra C-00002 - COMPAÑIA DE TELECOMUNICACIONES EL SALVADOR S.A DE C.V. (CLARO)",
+        "tipo": "egreso",
+        "cargo": 52.0026,
+        "abono": 52.0026,
+        "auto": true,
+        "invoiceId": "co002"
+      },
+      {
+        "id": "pol18",
+        "numero": 18,
+        "fecha": "2026-09-08",
+        "concepto": "Compra C-00003 - TELEFONICA MOVISTEL EL SALVADOR (TIGO)",
+        "tipo": "egreso",
+        "cargo": 39.55,
+        "abono": 39.55,
+        "auto": true,
+        "invoiceId": "co003"
+      },
+      {
+        "id": "pol19",
+        "numero": 19,
+        "fecha": "2026-09-15",
+        "concepto": "Compra C-00004 - Distribuidora Eléctrica del Norte",
+        "tipo": "egreso",
+        "cargo": 96.05,
+        "abono": 96.05,
+        "auto": true,
+        "invoiceId": "co004"
+      },
+      {
+        "id": "pol20",
+        "numero": 20,
+        "fecha": "2026-09-01",
+        "concepto": "Compra C-00005 - Inmobiliaria Santa Ana",
+        "tipo": "egreso",
+        "cargo": 395.5,
+        "abono": 395.5,
+        "auto": true,
+        "invoiceId": "co005"
+      },
+      {
+        "id": "pol21",
+        "numero": 21,
+        "fecha": "2026-08-12",
+        "concepto": "Compra C-00006 - Office Depot El Salvador",
+        "tipo": "egreso",
+        "cargo": 231.65,
+        "abono": 231.65,
+        "auto": true,
+        "invoiceId": "co006"
+      },
+      {
+        "id": "pol22",
+        "numero": 22,
+        "fecha": "2026-07-10",
+        "concepto": "Compra C-00007 - Computec S.A. de C.V.",
+        "tipo": "egreso",
+        "cargo": 2762.85,
+        "abono": 2762.85,
+        "auto": true,
+        "invoiceId": "co007"
+      },
+      {
+        "id": "pol23",
+        "numero": 23,
+        "fecha": "2026-09-20",
+        "concepto": "Compra C-00008 - Administración Nacional de Acueductos (ANDA)",
+        "tipo": "egreso",
+        "cargo": 20.34,
+        "abono": 20.34,
+        "auto": true,
+        "invoiceId": "co008"
+      },
+      {
+        "id": "pol24",
+        "numero": 24,
+        "fecha": "2026-09-15",
+        "concepto": "Compra C-00009 - Publicidad Digital SV",
+        "tipo": "egreso",
+        "cargo": 316.4,
+        "abono": 316.4,
+        "auto": true,
+        "invoiceId": "co009"
+      },
+      {
+        "id": "pol25",
+        "numero": 25,
+        "fecha": "2026-06-01",
+        "concepto": "Compra C-00010 - Seguros Atlántico",
+        "tipo": "egreso",
+        "cargo": 734.5,
+        "abono": 734.5,
+        "auto": true,
+        "invoiceId": "co010"
+      },
+      {
+        "id": "pol26",
+        "numero": 26,
+        "fecha": "2026-08-25",
+        "concepto": "Compra C-00011 - Servicios Legales Asociados",
+        "tipo": "egreso",
+        "cargo": 226,
+        "abono": 226,
+        "auto": true,
+        "invoiceId": "co011"
+      },
+      {
+        "id": "pol27",
+        "numero": 27,
+        "fecha": "2026-07-18",
+        "concepto": "Compra C-00012 - Mantenimiento Técnico Pro",
+        "tipo": "egreso",
+        "cargo": 203.4,
+        "abono": 203.4,
+        "auto": true,
+        "invoiceId": "co012"
+      },
+      {
+        "id": "pol28",
+        "numero": 28,
+        "fecha": "2026-08-20",
+        "concepto": "NC NC-00001 - V-00006",
+        "tipo": "egreso",
+        "cargo": 100,
+        "abono": 100,
+        "auto": true
+      },
+      {
+        "id": "pol29",
+        "numero": 29,
+        "fecha": "2026-07-25",
+        "concepto": "NC NC-00002 - V-00008",
+        "tipo": "egreso",
+        "cargo": 220,
+        "abono": 220,
+        "auto": true
+      },
+      {
+        "id": "pol30",
+        "numero": 30,
+        "fecha": "2026-09-12",
+        "concepto": "NC NC-00003 - V-00002",
+        "tipo": "egreso",
+        "cargo": 50,
+        "abono": 50,
+        "auto": true
+      },
+      {
+        "id": "pol31",
+        "numero": 31,
+        "fecha": "2026-09-05",
+        "concepto": "Pago de planilla quincenal - empleados",
+        "tipo": "egreso",
+        "cargo": 1200,
+        "abono": 1200,
+        "auto": false
+      },
+      {
+        "id": "pol32",
+        "numero": 32,
+        "fecha": "2026-09-20",
+        "concepto": "Pago de planilla quincenal - empleados",
+        "tipo": "egreso",
+        "cargo": 1200,
+        "abono": 1200,
+        "auto": false
+      },
+      {
+        "id": "pol33",
+        "numero": 33,
+        "fecha": "2026-08-05",
+        "concepto": "Pago de planilla quincenal - empleados",
+        "tipo": "egreso",
+        "cargo": 1150,
+        "abono": 1150,
+        "auto": false
+      }
+    ],
+    "consultoria": [
+      {
+        "id": "cs01",
+        "clave": "CON-0001",
+        "cliente": "Clínica Médica San José",
+        "servicio": "Implementación de expedientes digitales",
+        "fechaInicio": "2026-04-01",
+        "fechaFin": "2026-07-28",
+        "monto": 4500,
+        "cobrado": 4500,
+        "estado": "completado",
+        "descripcion": "Sistema completo de gestión de expedientes médicos digitales con respaldo en la nube."
+      },
+      {
+        "id": "cs02",
+        "clave": "CON-0002",
+        "cliente": "Hotel Real de Santa Ana",
+        "servicio": "Migración de correo a Microsoft 365",
+        "fechaInicio": "2026-06-05",
+        "fechaFin": "2026-07-10",
+        "monto": 1800,
+        "cobrado": 1800,
+        "estado": "completado",
+        "descripcion": "Migración de 25 buzones de correo a la nube con capacitación al personal."
+      },
+      {
+        "id": "cs03",
+        "clave": "CON-0003",
+        "cliente": "Constructora del Valle, S.A.",
+        "servicio": "Consultoría en infraestructura TI",
+        "fechaInicio": "2026-08-01",
+        "fechaFin": "",
+        "monto": 3500,
+        "cobrado": 1500,
+        "estado": "activo",
+        "descripcion": "Diseño e implementación de nueva infraestructura de red y servidores para la empresa."
+      },
+      {
+        "id": "cs04",
+        "clave": "CON-0004",
+        "cliente": "Supermercados El Amigo",
+        "servicio": "Sistema de punto de venta integrado",
+        "fechaInicio": "2026-09-05",
+        "fechaFin": "",
+        "monto": 5200,
+        "cobrado": 1500,
+        "estado": "activo",
+        "descripcion": "Desarrollo de sistema POS integrado con inventario y facturación electrónica."
+      },
+      {
+        "id": "cs05",
+        "clave": "CON-0005",
+        "cliente": "Agencia de Viajes Tourist",
+        "servicio": "Rediseño de sitio web y booking",
+        "fechaInicio": "2026-09-10",
+        "fechaFin": "",
+        "monto": 2800,
+        "cobrado": 800,
+        "estado": "activo",
+        "descripcion": "Rediseño completo del sitio web con sistema de reservas en línea."
+      },
+      {
+        "id": "cs06",
+        "clave": "CON-0006",
+        "cliente": "Panadería La Espiga Dorada",
+        "servicio": "Sistema de facturación electrónica",
+        "fechaInicio": "2026-03-01",
+        "fechaFin": "2026-05-30",
+        "monto": 1500,
+        "cobrado": 1500,
+        "estado": "completado",
+        "descripcion": "Implementación de sistema de facturación electrónica para la cadena."
+      }
+    ],
+    "dteRaw": [
+      {
+        "id": "dte_raw_1",
+        "fileName": "E_5413ACB4-3DD8-FAD4-E063-CD7418AC6B20.json",
+        "importedAt": "2026-09-01T10:30:00.000Z",
+        "tipoDetectado": "compra",
+        "raw": {
+          "identificacion": {
+            "version": 3,
+            "ambiente": "01",
+            "tipoDte": "03",
+            "numeroControl": "DTE-03-M001P002-000000000158619",
+            "codigoGeneracion": "5413ACB4-3DD8-FAD4-E063-CD7418AC6B20",
+            "fecEmi": "2026-06-12",
+            "horEmi": "08:00:00",
+            "tipoMoneda": "USD"
+          },
+          "emisor": {
+            "nit": "06142102971044",
+            "nrc": "978957",
+            "nombre": "COMPAÑIA DE TELECOMUNICACIONES EL SALVADOR S.A DE C.V.",
+            "descActividad": "Servicio de telefonia",
+            "telefono": "22505555",
+            "correo": "clientes@claro.com.sv",
+            "direccion": {
+              "complemento": "FINAL CALLE EL PROGRESO Y AVENIDA LIVERPOOL, EDIFICIO E, SEGUNDO NIVEL, COL. ROMA"
+            }
+          },
+          "receptor": {
+            "nit": "02101505701010",
+            "nrc": "1806942",
+            "nombre": "CARLOS ALFREDO CASTILLO FLORES",
+            "telefono": null,
+            "correo": "itconsultingpro@outlook.com",
+            "direccion": {
+              "complemento": "Distrito de Santa Ana 12a. CALLE PTE # 6 BO. SAN JUAN"
+            }
+          },
+          "cuerpoDocumento": [
+            {
+              "numItem": 1,
+              "descripcion": "CARGO(S) MENSUAL(ES) TODOS LOS SERVICIOS",
+              "cantidad": 1,
+              "precioUni": 46.02,
+              "ventaGravada": 46.02,
+              "tributos": [
+                "20"
+              ]
+            }
+          ],
+          "resumen": {
+            "totalGravada": 46.02,
+            "subTotalVentas": 46.02,
+            "tributos": [
+              {
+                "codigo": "20",
+                "descripcion": "Impuesto al Valor Agregado 13%",
+                "valor": 5.98
+              }
+            ],
+            "montoTotalOperacion": 52,
+            "totalPagar": 52,
+            "totalLetras": "CINCUENTA Y DOS CON 00/100 DOLARES",
+            "condicionOperacion": 3,
+            "numPagoElectronico": "1000520018316146"
+          },
+          "selloRecibido": "2026DD93310A4D334738BDAD2A13F7E51074DHOI"
+        },
+        "resumen": {
+          "uuid": "5413ACB4-3DD8-FAD4-E063-CD7418AC6B20",
+          "numeroControl": "DTE-03-M001P002-000000000158619",
+          "fecha": "2026-06-12",
+          "emisor": "COMPAÑIA DE TELECOMUNICACIONES EL SALVADOR S.A DE C.V.",
+          "emisorNit": "06142102971044",
+          "receptor": "CARLOS ALFREDO CASTILLO FLORES",
+          "receptorNit": "02101505701010",
+          "totalGravada": 46.02,
+          "iva": 5.98,
+          "total": 52,
+          "moneda": "USD",
+          "sello": "2026DD93310A4D334738BDAD2A13F7E51074DHOI",
+          "tipoDTE": "03"
+        }
+      },
+      {
+        "id": "dte_raw_2",
+        "fileName": "Escorial-7-26-F79CEC03-7B85-4B38-993C-7AF6F1A300A2.json",
+        "importedAt": "2026-09-01T10:35:00.000Z",
+        "tipoDetectado": "venta",
+        "raw": {
+          "identificacion": {
+            "version": 4,
+            "ambiente": "01",
+            "tipoDte": "03",
+            "numeroControl": "DTE-03-M001P001-000000000000008",
+            "codigoGeneracion": "F79CEC03-7B85-4B38-993C-7AF6F1A300A2",
+            "fecEmi": "2026-07-19",
+            "horEmi": "20:48:49",
+            "tipoMoneda": "USD"
+          },
+          "emisor": {
+            "nit": "006754754",
+            "nrc": "1806942",
+            "nombre": "CARLOS ALFREDO CASTILLO FLORES",
+            "descActividad": "Consultorias y gestión de servicios informáticos",
+            "telefono": "78873322",
+            "correo": "itconsultingpro@outlook.com",
+            "direccion": {
+              "complemento": "AVENIDA JOSE MATIAS DELGADO NORTE Y 12 CALLE PONIENTE, BO. SAN JUAN, # 6"
+            }
+          },
+          "receptor": {
+            "nit": "06142106891010",
+            "nrc": "22594",
+            "nombre": "Almacén El Escorial, S.A. de C.V.",
+            "telefono": "78616172",
+            "correo": "almacenelescorial@gmail.com",
+            "direccion": {
+              "complemento": "14ª Av. Sur, entre 29 y 31 Calle Poniente, Santa Ana"
+            }
+          },
+          "cuerpoDocumento": [
+            {
+              "numItem": 1,
+              "descripcion": "Servicios profesionales correspondiente a soporte de los equipos del almacén y configuraciones varias del sistema operativo",
+              "cantidad": 1,
+              "precioUni": 75,
+              "ventaGravada": 75,
+              "tributos": [
+                "20"
+              ]
+            }
+          ],
+          "resumen": {
+            "totalGravada": 75,
+            "subTotalVentas": 75,
+            "tributos": [
+              {
+                "codigo": "20",
+                "descripcion": "Impuesto al Valor Agregado 13%",
+                "valor": 9.75
+              }
+            ],
+            "montoTotalOperacion": 84.75,
+            "totalPagar": 84.75,
+            "totalLetras": "OCHENTA Y CUATRO DÓLARES CON SETENTA Y CINCO CENTAVOS",
+            "condicionOperacion": 1,
+            "pagos": [
+              {
+                "codigo": "04",
+                "montoPago": 84.75
+              }
+            ]
+          },
+          "selloRecibido": "202620C1B818145642BE8DE90F4A58D13A38VJDB"
+        },
+        "resumen": {
+          "uuid": "F79CEC03-7B85-4B38-993C-7AF6F1A300A2",
+          "numeroControl": "DTE-03-M001P001-000000000000008",
+          "fecha": "2026-07-19",
+          "emisor": "CARLOS ALFREDO CASTILLO FLORES",
+          "emisorNit": "006754754",
+          "receptor": "Almacén El Escorial, S.A. de C.V.",
+          "receptorNit": "06142106891010",
+          "totalGravada": 75,
+          "iva": 9.75,
+          "total": 84.75,
+          "moneda": "USD",
+          "sello": "202620C1B818145642BE8DE90F4A58D13A38VJDB",
+          "tipoDTE": "03"
+        }
+      },
+      {
+        "id": "dte_raw_3",
+        "fileName": "DTE-LaColmena-A1B2C3D4.json",
+        "importedAt": "2026-09-10T14:20:00.000Z",
+        "tipoDetectado": "venta",
+        "raw": {
+          "identificacion": {
+            "version": 4,
+            "ambiente": "01",
+            "tipoDte": "03",
+            "numeroControl": "DTE-03-M001P001-000000000000009",
+            "codigoGeneracion": "A1B2C3D4-E5F6-7890-ABCD-EF1234567890",
+            "fecEmi": "2026-08-15",
+            "horEmi": "15:30:22",
+            "tipoMoneda": "USD"
+          },
+          "emisor": {
+            "nit": "006754754",
+            "nrc": "1806942",
+            "nombre": "CARLOS ALFREDO CASTILLO FLORES",
+            "descActividad": "Consultorias y gestión de servicios informáticos",
+            "telefono": "78873322",
+            "correo": "itconsultingpro@outlook.com",
+            "direccion": {
+              "complemento": "AVENIDA JOSE MATIAS DELGADO NORTE Y 12 CALLE PONIENTE, BO. SAN JUAN, # 6"
+            }
+          },
+          "receptor": {
+            "nit": "06140803671017",
+            "nrc": "15423",
+            "nombre": "Distribuidora La Colmena, S.A. de C.V.",
+            "telefono": "22354455",
+            "correo": "ventas@lacolmena.com.sv",
+            "direccion": {
+              "complemento": "Col. Escalón, San Salvador"
+            }
+          },
+          "cuerpoDocumento": [
+            {
+              "numItem": 1,
+              "descripcion": "Consultoría en transformación digital",
+              "cantidad": 1,
+              "precioUni": 350,
+              "ventaGravada": 350,
+              "tributos": [
+                "20"
+              ]
+            }
+          ],
+          "resumen": {
+            "totalGravada": 350,
+            "subTotalVentas": 350,
+            "tributos": [
+              {
+                "codigo": "20",
+                "descripcion": "Impuesto al Valor Agregado 13%",
+                "valor": 45.5
+              }
+            ],
+            "montoTotalOperacion": 395.5,
+            "totalPagar": 395.5,
+            "totalLetras": "TRESCIENTOS NOVENTA Y CINCO CON 50/100 DOLARES",
+            "condicionOperacion": 1,
+            "pagos": [
+              {
+                "codigo": "03",
+                "montoPago": 395.5,
+                "referencia": "TRANSF-001"
+              }
+            ]
+          },
+          "selloRecibido": "2026A1B2C3D4E5F67890ABCDEF123456TEST"
+        },
+        "resumen": {
+          "uuid": "A1B2C3D4-E5F6-7890-ABCD-EF1234567890",
+          "numeroControl": "DTE-03-M001P001-000000000000009",
+          "fecha": "2026-08-15",
+          "emisor": "CARLOS ALFREDO CASTILLO FLORES",
+          "emisorNit": "006754754",
+          "receptor": "Distribuidora La Colmena, S.A. de C.V.",
+          "receptorNit": "06140803671017",
+          "totalGravada": 350,
+          "iva": 45.5,
+          "total": 395.5,
+          "moneda": "USD",
+          "sello": "2026A1B2C3D4E5F67890ABCDEF123456TEST",
+          "tipoDTE": "03"
+        }
+      }
+    ],
+    "importLog": [
+      {
+        "fecha": "2026-09-01T10:30:00.000Z",
+        "tipo": "DTE",
+        "archivo": "E_5413ACB4-3DD8-FAD4-E063-CD7418AC6B20.json",
+        "registros": "0V/1C",
+        "resultado": "✅ Todos (0V + 1C)"
+      },
+      {
+        "fecha": "2026-09-01T10:35:00.000Z",
+        "tipo": "DTE",
+        "archivo": "Escorial-7-26-F79CEC03-7B85-4B38-993C-7AF6F1A300A2.json",
+        "registros": "1V/0C",
+        "resultado": "✅ Todos (1V + 0C)"
+      },
+      {
+        "fecha": "2026-09-10T14:20:00.000Z",
+        "tipo": "DTE",
+        "archivo": "DTE-LaColmena-A1B2C3D4.json",
+        "registros": "1V/0C",
+        "resultado": "✅ Todos (1V + 0C)"
+      }
+    ],
+    "notifications": [],
+    "counters": {
+      "venta": 17,
+      "compra": 13,
+      "poliza": 34,
+      "consultoria": 7,
+      "nota": 4
+    }
+  }
+}
