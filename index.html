@@ -583,7 +583,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
                         <div class="form-group"><label>NIT principal ⭐</label><input type="text" class="form-control" id="cfg-nit" style="border-color:var(--orange-400);font-weight:600" /></div>
                         <div class="form-group"><label>NRC</label><input type="text" class="form-control" id="cfg-nrc" /></div>
                     </div>
-                    <div class="form-group"><label>NITs adicionales (coma)</label><input type="text" class="form-control" id="cfg-nits-adicionales" placeholder="006754754, 02101505701010" /><small style="color:var(--blue-600)">Los DTE con cualquiera de estos NIT se clasifican como VENTA</small></div>
+                    <div class="form-group"><label>NITs adicionales (coma)</label><input type="text" class="form-control" id="cfg-nits-adicionales" placeholder="006754254, 02101510701010" /><small style="color:var(--blue-600)">Los DTE con cualquiera de estos NIT se clasifican como VENTA</small></div>
                     <div class="form-group"><label>Email fiscal</label><input type="email" class="form-control" id="cfg-email" /></div>
                     <div class="form-group"><label>Giro</label><input type="text" class="form-control" id="cfg-giro" /></div>
                     <div class="form-group"><label>Domicilio</label><input type="text" class="form-control" id="cfg-domicilio" /></div>
@@ -630,8 +630,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
                 <p>Antes de operar, vaya a <code>⚙️ Configuración</code> en el menú lateral y complete los datos fiscales. Sin esta información el sistema no podrá clasificar correctamente los DTE (venta vs compra).</p>
                 <ol class="help-step-list">
                     <li><strong>Razón social</strong><p>El nombre legal de su empresa tal como aparece en el Ministerio de Hacienda.</p></li>
-                    <li><strong>NIT principal ⭐</strong><p>Su Número de Identificación Tributaria. El formato nuevo tiene 14 dígitos (ej: <code>0210-150570-101-0</code>) y el antiguo 9 dígitos (ej: <code>006754754</code>). <strong>Este campo es el más importante para clasificar DTE.</strong></p></li>
-                    <li><strong>NITs adicionales</strong><p>Si opera con más de un NIT (formato antiguo y nuevo), ingréselos separados por coma (ej: <code>006754754, 02101505701010</code>). Cualquier DTE con estos NIT se clasificará como VENTA.</p></li>
+                    <li><strong>NIT principal ⭐</strong><p>Su Número de Identificación Tributaria. El formato nuevo tiene 14 dígitos (ej: <code>0210-151070-101-0</code>) y el antiguo 9 dígitos (ej: <code>006754254</code>). <strong>Este campo es el más importante para clasificar DTE.</strong></p></li>
+                    <li><strong>NITs adicionales</strong><p>Si opera con más de un NIT (formato antiguo y nuevo), ingréselos separados por coma (ej: <code>006754254, 02101510701010</code>). Cualquier DTE con estos NIT se clasificará como VENTA.</p></li>
                     <li><strong>NRC</strong><p>Número de Registro de Contribuyente del MH. Se usa como criterio alterno de identificación.</p></li>
                     <li><strong>Email fiscal</strong><p>Se usa como criterio alterno para reconocerlo como emisor de un DTE.</p></li>
                     <li><strong>Preferencias</strong><p>IVA (13% por defecto en El Salvador), días de crédito por defecto (30), series de facturación (V para ventas, C para compras).</p></li>
@@ -706,9 +706,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
                 <table class="help-table-compare">
                     <thead><tr><th style="width:8%">#</th><th style="width:42%">Criterio</th><th style="width:50%">Ejemplo</th></tr></thead>
                     <tbody>
-                        <tr><td>1</td><td>NIT principal coincide con <code>emisor.nit</code></td><td>02101505701010 = 02101505701010</td></tr>
-                        <tr><td>2</td><td>NIT adicional coincide con <code>emisor.nit</code></td><td>006754754 está en la lista</td></tr>
-                        <tr><td>3</td><td>NRC coincide con <code>emisor.nrc</code></td><td>1806942 = 1806942</td></tr>
+                        <tr><td>1</td><td>NIT principal coincide con <code>emisor.nit</code></td><td>02101510701010 = 02101510701010</td></tr>
+                        <tr><td>2</td><td>NIT adicional coincide con <code>emisor.nit</code></td><td>006754254 está en la lista</td></tr>
+                        <tr><td>3</td><td>NRC coincide con <code>emisor.nrc</code></td><td>1806942 = 1816942</td></tr>
                         <tr><td>4</td><td>Email fiscal coincide con <code>emisor.correo</code></td><td>itconsultingpro@outlook.com</td></tr>
                         <tr><td>5</td><td>Nombre normalizado coincide</td><td>CASTILLO ALFREDO CARLOS</td></tr>
                     </tbody>
