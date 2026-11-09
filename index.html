@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#E66A1F" />
-<title>Sistema ERP Integral · ITCPO v11.5</title>
+<title>Sistema ERP Integral · ITCPO v12.0</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 :root{--orange-600:#E66A1F;--orange-500:#F08A3E;--orange-400:#F5A65B;--orange-100:#FEECD9;--orange-50:#FFF7EE;--blue-700:#1D4ED8;--blue-600:#2563EB;--blue-500:#3B82F6;--blue-100:#DBEAFE;--gray-100:#F4F6F9;--gray-200:#E5E7EB;--gray-300:#D1D5DB;--gray-500:#6B7280;--gray-700:#374151;--gray-900:#111827;--white:#FFFFFF;--success:#059669;--danger:#DC2626;--warning:#D97706;--shadow-sm:0 1px 2px rgba(0,0,0,.05);--shadow:0 2px 8px rgba(0,0,0,.08);--shadow-lg:0 10px 25px rgba(0,0,0,.1);--radius:10px;--radius-sm:6px}
@@ -177,10 +177,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
 .dte-resumen-line.total .label,.dte-resumen-line.total .value{font-weight:700;color:var(--orange-600)}
 .dte-total-letras{background:var(--blue-100);padding:10px 14px;border-radius:var(--radius-sm);font-style:italic;font-size:12px;color:var(--blue-700);margin-top:12px;border-left:3px solid var(--blue-600)}
 .dte-json-raw{background:var(--gray-900);color:#A5F3FC;padding:16px;border-radius:var(--radius-sm);font-family:'Courier New',monospace;font-size:11px;overflow:auto;max-height:500px;white-space:pre;line-height:1.5}
-.import-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:16px 0}
+.import-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin:16px 0}
 .import-stat{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:14px;text-align:center}
 .import-stat .num{font-size:28px;font-weight:700}.import-stat .label{font-size:11px;color:var(--gray-500);text-transform:uppercase;margin-top:4px;font-weight:600}
-.import-stat.success .num{color:var(--success)}.import-stat.error .num{color:var(--danger)}.import-stat.warn .num{color:var(--warning)}.import-stat.info .num{color:var(--blue-600)}.import-stat.duplicate .num{color:#7C3AED}.import-stat.prod .num{color:var(--orange-600)}
+.import-stat.success .num{color:var(--success)}.import-stat.error .num{color:var(--danger)}.import-stat.warn .num{color:var(--warning)}.import-stat.info .num{color:var(--blue-600)}.import-stat.duplicate .num{color:#7C3AED}.import-stat.prod .num{color:var(--orange-600)}.import-stat.serv .num{color:#7C3AED}
 .danger-zone{background:#FEF2F2;border:2px dashed var(--danger);border-radius:var(--radius);padding:20px;margin-top:16px}
 .danger-zone-header{display:flex;align-items:center;gap:10px;margin-bottom:10px;color:var(--danger);font-weight:700;font-size:15px}
 .danger-zone p{color:#7F1D1D;font-size:13px;line-height:1.6;margin-bottom:12px}
@@ -190,15 +190,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
 .help-intro{background:#fff;border-radius:var(--radius);padding:24px;margin-bottom:20px;border:1px solid var(--gray-200)}
 .help-intro h3{color:var(--orange-600);margin-bottom:12px;font-size:18px}
 .help-module-card{background:#fff;border-radius:var(--radius);padding:20px;margin-bottom:16px;border:1px solid var(--gray-200);border-left:5px solid var(--orange-600)}
-.help-module-card.blue{border-left-color:var(--blue-600)}
-.help-module-card.green{border-left-color:var(--success)}
-.help-module-card.purple{border-left-color:#7C3AED}
-.help-module-card.orange{border-left-color:var(--orange-600)}
+.help-module-card.blue{border-left-color:var(--blue-600)}.help-module-card.green{border-left-color:var(--success)}.help-module-card.purple{border-left-color:#7C3AED}.help-module-card.orange{border-left-color:var(--orange-600)}
 .help-module-card h3{font-size:16px;margin-bottom:10px;display:flex;align-items:center;gap:10px}
 .help-module-card h3 .mod-icon{font-size:22px;background:var(--orange-50);padding:6px 10px;border-radius:var(--radius-sm)}
-.help-module-card.blue h3 .mod-icon{background:var(--blue-100)}
-.help-module-card.green h3 .mod-icon{background:#D1FAE5}
-.help-module-card.purple h3 .mod-icon{background:#EDE9FE}
+.help-module-card.blue h3 .mod-icon{background:var(--blue-100)}.help-module-card.green h3 .mod-icon{background:#D1FAE5}.help-module-card.purple h3 .mod-icon{background:#EDE9FE}
 .help-module-card p{font-size:13.5px;line-height:1.7;color:var(--gray-700);margin-bottom:10px}
 .help-module-card code{background:var(--gray-100);padding:2px 6px;border-radius:4px;font-size:12px;color:var(--orange-600);font-family:monospace}
 .help-tip{background:var(--blue-100);border-left:4px solid var(--blue-600);padding:10px 14px;border-radius:4px;margin:10px 0;font-size:13px;color:var(--blue-700)}
@@ -209,7 +204,6 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
 .help-copyright h3{color:var(--orange-400);margin-bottom:10px;font-size:20px}.help-copyright .copyright-main{font-size:16px;font-weight:600;margin-bottom:4px}
 .help-copyright .copyright-author{font-size:14px;opacity:.95;margin-bottom:4px}.help-copyright .copyright-year{font-size:13px;opacity:.85;margin-bottom:12px}
 .help-copyright .copyright-legal{font-size:11px;opacity:.7;font-style:italic;max-width:600px;margin:0 auto;line-height:1.6}
-/* ═══════ ESTILOS AYUDA MEJORADA ═══════ */
 .help-step-list{counter-reset:help-step;list-style:none;padding:0;margin:12px 0}
 .help-step-list>li{counter-increment:help-step;position:relative;padding:12px 12px 12px 52px;margin-bottom:10px;background:#F9FAFB;border-left:3px solid var(--orange-500);border-radius:6px}
 .help-step-list>li::before{content:counter(help-step);position:absolute;left:12px;top:12px;width:28px;height:28px;background:var(--orange-600);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
@@ -218,16 +212,13 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
 .help-checklist{list-style:none;padding:0;margin:10px 0}
 .help-checklist li{padding:6px 0 6px 30px;position:relative;font-size:13px;line-height:1.6;color:var(--gray-700)}
 .help-checklist li::before{content:"✅";position:absolute;left:0;top:6px;font-size:14px}
-.help-checklist.warn li::before{content:"⚠️"}
-.help-checklist.danger li::before{content:"❌"}
-.help-checklist.info li::before{content:"ℹ️"}
+.help-checklist.warn li::before{content:"⚠️"}.help-checklist.danger li::before{content:"❌"}.help-checklist.info li::before{content:"ℹ️"}
 .help-faq{background:#fff;border-radius:var(--radius);border:1px solid var(--gray-200);margin-bottom:10px;overflow:hidden}
 .help-faq summary{padding:14px 16px;font-weight:600;cursor:pointer;color:var(--gray-900);font-size:13.5px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:8px}
 .help-faq summary::-webkit-details-marker{display:none}
 .help-faq summary::after{content:"▼";font-size:10px;color:var(--gray-500);transition:transform .2s;flex-shrink:0}
 .help-faq[open] summary::after{transform:rotate(180deg)}
-.help-faq summary:hover{background:var(--orange-50)}
-.help-faq[open] summary{background:var(--orange-50);color:var(--orange-600)}
+.help-faq summary:hover{background:var(--orange-50)}.help-faq[open] summary{background:var(--orange-50);color:var(--orange-600)}
 .help-faq .faq-body{padding:0 16px 14px;font-size:13px;line-height:1.7;color:var(--gray-700)}
 .help-flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;justify-content:center;padding:16px;background:var(--orange-50);border-radius:var(--radius);margin:12px 0}
 .help-flow-step{padding:8px 14px;background:#fff;border-radius:20px;border:2px solid var(--orange-400);font-size:12px;font-weight:600;color:var(--orange-600);text-align:center}
@@ -264,6 +255,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
 .empty-state{text-align:center;padding:30px 20px;color:var(--gray-500)}.empty-state .icon{font-size:44px;margin-bottom:10px;opacity:.4}
 .actions-cell{display:flex;gap:4px;flex-wrap:wrap}
 @media (max-width:900px){.app-layout{grid-template-columns:1fr}.sidebar{position:fixed;left:-280px;top:0;bottom:0;width:260px;transition:left .3s;z-index:200;padding-top:60px}.sidebar.open{left:0}.menu-toggle{display:block}.main-area{padding:16px}.global-search{display:none}.account-row{grid-template-columns:80px 1fr 80px}.account-row .hide-mobile{display:none}.asiento-line{grid-template-columns:1fr}.notifications-panel{right:10px;width:calc(100vw - 20px)}.libro-tabs{flex-direction:column}.libro-header{flex-direction:column;align-items:flex-start}.help-hero h1{font-size:24px}.cambio-tipo-container{grid-template-columns:1fr}.cambio-tipo-arrow{transform:rotate(90deg);text-align:center}.dte-resumen-container{grid-template-columns:1fr}.report-with-chart{grid-template-columns:1fr}.search-box{width:100%}}
+.help-section-title{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.help-back{font-size:12px;font-weight:600;text-decoration:none;color:var(--blue-700);background:var(--blue-100);padding:5px 12px;border-radius:20px;white-space:nowrap}.help-back:hover{background:var(--blue-600);color:#fff}
 </style>
 </head>
 <body>
@@ -356,7 +348,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
         </section>
 
         <section class="view" id="view-inventario">
-            <div class="view-header"><div><h2>📦 Inventario</h2><p class="subtitle">Catálogo de productos</p></div><button class="btn btn-primary" onclick="ERP.openProductModal()">➕ Nuevo</button></div>
+            <div class="view-header"><div><h2>📦 Inventario</h2><p class="subtitle">Solo productos físicos · Los servicios van a Consultoría</p></div><button class="btn btn-primary" onclick="ERP.openProductModal()">➕ Nuevo</button></div>
             <div class="card-grid mb-16">
                 <div class="kpi-card orange"><div class="icon-bg">📦</div><div class="label">Productos</div><div class="value" id="inv-total">0</div></div>
                 <div class="kpi-card blue"><div class="icon-bg">💵</div><div class="label">Valor</div><div class="value" id="inv-valor">$0</div></div>
@@ -373,15 +365,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
                             <button type="button" class="clear-btn" onclick="ERP.clearInventarioSearch()" title="Limpiar búsqueda">✕</button>
                             <button type="button" class="search-btn" onclick="ERP.renderInventario()" title="Buscar">Buscar</button>
                         </div>
-                        <select class="form-control" id="filter-categoria-productos" onchange="ERP.renderInventario()" style="width:auto;min-width:170px">
-                            <option value="">Todas las categorías</option>
-                        </select>
-                        <select class="form-control" id="filter-estado-productos" onchange="ERP.renderInventario()" style="width:auto">
-                            <option value="">Todos los estados</option>
-                            <option value="ok">✅ Stock OK</option>
-                            <option value="bajo">⚠️ Bajo</option>
-                            <option value="agotado">❌ Agotado</option>
-                        </select>
+                        <select class="form-control" id="filter-categoria-productos" onchange="ERP.renderInventario()" style="width:auto;min-width:170px"><option value="">Todas las categorías</option></select>
+                        <select class="form-control" id="filter-estado-productos" onchange="ERP.renderInventario()" style="width:auto"><option value="">Todos los estados</option><option value="ok">✅ Stock OK</option><option value="bajo">⚠️ Bajo</option><option value="agotado">❌ Agotado</option></select>
                     </div>
                 </div>
                 <div id="inventario-resumen" class="inv-resumen"></div>
@@ -392,12 +377,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
         <section class="view" id="view-clientes">
             <div class="view-header"><div><h2>👥 Clientes y Proveedores</h2></div><button class="btn btn-primary" onclick="ERP.openContactModal()">➕ Nuevo</button></div>
             <div class="tabs"><div class="tab active" data-tab="contacts-clientes">👤 Clientes</div><div class="tab" data-tab="contacts-proveedores">🏭 Proveedores</div></div>
-            <div class="tab-content active" id="tab-contacts-clientes">
-                <div class="card"><div class="card-header"><h3>Clientes</h3><button class="btn btn-blue" onclick="ERP.exportContactosPDF('cliente')">📄 Exportar PDF</button></div><div class="table-wrapper"><table class="data-table" id="tabla-clientes"><thead><tr><th>Nombre</th><th>NIT</th><th>NRC</th><th>Email</th><th>Tel</th><th class="num">Facturas</th><th class="num">Total</th><th>Acciones</th></tr></thead><tbody></tbody></table></div></div>
-            </div>
-            <div class="tab-content" id="tab-contacts-proveedores">
-                <div class="card"><div class="card-header"><h3>Proveedores</h3><button class="btn btn-blue" onclick="ERP.exportContactosPDF('proveedor')">📄 Exportar PDF</button></div><div class="table-wrapper"><table class="data-table" id="tabla-proveedores"><thead><tr><th>Nombre</th><th>NIT</th><th>NRC</th><th>Email</th><th>Tel</th><th class="num">Facturas</th><th class="num">Total</th><th>Acciones</th></tr></thead><tbody></tbody></table></div></div>
-            </div>
+            <div class="tab-content active" id="tab-contacts-clientes"><div class="card"><div class="card-header"><h3>Clientes</h3><button class="btn btn-blue" onclick="ERP.exportContactosPDF('cliente')">📄 Exportar PDF</button></div><div class="table-wrapper"><table class="data-table" id="tabla-clientes"><thead><tr><th>Nombre</th><th>NIT</th><th>NRC</th><th>Email</th><th>Tel</th><th class="num">Facturas</th><th class="num">Total</th><th>Acciones</th></tr></thead><tbody></tbody></table></div></div></div>
+            <div class="tab-content" id="tab-contacts-proveedores"><div class="card"><div class="card-header"><h3>Proveedores</h3><button class="btn btn-blue" onclick="ERP.exportContactosPDF('proveedor')">📄 Exportar PDF</button></div><div class="table-wrapper"><table class="data-table" id="tabla-proveedores"><thead><tr><th>Nombre</th><th>NIT</th><th>NRC</th><th>Email</th><th>Tel</th><th class="num">Facturas</th><th class="num">Total</th><th>Acciones</th></tr></thead><tbody></tbody></table></div></div></div>
         </section>
 
         <section class="view" id="view-cxc">
@@ -445,7 +426,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
         </section>
 
         <section class="view" id="view-consultoria">
-            <div class="view-header"><div><h2>💼 Consultoría</h2></div><button class="btn btn-primary" onclick="ERP.openConsultingModal()">➕ Nuevo</button></div>
+            <div class="view-header"><div><h2>💼 Consultoría</h2><p class="subtitle">Servicios profesionales · Solo servicios de DTE emitidos con su NIT configurado</p></div><button class="btn btn-primary" onclick="ERP.openConsultingModal()">➕ Nuevo</button></div>
             <div class="card-grid mb-16">
                 <div class="kpi-card orange"><div class="label">Activos</div><div class="value" id="con-activos">0</div></div>
                 <div class="kpi-card blue"><div class="label">Completados</div><div class="value" id="con-completados">0</div></div>
@@ -533,7 +514,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
                 <div class="kpi-card green"><div class="label">Total Ventas</div><div class="value" id="dte-total-v">$0</div></div>
                 <div class="kpi-card" style="border-left-color:var(--blue-600)"><div class="label">Total Compras</div><div class="value" id="dte-total-c">$0</div></div>
             </div>
-            <div class="alert-contable info"><span class="icon">💡</span><div><strong>Extracción de productos:</strong> Los bienes (no servicios) de cada DTE se agregan automáticamente al inventario con su precio + IVA (13%). Se excluyen combustibles (FOVIAL/COTRANS) y telecomunicaciones.</div></div>
+            <div class="alert-contable info"><span class="icon">💡</span><div><strong>Extracción automática:</strong> Los <strong>bienes físicos</strong> van a <strong>Inventario</strong> (precio + IVA). Solo los <strong>servicios</strong> emitidos con el NIT de Configuración (principal o adicional) van a <strong>Consultoría</strong>; los demás no se registran allí.</div></div>
             <div class="card">
                 <div class="card-header">
                     <h3>Todos los DTE</h3>
@@ -559,7 +540,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
                 <div class="card"><div class="card-header"><h3>📥 Cargar</h3></div><p class="text-muted text-sm mb-12">Restaura desde JSON.</p><div class="upload-zone" onclick="document.getElementById('backup-input').click()"><div class="icon">📂</div><p><strong>Seleccionar JSON</strong></p></div><input type="file" id="backup-input" accept=".json" style="display:none" onchange="ERP.importBackup(event)" /></div>
                 <div class="card">
                     <div class="card-header"><h3>🧾 Importar DTE</h3></div>
-                    <p class="text-muted text-sm mb-12">Productos extraídos al inventario automáticamente.</p>
+                    <p class="text-muted text-sm mb-12">Bienes → Inventario · Servicios → Consultoría</p>
                     <div class="upload-zone" id="dte-drop-zone">
                         <div class="icon">🧾</div>
                         <p><strong>Arrastra JSON aquí</strong></p>
@@ -567,7 +548,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
                     </div>
                 </div>
             </div>
-            <div class="card" id="import-result-card" style="display:none"><div class="card-header"><h3>📊 Resultado</h3></div><div class="import-stats" id="import-stats"></div><div class="table-wrapper"><table class="data-table" id="tabla-import-detail"><thead><tr><th>Archivo</th><th>Tipo</th><th>Criterio</th><th>Emisor</th><th>Receptor</th><th class="num">Total</th><th>Productos</th><th>Estado</th></tr></thead><tbody></tbody></table></div></div>
+            <div class="alert-contable info"><span class="icon">💡</span><div><strong>Clasificación automática:</strong> Los <strong>bienes físicos</strong> (tipoItem = 1, sin combustibles/telecom) se agregan al <strong>Inventario</strong> con precio + IVA. Los <strong>servicios</strong> (tipoItem = 2) cuyo emisor tenga el <strong>NIT principal o adicional</strong> de Configuración se registran en <strong>Consultoría</strong>. Servicios de otros NIT (compras) no se agregan.</div></div>
+            <div class="card" id="import-result-card" style="display:none"><div class="card-header"><h3>📊 Resultado</h3></div><div class="import-stats" id="import-stats"></div><div class="table-wrapper"><table class="data-table" id="tabla-import-detail"><thead><tr><th>Archivo</th><th>Tipo</th><th>Criterio</th><th>Emisor</th><th>Receptor</th><th class="num">Total</th><th>Extraído</th><th>Estado</th></tr></thead><tbody></tbody></table></div></div>
             <div class="card"><div class="card-header"><h3>📋 Historial</h3><button class="btn btn-secondary btn-sm" onclick="ERP.clearImportLog()">🗑️</button></div><div class="table-wrapper"><table class="data-table" id="tabla-importaciones"><thead><tr><th>Fecha</th><th>Tipo</th><th>Archivo</th><th>Registros</th><th>Resultado</th></tr></thead><tbody></tbody></table></div></div>
             <div class="danger-zone"><div class="danger-zone-header"><span class="icon">⚠️</span><span>Zona Peligrosa</span></div><p>Eliminará <strong>todos</strong> los datos operativos. Conserva catálogo y configuración.</p><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px"><button class="btn btn-secondary" onclick="ERP.exportBackup()">📥 Respaldo</button><button class="btn btn-danger" onclick="ERP.resetAllData()">🗑️ Eliminar todo</button></div></div>
         </section>
@@ -583,7 +565,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
                         <div class="form-group"><label>NIT principal ⭐</label><input type="text" class="form-control" id="cfg-nit" style="border-color:var(--orange-400);font-weight:600" /></div>
                         <div class="form-group"><label>NRC</label><input type="text" class="form-control" id="cfg-nrc" /></div>
                     </div>
-                    <div class="form-group"><label>NITs adicionales (coma)</label><input type="text" class="form-control" id="cfg-nits-adicionales" placeholder="006754254, 02101510701010" /><small style="color:var(--blue-600)">Los DTE con cualquiera de estos NIT se clasifican como VENTA</small></div>
+                    <div class="form-group"><label>NITs adicionales (coma)</label><input type="text" class="form-control" id="cfg-nits-adicionales" placeholder="123456789, 06140000000000" /><small style="color:var(--blue-600)">Los DTE con cualquiera de estos NIT se clasifican como VENTA</small></div>
                     <div class="form-group"><label>Email fiscal</label><input type="email" class="form-control" id="cfg-email" /></div>
                     <div class="form-group"><label>Giro</label><input type="text" class="form-control" id="cfg-giro" /></div>
                     <div class="form-group"><label>Domicilio</label><input type="text" class="form-control" id="cfg-domicilio" /></div>
@@ -604,59 +586,51 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
         </section>
 
         <section class="view" id="view-ayuda">
-            <div class="help-hero">
-                <h1>❓ Centro de Ayuda</h1>
-                <p>Guía completa del Sistema ERP Integral ITCPO · Todo lo que necesita saber para operar con seguridad</p>
-                <div class="version-tag">VERSIÓN 11.5 · EL SALVADOR</div>
-            </div>
+            <div class="help-hero"><h1>❓ Centro de Ayuda</h1><p>Guía completa del Sistema ERP Integral ITCPO · Todo lo que necesita saber para operar con seguridad</p><div class="version-tag">VERSIÓN 12.0 · EL SALVADOR</div></div>
 
             <div class="help-intro">
                 <h3>📖 ¿Qué es el Sistema ERP Integral ITCPO?</h3>
                 <p>El <strong>Sistema ERP Integral ITCPO</strong> es una aplicación de gestión empresarial 100% local diseñada para El Salvador que centraliza en un solo lugar toda la operación de su negocio:</p>
                 <ul style="padding-left:22px;line-height:1.8;font-size:13.5px;color:var(--gray-700);margin:12px 0">
-                    <li>🧾 <strong>Facturación y compras</strong> con soporte nativo para DTE (Documentos Tributarios Electrónicos)</li>
-                    <li>📦 <strong>Inventario</strong> de productos con precios, costos y control de stock</li>
-                    <li>📒 <strong>Contabilidad</strong> con pólizas automáticas, catálogo de cuentas y balance general</li>
-                    <li>📈 <strong>Reportes oficiales</strong>: libros de IVA (CF, CCF, compras), ventas, compras, rentabilidad y balance</li>
-                    <li>👥 <strong>Clientes y proveedores</strong> con exportación a PDF para impresión</li>
+                    <li>🧾 <strong>Facturación y compras</strong> con soporte nativo para DTE</li>
+                    <li>📦 <strong>Inventario</strong> de productos físicos con precios, costos y stock</li>
+                    <li>💼 <strong>Consultoría</strong> con servicios profesionales y proyectos</li>
+                    <li>📒 <strong>Contabilidad</strong> con pólizas automáticas y catálogo</li>
+                    <li>📈 <strong>Reportes oficiales</strong>: libros de IVA, ventas, compras, balance</li>
+                    <li>👥 <strong>Clientes y proveedores</strong> con exportación a PDF</li>
                 </ul>
-                <div class="help-tip"><strong>💡 Sus datos son 100% locales y privados:</strong> Todo se guarda en el almacenamiento del navegador (localStorage). No hay servidores externos ni envío de información a terceros.</div>
-                <div class="help-warn"><strong>⚠️ Importante sobre la persistencia:</strong> Al ser local, si borra el caché del navegador, usa modo incógnito o cambia de dispositivo, <strong>perderá los datos</strong>. Por eso los respaldos son críticos — vea el módulo 3 de esta guía.</div>
+                <div class="help-tip"><strong>💡 Sus datos son 100% locales y privados:</strong> Todo se guarda en el navegador (localStorage). No hay servidores externos ni envío a terceros.</div>
+                <div class="help-warn"><strong>⚠️ Persistencia:</strong> Si borra el caché del navegador, usa modo incógnito o cambia de dispositivo, <strong>perderá los datos</strong>. Los respaldos son críticos.</div>
             </div>
 
-            <div class="help-section-title">🚀 Antes de empezar · Configuración obligatoria</div>
+            <div class="help-section-title"><span>🚀 Antes de empezar · Configuración obligatoria</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
             <div class="help-module-card">
                 <h3><span class="mod-icon">⚙️</span>Paso previo indispensable</h3>
-                <p>Antes de operar, vaya a <code>⚙️ Configuración</code> en el menú lateral y complete los datos fiscales. Sin esta información el sistema no podrá clasificar correctamente los DTE (venta vs compra).</p>
+                <p>Antes de operar, vaya a <code>⚙️ Configuración</code> y complete los datos fiscales. Sin esta información el sistema no podrá clasificar correctamente los DTE.</p>
                 <ol class="help-step-list">
-                    <li><strong>Razón social</strong><p>El nombre legal de su empresa tal como aparece en el Ministerio de Hacienda.</p></li>
-                    <li><strong>NIT principal ⭐</strong><p>Su Número de Identificación Tributaria. El formato nuevo tiene 14 dígitos (ej: <code>0210-151070-101-0</code>) y el antiguo 9 dígitos (ej: <code>006754254</code>). <strong>Este campo es el más importante para clasificar DTE.</strong></p></li>
-                    <li><strong>NITs adicionales</strong><p>Si opera con más de un NIT (formato antiguo y nuevo), ingréselos separados por coma (ej: <code>006754254, 02101510701010</code>). Cualquier DTE con estos NIT se clasificará como VENTA.</p></li>
-                    <li><strong>NRC</strong><p>Número de Registro de Contribuyente del MH. Se usa como criterio alterno de identificación.</p></li>
-                    <li><strong>Email fiscal</strong><p>Se usa como criterio alterno para reconocerlo como emisor de un DTE.</p></li>
-                    <li><strong>Preferencias</strong><p>IVA (13% por defecto en El Salvador), días de crédito por defecto (30), series de facturación (V para ventas, C para compras).</p></li>
+                    <li><strong>Razón social</strong><p>Nombre legal de la empresa según el MH.</p></li>
+                    <li><strong>NIT principal ⭐</strong><p>Formato nuevo (14 dígitos) o antiguo (9 dígitos). <strong>Este campo es el más importante.</strong></p></li>
+                    <li><strong>NITs adicionales</strong><p>Si opera con más de un NIT, sepárelos por coma.</p></li>
+                    <li><strong>NRC</strong><p>Número de Registro de Contribuyente (criterio alterno).</p></li>
+                    <li><strong>Email fiscal</strong><p>Se usa para reconocerlo como emisor de un DTE.</p></li>
+                    <li><strong>Preferencias</strong><p>IVA 13%, días de crédito 30, series de facturación.</p></li>
                 </ol>
-                <div class="help-warn"><strong>⚠️ Advertencia crítica:</strong> Si no configura correctamente el NIT, los DTE que usted emita podrían clasificarse como COMPRA en lugar de VENTA, generando reportes incorrectos.</div>
+                <div class="help-warn"><strong>⚠️ Advertencia crítica:</strong> Sin NIT correcto, sus DTE podrían clasificarse como COMPRA en lugar de VENTA.</div>
             </div>
 
-            <div class="help-section-title">🔄 Flujo de trabajo recomendado</div>
+            <div class="help-section-title"><span>🔄 Flujo de trabajo recomendado</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
             <div class="help-intro">
-                <p style="font-size:13.5px;color:var(--gray-700);line-height:1.7;text-align:center;margin-bottom:12px">Orden sugerido para operar el sistema día a día:</p>
+                <p style="font-size:13.5px;color:var(--gray-700);text-align:center;margin-bottom:12px">Orden sugerido para operar el sistema día a día:</p>
                 <div class="help-flow">
-                    <span class="help-flow-step">1. Configurar</span>
-                    <span class="help-flow-arrow">→</span>
-                    <span class="help-flow-step">2. Importar DTE</span>
-                    <span class="help-flow-arrow">→</span>
-                    <span class="help-flow-step">3. Verificar productos</span>
-                    <span class="help-flow-arrow">→</span>
-                    <span class="help-flow-step">4. Consultar reportes</span>
-                    <span class="help-flow-arrow">→</span>
-                    <span class="help-flow-step">5. Exportar respaldo</span>
+                    <span class="help-flow-step">1. Configurar</span><span class="help-flow-arrow">→</span>
+                    <span class="help-flow-step">2. Importar DTE</span><span class="help-flow-arrow">→</span>
+                    <span class="help-flow-step">3. Verificar</span><span class="help-flow-arrow">→</span>
+                    <span class="help-flow-step">4. Reportes</span><span class="help-flow-arrow">→</span>
+                    <span class="help-flow-step">5. Respaldo</span>
                 </div>
-                <p style="text-align:center;font-size:13px;color:var(--gray-500);margin-top:8px">El sistema genera <strong>automáticamente</strong> pólizas contables, contactos y productos al importar los DTE.</p>
             </div>
 
-            <div class="help-section-title">📚 Guía por módulo</div>
+            <div class="help-section-title" id="help-guia">📚 Guía por módulo</div>
             <div class="help-module-nav">
                 <a href="#help-dashboard"><span class="num">1</span>📊 Dashboard</a>
                 <a href="#help-dte"><span class="num">2</span>🧾 Importar DTE ⭐</a>
@@ -665,273 +639,236 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
                 <a href="#help-compras"><span class="num">5</span>🛒 Compras</a>
                 <a href="#help-nc"><span class="num">6</span>↩️ Notas de Crédito</a>
                 <a href="#help-inventario"><span class="num">7</span>📦 Inventario</a>
-                <a href="#help-clientes"><span class="num">8</span>👥 Clientes/Proveedores</a>
-                <a href="#help-cxc"><span class="num">9</span>💵 CxC / 💸 CxP</a>
-                <a href="#help-contabilidad"><span class="num">10</span>📒 Contabilidad</a>
-                <a href="#help-consultoria"><span class="num">11</span>💼 Consultoría</a>
+                <a href="#help-consultoria"><span class="num">8</span>💼 Consultoría</a>
+                <a href="#help-clientes"><span class="num">9</span>👥 Clientes/Proveedores</a>
+                <a href="#help-cxc"><span class="num">10</span>💵 CxC / 💸 CxP</a>
+                <a href="#help-contabilidad"><span class="num">11</span>📒 Contabilidad</a>
                 <a href="#help-reportes"><span class="num">12</span>📈 Reportes</a>
-                <a href="#help-atajos"><span class="num">13</span>⌨️ Atajos de teclado</a>
-                <a href="#help-faq"><span class="num">14</span>❓ Preguntas frecuentes</a>
+                <a href="#help-atajos"><span class="num">13</span>⌨️ Atajos</a>
+                <a href="#help-faq"><span class="num">14</span>❓ FAQ</a>
             </div>
 
-            <div class="help-section-title" id="help-dashboard">1. 📊 Dashboard</div>
+            <div class="help-section-title" id="help-dashboard"><span>1. 📊 Dashboard</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
             <div class="help-module-card">
                 <h3><span class="mod-icon">📊</span>Panel principal</h3>
-                <p>Es la primera pantalla al iniciar sesión. Muestra un resumen ejecutivo del estado de su empresa:</p>
+                <p>Primera pantalla al iniciar sesión. Resumen ejecutivo del estado de la empresa:</p>
                 <ul class="help-checklist">
-                    <li><strong>KPIs superiores:</strong> Ventas totales, Compras totales, IVA a pagar, valor del inventario, ingresos por consultoría, saldo pendiente de CxC.</li>
-                    <li><strong>Gráficos:</strong> Ventas vs Compras (últimos 6 meses), Top 5 productos, IVA mensual y Consultoría.</li>
-                    <li><strong>Movimientos recientes:</strong> los últimos 10 movimientos ordenados por fecha.</li>
+                    <li><strong>KPIs:</strong> Ventas, Compras, IVA a pagar, valor del inventario, ingresos por consultoría, saldo CxC.</li>
+                    <li><strong>Gráficos:</strong> Ventas vs Compras, Top 5 productos, IVA mensual y Consultoría.</li>
+                    <li><strong>Movimientos recientes:</strong> últimos 10 registros.</li>
                 </ul>
-                <p><strong>Cómo usarlo:</strong> Los KPIs son clickeables y lo llevan directamente al módulo correspondiente. El botón "🔄 Actualizar" regenera los datos si acaba de importar algo.</p>
-                <div class="help-tip"><strong>💡 Consejo:</strong> Revise el Dashboard al final del día para confirmar que todos los DTE del día se importaron correctamente.</div>
+                <div class="help-tip"><strong>💡 Los KPIs son clickeables</strong> y llevan al módulo correspondiente.</div>
             </div>
 
-            <div class="help-section-title" id="help-dte">2. 🧾 Importar DTE · El corazón del sistema ⭐</div>
+            <div class="help-section-title" id="help-dte"><span>2. 🧾 Importar DTE · El corazón del sistema ⭐</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
             <div class="help-module-card blue">
                 <h3><span class="mod-icon">🧾</span>Documentos Tributarios Electrónicos</h3>
-                <p>Los DTE son archivos JSON emitidos por el Ministerio de Hacienda (o por cualquier sistema de facturación electrónica certificado). Importarlos al sistema <strong>crea automáticamente</strong>: facturas de venta o compra, contactos, productos en inventario y pólizas contables. <strong>Es la forma más eficiente de cargar información al sistema.</strong></p>
+                <p>Los DTE son archivos JSON emitidos por el MH. Importarlos <strong>crea automáticamente</strong>: facturas, contactos, productos, servicios en consultoría y pólizas contables.</p>
 
-                <h4>📥 Cómo importar DTE — paso a paso</h4>
+                <h4>📥 Cómo importar DTE</h4>
                 <ol class="help-step-list">
-                    <li><strong>Verifique su configuración</strong><p>Asegúrese de que NIT principal, NITs adicionales, NRC y email están correctos en <code>⚙️ Configuración</code>.</p></li>
-                    <li><strong>Vaya a Respaldos → Importar DTE</strong><p>Menú lateral → <code>💾 Respaldos</code> → sección <code>🧾 Importar DTE</code>.</p></li>
-                    <li><strong>Arrastre o seleccione los archivos</strong><p>Puede arrastrar múltiples JSON a la zona de carga o hacer clic en ella para seleccionar varios archivos a la vez.</p></li>
-                    <li><strong>Espere el procesamiento</strong><p>El sistema procesa cada archivo individualmente. Al finalizar, verá un resumen con: archivos procesados, ventas creadas, compras creadas, productos extraídos, duplicados omitidos y errores.</p></li>
-                    <li><strong>Verifique los datos</strong><p>Los DTE quedan registrados en <code>🧾 DTE Importados</code>. Las facturas aparecen en <code>🧾 Facturación</code> o <code>🛒 Compras</code> según su clasificación. Los productos en <code>📦 Inventario</code>.</p></li>
+                    <li><strong>Verifique su configuración</strong><p>NIT, NRC y email correctos en <code>⚙️ Configuración</code>.</p></li>
+                    <li><strong>Vaya a Respaldos → Importar DTE</strong><p>Menú lateral → <code>💾 Respaldos</code>.</p></li>
+                    <li><strong>Arrastre los archivos JSON</strong><p>Puede cargar múltiples a la vez.</p></li>
+                    <li><strong>Espere el procesamiento</strong><p>Verá un resumen con: ventas, compras, productos, servicios, duplicados y errores.</p></li>
+                    <li><strong>Verifique los datos</strong><p>Facturas en <code>🧾 Facturación</code> o <code>🛒 Compras</code>. Productos en <code>📦 Inventario</code>. Servicios en <code>💼 Consultoría</code>.</p></li>
                 </ol>
 
-                <h4>🔍 Clasificación automática (¿Venta o Compra?)</h4>
-                <p>El sistema determina si el DTE es <strong>VENTA</strong> (usted es el emisor) o <strong>COMPRA</strong> (usted es el receptor) comparando al emisor del JSON contra su configuración. El orden de verificación es:</p>
+                <h4>🔍 Clasificación automática (Venta vs Compra)</h4>
+                <p>El sistema determina si el DTE es VENTA (usted es emisor) o COMPRA (usted es receptor):</p>
                 <table class="help-table-compare">
-                    <thead><tr><th style="width:8%">#</th><th style="width:42%">Criterio</th><th style="width:50%">Ejemplo</th></tr></thead>
+                    <thead><tr><th>#</th><th>Criterio</th><th>Ejemplo</th></tr></thead>
                     <tbody>
-                        <tr><td>1</td><td>NIT principal coincide con <code>emisor.nit</code></td><td>02101510701010 = 02101510701010</td></tr>
-                        <tr><td>2</td><td>NIT adicional coincide con <code>emisor.nit</code></td><td>006754254 está en la lista</td></tr>
-                        <tr><td>3</td><td>NRC coincide con <code>emisor.nrc</code></td><td>1806942 = 1816942</td></tr>
-                        <tr><td>4</td><td>Email fiscal coincide con <code>emisor.correo</code></td><td>itconsultingpro@outlook.com</td></tr>
-                        <tr><td>5</td><td>Nombre normalizado coincide</td><td>CASTILLO ALFREDO CARLOS</td></tr>
+                        <tr><td>1</td><td>NIT principal coincide con emisor</td><td>06140000000000</td></tr>
+                        <tr><td>2</td><td>NIT adicional coincide</td><td>123456789 en lista</td></tr>
+                        <tr><td>3</td><td>NRC coincide</td><td>123456-7</td></tr>
+                        <tr><td>4</td><td>Email fiscal coincide</td><td>correo@empresa.com</td></tr>
+                        <tr><td>5</td><td>Nombre normalizado coincide</td><td>EMPRESA EJEMPLO S.A. DE C.V.</td></tr>
                     </tbody>
                 </table>
-                <p style="font-size:13px;color:var(--gray-700);margin-top:8px">Si <strong>ningún criterio coincide</strong> → el DTE se clasifica como <strong>COMPRA</strong> (el emisor es un tercero = su proveedor). El resultado de la clasificación se muestra en la columna "Criterio" del resultado de importación.</p>
+                <p style="font-size:13px;color:var(--gray-700);margin-top:8px">Si <strong>ninguno coincide</strong> → es <strong>COMPRA</strong>.</p>
 
-                <h4>📦 Extracción automática de productos al inventario</h4>
-                <p>Cuando importa un DTE, cada ítem del <code>cuerpoDocumento</code> se evalúa para agregarlo al inventario. Las reglas son:</p>
-                <ul class="help-checklist">
-                    <li><strong>Se agrega</strong> si <code>tipoItem = 1</code> (es un bien) y tiene <code>precioUni &gt; 0</code></li>
-                    <li><strong>Precio final de venta</strong> = <code>precioUni × 1.13</code> (base + IVA incluido)</li>
-                    <li><strong>Costo</strong> = <code>precioUni</code> (base sin IVA)</li>
-                    <li><strong>SKU</strong> = se toma del <code>codigo</code> del ítem si existe, o se genera automáticamente del nombre</li>
-                    <li><strong>Categoría</strong> = "Importado DTE" (puede cambiarla después)</li>
-                    <li><strong>Stock inicial</strong> = 0 (el DTE no indica stock físico, ajústelo manualmente)</li>
-                </ul>
-                <ul class="help-checklist danger">
-                    <li><strong>NO se agregan</strong> servicios (<code>tipoItem = 2</code>): consultorías, honorarios, asesorías, etc.</li>
-                    <li><strong>NO se agregan</strong> combustibles: si el ítem tiene tributos <code>D1</code> (FOVIAL) o <code>C8</code> (COTRANS), o el emisor es gasolinera/combustible</li>
-                    <li><strong>NO se agregan</strong> telecomunicaciones: si el emisor o la descripción contiene "telefonía", "internet", "recarga", "megas", "plan datos", "celular", etc.</li>
-                </ul>
-                <div class="help-tip"><strong>💡 ¿Por qué se excluyen combustibles y telecomunicaciones?</strong> Porque en El Salvador estos productos tienen tratamientos fiscales especiales (impuestos adicionales FOVIAL/COTRANS, IVA diferenciado) que distorsionarían sus cálculos de margen y utilidad.</div>
+                <h4>📦 Extracción automática: Inventario vs Consultoría</h4>
+                <p>Al importar un DTE, cada ítem se evalúa según su tipo:</p>
+                <table class="help-table-compare">
+                    <thead><tr><th>Tipo de ítem</th><th>Destino</th><th>Condición</th></tr></thead>
+                    <tbody>
+                        <tr><td>🏷️ Bien físico</td><td>📦 <strong>Inventario</strong></td><td><code>tipoItem = 1</code>, no combustible/telecom, con precio &gt; 0</td></tr>
+                        <tr><td>💼 Servicio</td><td>💼 <strong>Consultoría</strong></td><td><code>tipoItem = 2</code> y emisor con NIT principal/adicional de Configuración</td></tr>
+                        <tr><td>⛽ Combustible / 📡 Telecom</td><td>🚫 <strong>No se registra</strong></td><td>Bien excluido del inventario (FOVIAL/COTRANS o actividad)</td></tr>
+                    </tbody>
+                </table>
+                <div class="help-tip"><strong>💡 Precio en inventario:</strong> <code>precioUni × 1.13</code> (base + IVA). <strong>Monto en consultoría:</strong> la base gravada del ítem.</div>
+                <div class="help-tip"><strong>💡 En Consultoría:</strong> los servicios quedan con prefijo <code>[Servicio]</code> o <code>[Ítem]</code>, con estado "completado" si es contado o "activo" si es crédito.</div>
+                <div class="help-warn"><strong>⚠️ Anti-duplicado:</strong> Si ya existe un registro con el mismo cliente, servicio y fecha en Consultoría, el sistema lo omite.</div>
 
-                <h4>🚫 Detección de duplicados</h4>
-                <p>Antes de importar cada archivo, el sistema verifica el UUID (<code>codigoGeneracion</code>) y el Número de Control. Si el DTE ya fue importado anteriormente, se <strong>omite</strong> y se cuenta como "duplicado" en el resumen. Esto evita reimportar por error el mismo archivo dos veces.</p>
+                <h4>🚫 Duplicados de DTE</h4>
+                <p>El sistema verifica UUID y Número de Control. Si el DTE ya fue importado, se omite.</p>
 
-                <h4>🔧 Corregir clasificación incorrecta</h4>
-                <p>Si un DTE se clasificó mal (raro, pero posible si configuró mal el NIT), vaya a <code>🧾 DTE Importados</code>, busque el documento y use el botón <strong>🔄</strong>. El sistema actualizará automáticamente la factura, la póliza contable y el contacto asociado.</p>
+                <h4>🔧 Corregir clasificación</h4>
+                <p>Si un DTE quedó mal clasificado, vaya a <code>🧾 DTE Importados</code> y use el botón <strong>🔄</strong>.</p>
 
-                <div class="help-warn"><strong>⚠️ Formatos aceptados:</strong> Solo archivos <code>.json</code>. El JSON debe tener la estructura oficial del MH (identificacion, emisor, receptor, cuerpoDocumento, resumen). El sistema tolera diferencias menores entre versiones del esquema (v1, v2, v3).</div>
+                <div class="help-warn"><strong>⚠️ Formato:</strong> Solo <code>.json</code> con estructura oficial del MH. Tolerante a v1, v2, v3.</div>
             </div>
 
-            <div class="help-section-title" id="help-respaldo">3. 💾 Respaldos · Lo más importante ⭐</div>
+            <div class="help-section-title" id="help-respaldo"><span>3. 💾 Respaldos · Lo más importante ⭐</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
             <div class="help-module-card green">
                 <h3><span class="mod-icon">💾</span>Su red de seguridad</h3>
-                <p>Los datos se guardan en el <strong>localStorage del navegador</strong>. Esto significa que si limpia el caché, cambia de dispositivo o el navegador se corrompe, <strong>puede perder toda su información</strong>. Los respaldos son críticos para el uso profesional.</p>
+                <p>Los datos viven en <strong>localStorage del navegador</strong>. Si limpia caché o cambia de dispositivo, <strong>puede perder todo</strong>. Los respaldos son críticos.</p>
 
                 <div class="help-important">
                     <h4>📌 Regla de oro</h4>
-                    <p>Haga un respaldo <strong>después de cada sesión de trabajo</strong>. Si trabajó todo el día importando DTE, registrando facturas o ajustando inventario, expórtelo antes de cerrar el navegador.</p>
+                    <p>Haga un respaldo <strong>después de cada sesión de trabajo</strong>. Si trabajó importando DTE o ajustando datos, expórtelo antes de cerrar.</p>
                 </div>
 
                 <h4>📤 Exportar respaldo</h4>
                 <ol class="help-step-list">
                     <li><strong>Vaya a Respaldos</strong><p>Menú lateral → <code>💾 Respaldos</code>.</p></li>
-                    <li><strong>Click en "Descargar"</strong><p>En la tarjeta "Exportar respaldo". Se descargará un archivo JSON con nombre <code>Respaldo_YYYY-MM-DD.json</code>.</p></li>
-                    <li><strong>Guarde el archivo en un lugar seguro</strong><p>Recomendado: Google Drive, OneDrive, disco externo o correo personal. Tenga al menos 2 copias en lugares diferentes.</p></li>
-                    <li><strong>Renombre el archivo</strong><p>Ej: <code>Respaldo_2026-10-25_antes_de_importar_lote.json</code>. Esto le ayuda a identificar versiones cuando necesite restaurar.</p></li>
+                    <li><strong>Click en "Descargar"</strong><p>Se descarga <code>Respaldo_YYYY-MM-DD.json</code>.</p></li>
+                    <li><strong>Guarde en lugar seguro</strong><p>Google Drive, OneDrive, disco externo o correo. Al menos 2 copias.</p></li>
+                    <li><strong>Renombre</strong><p>Ej: <code>Respaldo_2026-10-25_antes_importar.json</code></p></li>
                 </ol>
 
-                <h4>📥 Cargar respaldo (restaurar)</h4>
+                <h4>📥 Cargar respaldo</h4>
                 <ol class="help-step-list">
-                    <li><strong>Exporte primero el respaldo actual</strong><p>Antes de cargar uno viejo, guarde el estado actual por si acaso. Nunca se sabe si va a necesitar volver atrás.</p></li>
-                    <li><strong>Vaya a Respaldos → Cargar</strong><p>Seleccione el archivo JSON previamente descargado.</p></li>
-                    <li><strong>Confirme el reemplazo</strong><p>El sistema pedirá confirmación porque <strong>reemplazará TODOS los datos actuales</strong> (no fusiona).</p></li>
-                    <li><strong>Verifique los datos</strong><p>Revise Dashboard, Facturación, Inventario y Reportes para confirmar que todo se restauró correctamente.</p></li>
+                    <li><strong>Exporte primero el actual</strong><p>Por si acaso.</p></li>
+                    <li><strong>Vaya a Respaldos → Cargar</strong><p>Seleccione el JSON.</p></li>
+                    <li><strong>Confirme</strong><p>El sistema <strong>reemplazará TODOS</strong> los datos (no fusiona).</p></li>
+                    <li><strong>Verifique</strong><p>Revise Dashboard, Facturación, Inventario y Reportes.</p></li>
                 </ol>
 
-                <h4>✅ Buenas prácticas de respaldo</h4>
+                <h4>✅ Buenas prácticas</h4>
                 <ul class="help-checklist">
-                    <li><strong>Frecuencia:</strong> al menos 1 vez por semana, o después de sesiones intensas de trabajo.</li>
-                    <li><strong>Versionado:</strong> mantenga las últimas 5-10 copias con fecha en el nombre.</li>
-                    <li><strong>Ubicaciones:</strong> guarde en 2-3 lugares distintos (nube + local + externo).</li>
-                    <li><strong>Antes de cambios importantes:</strong> haga un respaldo extra antes de importar lotes grandes de DTE o antes de cargar otro respaldo.</li>
-                    <li><strong>Prueba de restauración:</strong> al menos una vez al mes, cargue su respaldo en un navegador distinto para verificar que no esté corrupto.</li>
+                    <li><strong>Frecuencia:</strong> al menos 1 vez por semana.</li>
+                    <li><strong>Versionado:</strong> mantenga últimas 5-10 copias con fecha.</li>
+                    <li><strong>Ubicaciones:</strong> 2-3 lugares (nube + local + externo).</li>
+                    <li><strong>Antes de cambios:</strong> respaldo extra antes de importar lotes grandes.</li>
+                    <li><strong>Prueba de restauración:</strong> 1 vez al mes.</li>
                 </ul>
 
                 <div class="help-danger-box">
-                    <h4>⚠️ Zona Peligrosa: "Eliminar todo"</h4>
-                    <p>Esta opción <strong>borra permanentemente</strong>: facturas, compras, productos, contactos, pólizas, DTE importados, notas de crédito y consultoría.</p>
-                    <p><strong>Conserva únicamente:</strong> el catálogo de cuentas contables y la configuración fiscal (razón social, NIT, etc.).</p>
-                    <p><strong>Nunca la use</strong> sin antes hacer un respaldo. <strong>No hay manera de deshacer.</strong></p>
+                    <h4>⚠️ Zona Peligrosa</h4>
+                    <p>Borra <strong>permanentemente</strong>: facturas, compras, productos, contactos, pólizas, DTE, notas de crédito y consultoría.</p>
+                    <p><strong>Conserva:</strong> catálogo de cuentas y configuración fiscal.</p>
+                    <p><strong>No hay manera de deshacer</strong> sin respaldo.</p>
                 </div>
             </div>
 
-            <div class="help-section-title" id="help-facturacion">4. 🧾 Facturación</div>
+            <div class="help-section-title" id="help-facturacion"><span>4. 🧾 Facturación</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
             <div class="help-module-card">
                 <h3><span class="mod-icon">🧾</span>Facturas de venta</h3>
-                <p>Registro de todas las facturas de venta emitidas a clientes. Aquí verá el listado de facturas propias, tanto las importadas desde DTE como las creadas manualmente.</p>
-                <h4>Operaciones disponibles</h4>
                 <ul class="help-checklist">
-                    <li><strong>➕ Nueva:</strong> crear factura manualmente. Elija tipo DTE (CF 01, CCF 03 o Exportación 11), cliente, conceptos con cantidades y precios.</li>
-                    <li><strong>📥 CSV:</strong> importar un archivo CSV con múltiples facturas (útil para carga masiva de datos históricos).</li>
-                    <li><strong>✏️ Editar:</strong> modificar una factura existente. Si era de tipo DTE importado, ciertos campos fiscales no se pueden cambiar.</li>
-                    <li><strong>🔄 Cambiar estado:</strong> alternar entre <em>Emitida</em> → <em>Pagada</em> → <em>Cancelada</em>.</li>
-                    <li><strong>🗑️ Eliminar:</strong> borra la factura y su póliza asociada.</li>
+                    <li><strong>➕ Nueva:</strong> crear manualmente (CF 01, CCF 03 o Exp 11).</li>
+                    <li><strong>📥 CSV:</strong> carga masiva desde archivo.</li>
+                    <li><strong>✏️ Editar:</strong> modificar factura (DTE: campos fiscales bloqueados).</li>
+                    <li><strong>🔄 Estado:</strong> Emitida → Pagada → Cancelada.</li>
+                    <li><strong>🗑️ Eliminar:</strong> borra factura y póliza.</li>
                 </ul>
-                <p><strong>Filtros:</strong> puede filtrar por año, mes y búsqueda de texto (folio, cliente o NIT).</p>
-                <div class="help-tip"><strong>💡 Póliza automática:</strong> Cada factura genera una póliza contable. Puede verla en la columna "Póliza" con su número asignado.</div>
+                <div class="help-tip"><strong>💡 Póliza automática:</strong> cada factura genera un asiento contable.</div>
             </div>
 
-            <div class="help-section-title" id="help-compras">5. 🛒 Compras</div>
+            <div class="help-section-title" id="help-compras"><span>5. 🛒 Compras</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
             <div class="help-module-card blue">
                 <h3><span class="mod-icon">🛒</span>Facturas de compra</h3>
-                <p>Registro de facturas recibidas de proveedores. Funciona igual que Facturación pero del lado de las compras.</p>
+                <p>Igual que Facturación pero para compras. Las DTE se cargan automáticamente si el emisor no es usted.</p>
                 <ul class="help-checklist">
-                    <li><strong>Importadas desde DTE:</strong> aparecen aquí automáticamente si el emisor del JSON no es usted.</li>
-                    <li><strong>Manuales:</strong> puede crear facturas de compra con los mismos campos que una venta (proveedor, NIT, conceptos).</li>
-                    <li><strong>Pólizas:</strong> cada compra genera una póliza de egreso con cargo a gastos e IVA crédito fiscal.</li>
-                    <li><strong>CxP:</strong> si la compra es a crédito, aparecerá en Cuentas por Pagar.</li>
+                    <li><strong>Pólizas:</strong> cada compra genera asiento de egreso (gastos + IVA crédito).</li>
+                    <li><strong>CxP:</strong> compras a crédito aparecen en Cuentas por Pagar.</li>
                 </ul>
-                <div class="help-tip"><strong>💡 Consejo:</strong> Importe primero todos los DTE del mes. Las compras se cargarán automáticamente sin necesidad de digitarlas.</div>
             </div>
 
-            <div class="help-section-title" id="help-nc">6. ↩️ Notas de Crédito</div>
+            <div class="help-section-title" id="help-nc"><span>6. ↩️ Notas de Crédito</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
             <div class="help-module-card">
                 <h3><span class="mod-icon">↩️</span>Devoluciones y ajustes</h3>
-                <p>Permite registrar notas de crédito sobre facturas de venta ya emitidas.</p>
                 <ol class="help-step-list">
-                    <li><strong>Click en "➕ Nueva"</strong><p>Seleccione la factura afectada de la lista.</p></li>
-                    <li><strong>Indique motivo y monto</strong><p>Motivos disponibles: Devolución, Descuento, Error, Otro. El monto no puede exceder el total de la factura.</p></li>
-                    <li><strong>Guardar</strong><p>El sistema genera automáticamente la póliza de reversión (reverso de ingreso e IVA).</p></li>
+                    <li><strong>➕ Nueva</strong><p>Seleccione la factura afectada.</p></li>
+                    <li><strong>Indique motivo y monto</strong><p>Devolución, Descuento, Error u Otro. No exceder el total.</p></li>
+                    <li><strong>Guardar</strong><p>Se genera póliza de reversión automática.</p></li>
                 </ol>
-                <div class="help-tip"><strong>💡 Uso típico:</strong> cuando un cliente devuelve mercadería o solicita un descuento posterior a la venta.</div>
             </div>
 
-            <div class="help-section-title" id="help-inventario">7. 📦 Inventario</div>
+            <div class="help-section-title" id="help-inventario"><span>7. 📦 Inventario</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
             <div class="help-module-card orange">
-                <h3><span class="mod-icon">📦</span>Catálogo de productos</h3>
-                <p>Administre sus productos con SKU, nombre, categoría, precio de venta, costo, stock actual y stock mínimo.</p>
+                <h3><span class="mod-icon">📦</span>Solo productos físicos</h3>
+                <p>Administre productos físicos con SKU, nombre, categoría, precio, costo, stock y mínimo. <strong>Los servicios NO van aquí</strong>, van a Consultoría.</p>
                 <h4>Operaciones</h4>
                 <ul class="help-checklist">
                     <li><strong>➕ Nuevo:</strong> agregar producto manualmente.</li>
-                    <li><strong>🔍 Búsqueda múltiple:</strong> filtre por SKU, nombre o categoría. Puede combinar con filtros de categoría y estado de stock.</li>
-                    <li><strong>📊 Filtros:</strong> categoría, estado (OK / Bajo / Agotado).</li>
+                    <li><strong>🔍 Búsqueda:</strong> por SKU, nombre o categoría.</li>
+                    <li><strong>📊 Filtros:</strong> categoría y estado de stock.</li>
                     <li><strong>✏️ Editar:</strong> cambiar cualquier campo.</li>
-                    <li><strong>🗑️ Eliminar:</strong> borrar producto del catálogo.</li>
+                    <li><strong>🗑️ Eliminar:</strong> borrar del catálogo.</li>
                 </ul>
-                <h4>Productos importados desde DTE</h4>
-                <p>Los productos extraídos automáticamente al importar DTE aparecen con:</p>
-                <ul class="help-checklist info">
-                    <li>Categoría "Importado DTE" (puede cambiarla)</li>
-                    <li>Precio = base + 13% IVA</li>
-                    <li>Costo = base sin IVA</li>
-                    <li>Stock = 0 (actualícelo manualmente)</li>
-                </ul>
-                <div class="help-warn"><strong>⚠️ Importante:</strong> El sistema no actualiza stock automáticamente al facturar. El stock que ingrese es su control físico real. Revíselo periódicamente.</div>
+                <div class="help-warn"><strong>⚠️ El stock NO se actualiza automáticamente al facturar</strong>. Es control físico real, actualícelo manualmente.</div>
             </div>
 
-            <div class="help-section-title" id="help-clientes">8. 👥 Clientes y Proveedores</div>
-            <div class="help-module-card">
-                <h3><span class="mod-icon">👥</span>Directorio centralizado</h3>
-                <p>Consulte y administre el listado de clientes y proveedores. Cada contacto guarda nombre, NIT, NRC, email y teléfono.</p>
-                <ul class="help-checklist">
-                    <li><strong>Se crean automáticamente:</strong> al importar DTE, los receptores (ventas) se registran como clientes y los emisores (compras) como proveedores.</li>
-                    <li><strong>NITs alternos:</strong> si un mismo cliente tiene NIT nuevo y viejo, ambos se guardan para evitar duplicados.</li>
-                    <li><strong>📄 Exportar PDF:</strong> genera un PDF imprimible con el listado completo, ideal para auditorías o respaldo físico.</li>
-                </ul>
-                <div class="help-tip"><strong>💡 ¿Aparece usted mismo en la lista?</strong> El sistema detecta su NIT configurado y NO lo registra como cliente o proveedor de sí mismo.</div>
-            </div>
-
-            <div class="help-section-title" id="help-cxc">9. 💵 Cuentas por Cobrar y 💸 Cuentas por Pagar</div>
-            <div class="help-module-card green">
-                <h3><span class="mod-icon">💵</span>Control de cobros y pagos</h3>
-                <p>Aquí ve todas las facturas pendientes de cobro (CxC = ventas a crédito) y de pago (CxP = compras a crédito).</p>
-                <ul class="help-checklist">
-                    <li><strong>Clasificación automática:</strong> Vencidas (rojo), Por vencer en 7 días (amarillo), En plazo (verde).</li>
-                    <li><strong>💵 Registrar cobro/pago:</strong> click en el botón verde de la fila. Ingrese el monto cobrado (puede ser parcial).</li>
-                    <li><strong>Póliza automática:</strong> cada cobro/pago genera su asiento contable (Caja/Banco contra CxC/CxP).</li>
-                    <li><strong>Auto-liquidación:</strong> cuando el saldo llega a 0, la factura pasa automáticamente a estado "Pagada".</li>
-                </ul>
-                <div class="help-tip"><strong>💡 Desde DTE:</strong> si importa un DTE con <code>condicionOperacion = 1</code> (contado), la factura aparece como "Pagada" automáticamente y no entra a CxC/CxP. Si es <code>2</code> (crédito), aparecerá como pendiente.</div>
-            </div>
-
-            <div class="help-section-title" id="help-contabilidad">10. 📒 Contabilidad · Pólizas y Catálogo</div>
+            <div class="help-section-title" id="help-consultoria"><span>8. 💼 Consultoría</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
             <div class="help-module-card purple">
-                <h3><span class="mod-icon">📒</span>Módulo contable</h3>
-                <p>Dos submódulos:</p>
+                <h3><span class="mod-icon">💼</span>Servicios profesionales</h3>
+                <p>Aquí van los proyectos de consultoría y también los <strong>servicios importados desde DTE</strong> (marcados con prefijo <code>[Servicio]</code> o <code>[Ítem]</code>).</p>
+                <h4>Campos</h4>
+                <ul class="help-checklist">
+                    <li>Cliente, servicio, fecha inicio, fecha fin</li>
+                    <li>Monto total y monto cobrado</li>
+                    <li>Estado: Activo / Completado / Pausado / Cancelado</li>
+                </ul>
+                <div class="help-tip"><strong>💡 Los servicios importados se crean con estado "completado" si son contado, o "activo" si son crédito.</strong></div>
+            </div>
+
+            <div class="help-section-title" id="help-clientes"><span>9. 👥 Clientes y Proveedores</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
+            <div class="help-module-card">
+                <h3><span class="mod-icon">👥</span>Directorio</h3>
+                <ul class="help-checklist">
+                    <li><strong>Auto-creados:</strong> al importar DTE.</li>
+                    <li><strong>NITs alternos:</strong> guarda ambos formatos.</li>
+                    <li><strong>📄 Exportar PDF:</strong> listado imprimible para auditoría.</li>
+                </ul>
+                <div class="help-tip"><strong>💡 No aparece usted mismo:</strong> el sistema detecta su NIT y no lo registra como cliente/proveedor de sí mismo.</div>
+            </div>
+
+            <div class="help-section-title" id="help-cxc"><span>10. 💵 CxC / 💸 CxP</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
+            <div class="help-module-card green">
+                <h3><span class="mod-icon">💵</span>Cobros y pagos</h3>
+                <ul class="help-checklist">
+                    <li><strong>Clasificación:</strong> Vencidas (rojo), Por vencer 7d (amarillo), En plazo (verde).</li>
+                    <li><strong>💵 Registrar:</strong> click en botón verde, ingrese monto (parcial permitido).</li>
+                    <li><strong>Póliza automática:</strong> cada cobro/pago genera asiento.</li>
+                    <li><strong>Auto-liquidación:</strong> saldo 0 → estado "Pagada".</li>
+                </ul>
+            </div>
+
+            <div class="help-section-title" id="help-contabilidad"><span>11. 📒 Contabilidad</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
+            <div class="help-module-card purple">
+                <h3><span class="mod-icon">📒</span>Pólizas y catálogo</h3>
                 <h4>📋 Catálogo de Cuentas</h4>
                 <ul class="help-checklist">
-                    <li><strong>Plan jerárquico:</strong> cuenta de mayor → subcuenta → sub-subcuenta.</li>
-                    <li><strong>Naturaleza:</strong> deudora (activos, costos, gastos) o acreedora (pasivos, patrimonio, ingresos).</li>
-                    <li><strong>Importar/Exportar CSV:</strong> puede editar el catálogo en Excel y volver a importarlo.</li>
-                    <li><strong>🔄 Restaurar:</strong> vuelve al plan de cuentas por defecto si cometió errores.</li>
+                    <li>Plan jerárquico con naturaleza (deudora/acreedora).</li>
+                    <li>Importar/Exportar CSV.</li>
+                    <li>Restaurar plan por defecto.</li>
                 </ul>
                 <h4>📒 Libro de Pólizas</h4>
                 <ul class="help-checklist">
-                    <li><strong>Automáticas (🤖):</strong> generadas al facturar, comprar o cobrar. No las edite si no sabe qué hace.</li>
-                    <li><strong>Manuales (📝):</strong> puede crear pólizas de diario, ajustes, depreciación, etc.</li>
-                    <li><strong>Validación:</strong> el sistema verifica que cargos = abonos antes de guardar.</li>
+                    <li><strong>Automáticas (🤖):</strong> generadas al facturar/comprar/cobrar.</li>
+                    <li><strong>Manuales (📝):</strong> pólizas de diario, ajustes, depreciación.</li>
+                    <li>Validación cargos = abonos.</li>
                 </ul>
-                <div class="help-warn"><strong>⚠️ Si edita una póliza automática:</strong> pierde el vínculo con la factura. Si después edita la factura, no actualizará la póliza editada manualmente.</div>
             </div>
 
-            <div class="help-section-title" id="help-consultoria">11. 💼 Consultoría</div>
-            <div class="help-module-card">
-                <h3><span class="mod-icon">💼</span>Servicios profesionales</h3>
-                <p>Registro de proyectos de consultoría o servicios profesionales con seguimiento de cobros.</p>
-                <ul class="help-checklist">
-                    <li><strong>Campos:</strong> cliente, servicio, fecha inicio, fecha fin, monto total, monto cobrado y estado.</li>
-                    <li><strong>Estados:</strong> Activo, Completado, Pausado, Cancelado.</li>
-                    <li><strong>KPIs:</strong> proyectos activos, completados, ingresos cobrados y saldo por cobrar.</li>
-                </ul>
-                <div class="help-tip"><strong>💡 Uso:</strong> cuando el receptor del DTE sea un cliente de consultoría, importe el DTE igual. Este módulo es para proyectos de mayor envergadura con seguimiento manual.</div>
-            </div>
-
-            <div class="help-section-title" id="help-reportes">12. 📈 Reportes</div>
+            <div class="help-section-title" id="help-reportes"><span>12. 📈 Reportes</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
             <div class="help-module-card orange">
                 <h3><span class="mod-icon">📈</span>Centro de reportes</h3>
-                <p>Todos los reportes respetan el filtro superior de <strong>Año</strong> y <strong>Mes</strong>.</p>
-                <h4>📚 Libros de IVA</h4>
+                <p>Todos respetan filtro superior de Año y Mes.</p>
                 <ul class="help-checklist">
-                    <li><strong>Consumidor Final (CF):</strong> DTE tipo 01 — ventas a consumidor final sin NIT.</li>
-                    <li><strong>Crédito Fiscal (CCF):</strong> DTE tipo 03 — ventas con NIT a empresas.</li>
-                    <li><strong>Compras:</strong> IVA acreditable de todas las compras del período.</li>
-                    <li><strong>📥 Exportar CSV:</strong> formato oficial compatible con el MH.</li>
+                    <li><strong>📚 Libros de IVA:</strong> CF, CCF, Compras — exportables CSV formato MH.</li>
+                    <li><strong>💰 Ventas / Compras mensuales:</strong> tabla + gráfica comparativa.</li>
+                    <li><strong>📅 Anual:</strong> resumen con utilidad y gráfico.</li>
+                    <li><strong>📊 Rentabilidad:</strong> margen por producto.</li>
+                    <li><strong>🏛️ Balance General:</strong> activos, pasivos, patrimonio, resultado.</li>
                 </ul>
-                <h4>💰 Ventas mensuales</h4>
-                <p>Tabla mes a mes + gráfica comparativa (subtotal, IVA y total). Filtra por año seleccionado.</p>
-                <h4>🛒 Compras mensuales</h4>
-                <p>Igual que ventas, pero del lado de las compras.</p>
-                <h4>📅 Anual</h4>
-                <p>Resumen del año completo con utilidad bruta y gráfico comparativo.</p>
-                <h4>📊 Rentabilidad</h4>
-                <p>Margen por producto: vendido, costo, ingreso, utilidad y porcentaje de margen.</p>
-                <h4>🏛️ Balance General</h4>
-                <p>Activos, Pasivos, Patrimonio y Resultado del ejercicio. Verifica el cuadre contable.</p>
-                <div class="help-tip"><strong>💡 Exportación:</strong> cada reporte tiene su propio botón 📥 para exportar a CSV. Los libros de IVA respetan el filtro año/mes.</div>
             </div>
 
-            <div class="help-section-title" id="help-atajos">13. ⌨️ Atajos de teclado</div>
+            <div class="help-section-title" id="help-atajos"><span>13. ⌨️ Atajos de teclado</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
             <div class="help-intro">
-                <p style="font-size:13.5px;color:var(--gray-700);margin-bottom:12px">Para usuarios frecuentes, los atajos aceleran la operación:</p>
                 <div class="help-shortcuts-grid">
                     <div class="help-shortcut-item"><span>Búsqueda global</span><kbd>Ctrl + K</kbd></div>
                     <div class="help-shortcut-item"><span>Nueva venta</span><kbd>Ctrl + N</kbd></div>
@@ -942,81 +879,57 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
                     <div class="help-shortcut-item"><span>Inventario</span><kbd>I</kbd></div>
                     <div class="help-shortcut-item"><span>Reportes</span><kbd>R</kbd></div>
                     <div class="help-shortcut-item"><span>Ayuda</span><kbd>F1</kbd></div>
-                    <div class="help-shortcut-item"><span>Cerrar modal/panel</span><kbd>Esc</kbd></div>
+                    <div class="help-shortcut-item"><span>Cerrar modal</span><kbd>Esc</kbd></div>
                 </div>
-                <div class="help-tip"><strong>💡 Nota:</strong> Los atajos no funcionan cuando el cursor está en un campo de texto (input, textarea o select).</div>
             </div>
 
-            <div class="help-section-title" id="help-faq">14. ❓ Preguntas frecuentes</div>
+            <div class="help-section-title" id="help-faq"><span>14. ❓ Preguntas frecuentes</span><a class="help-back" href="#help-guia" title="Volver a Guía por módulo">⬆️ Guía por módulo</a></div>
 
             <details class="help-faq">
                 <summary>¿Por qué un DTE se clasificó como COMPRA si era mi venta?</summary>
-                <div class="faq-body">
-                    <p>Esto ocurre cuando el NIT del emisor del DTE no coincide con ninguno de sus NIT configurados. Verifique:</p>
-                    <ul style="padding-left:20px;margin:8px 0;line-height:1.7">
-                        <li>Que su <strong>NIT principal</strong> en Configuración esté exacto (con guiones si aplica).</li>
-                        <li>Que el <strong>NIT antiguo</strong> (9 dígitos) esté en "NITs adicionales".</li>
-                        <li>Que el <strong>NRC</strong> y <strong>email</strong> también estén configurados como respaldo.</li>
-                    </ul>
-                    <p>Si ya se importó mal, vaya a <code>🧾 DTE Importados</code> y use el botón <strong>🔄</strong> para corregirlo sin reimportar.</p>
-                </div>
+                <div class="faq-body"><p>El NIT del emisor no coincidió con ninguno de sus NIT configurados. Verifique NIT principal, NITs adicionales, NRC y email en Configuración. Si ya se importó mal, vaya a <code>🧾 DTE Importados</code> → botón <strong>🔄</strong>.</p></div>
             </details>
 
             <details class="help-faq">
-                <summary>¿Por qué no veo mis productos del DTE en el inventario?</summary>
-                <div class="faq-body">
-                    <p>Posibles causas:</p>
-                    <ul style="padding-left:20px;margin:8px 0;line-height:1.7">
-                        <li>El ítem era un <strong>servicio</strong> (<code>tipoItem = 2</code>) — no se extrae.</li>
-                        <li>El ítem era <strong>combustible</strong> (tributos D1/C8) — se excluye.</li>
-                        <li>El emisor era de <strong>telecomunicaciones</strong> — se excluye.</li>
-                        <li>El precio unitario era <strong>0 o nulo</strong> — no se extrae.</li>
-                    </ul>
-                    <p>Puede crear el producto manualmente en <code>📦 Inventario</code>.</p>
-                </div>
+                <summary>¿Por qué un producto no aparece en Inventario?</summary>
+                <div class="faq-body"><p>Posibles causas:</p>
+                <ul style="padding-left:20px;margin:8px 0;line-height:1.7">
+                    <li>Era un <strong>servicio</strong> (<code>tipoItem = 2</code>) → va a Consultoría solo si lo emitió su NIT configurado</li>
+                    <li>Era <strong>combustible</strong> (D1/C8) → no se registra</li>
+                    <li>Era <strong>telecomunicaciones</strong> → no se registra</li>
+                    <li>Precio unitario 0 o nulo → no se extrae</li>
+                </ul>
+                <p>Búsquelo en <code>💼 Consultoría</code> — ahí quedan los que no son físicos.</p></div>
             </details>
 
             <details class="help-faq">
-                <summary>¿El sistema actualiza el stock al facturar?</summary>
-                <div class="faq-body">
-                    <p><strong>No automáticamente.</strong> El stock es su control físico real. Cuando venda o compre, ajuste el stock manualmente en <code>📦 Inventario</code> (botón ✏️). Esta decisión de diseño permite control total sin forzar un modelo de inventario perpetuo.</p>
-                </div>
+                <summary>¿Por qué veo servicios en Consultoría que no registré?</summary>
+                <div class="faq-body"><p>Porque fueron <strong>importados desde un DTE</strong>. Cada ítem con <code>tipoItem = 2</code> (servicio) o excluido del inventario se registra automáticamente con prefijo <code>[Servicio]</code> o <code>[Ítem]</code> en el nombre. Si no lo desea, puede eliminarlo desde Consultoría.</p></div>
             </details>
 
             <details class="help-faq">
-                <summary>¿Puedo usar el sistema en varios dispositivos?</summary>
-                <div class="faq-body">
-                    <p>Sí, exportando el respaldo en un dispositivo e importándolo en otro. <strong>No hay sincronización automática</strong> entre dispositivos porque los datos viven en el navegador local.</p>
-                    <p>Para trabajo multiusuario real se requeriría un servidor backend (fuera del alcance de esta versión).</p>
-                </div>
+                <summary>¿El sistema actualiza stock al facturar?</summary>
+                <div class="faq-body"><p><strong>No automáticamente.</strong> El stock es control físico real. Ajústelo manualmente en <code>📦 Inventario</code> (botón ✏️).</p></div>
             </details>
 
             <details class="help-faq">
-                <summary>¿Qué pasa si cierro el navegador sin hacer respaldo?</summary>
-                <div class="faq-body">
-                    <p>Los datos <strong>persisten normalmente</strong> en localStorage. Lo que pierde los datos es: limpiar caché/cookies, usar modo incógnito, o que el navegador borre datos por falta de espacio. Por eso recomendamos respaldos frecuentes.</p>
-                </div>
+                <summary>¿Puedo usar en varios dispositivos?</summary>
+                <div class="faq-body"><p>Sí, exportando respaldo en uno e importándolo en otro. <strong>No hay sincronización automática</strong>. Para multiusuario real se requeriría servidor backend.</p></div>
+            </details>
+
+            <details class="help-faq">
+                <summary>¿Qué pasa si cierro el navegador sin respaldo?</summary>
+                <div class="faq-body"><p>Los datos <strong>persisten</strong> en localStorage. Lo que los pierde es: limpiar caché, modo incógnito, o que el navegador borre datos por falta de espacio.</p></div>
             </details>
 
             <details class="help-faq">
                 <summary>¿Cuántos datos puedo cargar?</summary>
-                <div class="faq-body">
-                    <p>localStorage tiene un límite de ~5-10 MB por dominio (varía por navegador). Los DTE son pequeños (~3-10 KB c/u), así que puede almacenar miles. Si llega al límite, el sistema mostrará error al guardar — en ese caso exporte respaldo y archive los DTE más antiguos.</p>
-                </div>
+                <div class="faq-body"><p>localStorage soporta ~5-10 MB. Los DTE son pequeños (~3-10 KB). Puede almacenar miles. Si llega al límite, exporte respaldo y archive DTE antiguos.</p></div>
             </details>
 
             <details class="help-faq">
-                <summary>¿Cómo exporto los libros de IVA para presentarlos al MH?</summary>
-                <div class="faq-body">
-                    <p>Vaya a <code>📈 Reportes</code> → <code>📚 Libros IVA</code>. Seleccione el año y mes en los filtros superiores. Luego haga clic en el botón 📥 de cada libro (CF, CCF o Compras). Se descargará un CSV con el formato oficial.</p>
-                </div>
-            </details>
-
-            <details class="help-faq">
-                <summary>¿Cómo cambio el IVA si trabajo con tasa diferenciada?</summary>
-                <div class="faq-body">
-                    <p>Vaya a <code>⚙️ Configuración</code> → Preferencias → IVA (%). Cambie el 13% por la tasa que necesite (ej: 0% para exportación). Afecta a las nuevas facturas creadas, no a las existentes.</p>
-                </div>
+                <summary>¿Cómo exporto libros de IVA para el MH?</summary>
+                <div class="faq-body"><p><code>📈 Reportes</code> → <code>📚 Libros IVA</code>. Seleccione año/mes arriba. Click en 📥 de cada libro (CF, CCF, Compras). Se descarga CSV con formato oficial.</p></div>
             </details>
 
             <div class="help-copyright">
@@ -1024,7 +937,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
                 <div class="copyright-main">Powered by ITCPO</div>
                 <div class="copyright-author">Carlos Alfredo Castillo Flores</div>
                 <div class="copyright-year">© 2026 — Todos los derechos reservados</div>
-                <div class="copyright-legal">Sistema ERP Integral ITCPO v11.5 · Uso profesional en El Salvador · Aplicación 100% local sin envío de datos a terceros</div>
+                <div class="copyright-legal">Sistema ERP Integral ITCPO v12.0 · Uso profesional en El Salvador · Aplicación 100% local sin envío de datos a terceros</div>
             </div>
         </section>
     </main>
@@ -1037,9 +950,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}input,sele
 <script>
 const ERP = (() => {
     'use strict';
+    const Date = class extends globalThis.Date { constructor(...a){ if(a.length===1 && typeof a[0]==='string' && /^\d{4}-\d{2}-\d{2}$/.test(a[0])) super(a[0]+'T00:00:00'); else super(...a); } };
     const STORAGE_KEY = 'erp_itcpo_v11';
     const MESES = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-    const TIPOS_DTE = { '01':'Consumidor Final','03':'Crédito Fiscal','04':'Nota de Crédito','05':'Nota de Débito','06':'Retención','11':'Exportación' };
+    const TIPOS_DTE = { '01':'Factura Consumidor Final','03':'Comprobante de Crédito Fiscal','04':'Nota de Remisión','05':'Nota de Crédito','06':'Nota de Débito','07':'Comprobante de Retención','11':'Factura de Exportación','14':'Factura Sujeto Excluido' };
     const CLASES_CUENTA = ['Activo','Pasivo','Patrimonio','Ingreso','Costo','Gasto','Resultado'];
 
     const DEFAULT_CATALOGO = [
@@ -1100,8 +1014,9 @@ const ERP = (() => {
     const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
     const money = n => '$' + (Number(n)||0).toLocaleString('es-ES', { minimumFractionDigits:2, maximumFractionDigits:2 });
     const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    const today = () => new Date().toISOString().slice(0,10);
-    const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate()+n); return x.toISOString().slice(0,10); };
+    const iso = d => { const p = n => String(n).padStart(2,'0'); return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate()); };
+    const today = () => iso(new Date());
+    const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate()+n); return iso(x); };
     const fmtDate = d => d ? new Date(d).toLocaleDateString('es-ES', { day:'2-digit', month:'short', year:'numeric' }) : '';
     const trimKeys = obj => { if (obj === null || typeof obj !== 'object') return obj; if (Array.isArray(obj)) return obj.map(trimKeys); const out = {}; for (const k in obj) out[k.trim()] = trimKeys(obj[k]); return out; };
     const normalizeNit = nit => String(nit || '').replace(/[\s\-\.]/g, '').toUpperCase();
@@ -1112,7 +1027,19 @@ const ERP = (() => {
     function toast(msg, type='success') { const t = document.createElement('div'); t.className = `toast ${type}`; t.textContent = msg; $('#toast-container').appendChild(t); setTimeout(() => t.remove(), 3500); }
     function openModal(html, size='') { $('#modal-content').innerHTML = html; $('#modal-content').className = 'modal ' + size; $('#modal-overlay').classList.add('active'); }
     function closeModal() { $('#modal-overlay').classList.remove('active'); }
-    function save() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) { toast('Error al guardar','error'); } }
+    function renumerar() {
+        const pad = (n, l) => String(n).padStart(l, '0'), fmap = {};
+        const order = (arr, kf) => arr.map((x, i) => ({ x, i, k: kf(x) })).sort((a, b) => a.k < b.k ? -1 : a.k > b.k ? 1 : a.i - b.i).map(o => o.x);
+        const doc = (arr, serie) => order(arr, x => (x.fecha || '9999') + ' ' + (x.hora || '')).map((x, i) => { const nf = serie + '-' + pad(i + 1, 5); fmap[x.id] = [x.folio, nf]; x.folio = nf; return x; });
+        state.ventas = doc(state.ventas, state.config.serieV || 'V');
+        state.compras = doc(state.compras, state.config.serieC || 'C');
+        state.notasCredito = order(state.notasCredito, x => x.fecha || '9999').map((n, i) => { const nf = 'NC-' + pad(i + 1, 5); fmap[n.id] = [n.folio, nf]; n.folio = nf; const f = state.ventas.find(v => v.id === n.facturaId); if (f) n.facturaFolio = f.folio; return n; });
+        state.polizas.forEach(p => { const m = fmap[p.invoiceId || p.ncId]; if (m && m[0] && m[0] !== m[1]) { const rp = t => typeof t === 'string' ? t.split(m[0]).join(m[1]) : t; p.concepto = rp(p.concepto); p.referencia = rp(p.referencia); (p.lineas || []).forEach(l => { l.concepto = rp(l.concepto); }); } });
+        state.polizas = order(state.polizas, p => p.fecha || '9999').map((p, i) => { p.numero = i + 1; return p; });
+        state.consultoria = order(state.consultoria, c => c.fechaInicio || '9999').map((c, i) => { c.clave = 'CON-' + pad(i + 1, 4); return c; });
+        state.counters = { venta: state.ventas.length + 1, compra: state.compras.length + 1, poliza: state.polizas.length + 1, consultoria: state.consultoria.length + 1, nota: state.notasCredito.length + 1 };
+    }
+    function save() { try { renumerar(); localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) { toast('Error al guardar: almacenamiento lleno. Descargue un respaldo.','error'); } }
 
     function load() {
         try {
@@ -1210,30 +1137,74 @@ const ERP = (() => {
         if (/\b(telefonia|internet|recarga|megas|gigas|plan datos|plan movil)\b/.test(desc)) return false;
         return true;
     }
-    function extraerProductosInventario(json, tipoDTE) {
+
+    // ✨ NUEVA FUNCIÓN: extrae productos físicos a inventario Y servicios a consultoría
+    function extraerItems(json, tipoDTE, parsed) {
         const emisor = json.emisor || {};
+        const receptor = json.receptor || {};
         const cuerpo = json.cuerpoDocumento || [];
-        const agregados = [];
         const ivaRate = state.config.ivaRate || 0.13;
+        const productosAgregados = [];
+        const consultoriaAgregados = [];
+
         cuerpo.forEach(item => {
-            if (!esItemExtraible(emisor, item)) return;
+            const tipoItem = parseInt(item.tipoItem);
             const nombre = (item.descripcion || '').toString().trim();
             if (!nombre) return;
+
             const precioUni = parseFloat(item.precioUni) || 0;
-            if (precioUni <= 0) return;
-            const precioConIVA = Math.round(precioUni * (1 + ivaRate) * 100) / 100;
-            const existente = state.productos.find(p => normalizeName(p.nombre) === normalizeName(nombre));
-            if (existente) {
-                let actualizado = false;
-                if (precioConIVA > (Number(existente.precio) || 0)) { existente.precio = precioConIVA; actualizado = true; }
-                if (tipoDTE === 'compra' && precioUni > 0 && (!existente.costo || precioUni < Number(existente.costo))) { existente.costo = precioUni; actualizado = true; }
-                agregados.push({ nombre, accion: actualizado ? 'actualizado' : 'sin cambios', precio: precioConIVA, existente: true });
-            } else {
-                state.productos.push({ id: uid(), sku: item.codigo ? String(item.codigo).trim() : generarSKU(nombre), nombre: nombre, categoria: 'Importado DTE', precio: precioConIVA, costo: precioUni, stock: 0, minimo: 5 });
-                agregados.push({ nombre, accion: 'creado', precio: precioConIVA, existente: false });
+            const cantidad = parseFloat(item.cantidad) || 1;
+            const montoBase = parseFloat(item.ventaGravada) || parseFloat(item.ventaExenta) || parseFloat(item.ventaNoSuj) || (cantidad * precioUni);
+
+            // PRODUCTO FÍSICO → INVENTARIO
+            const esFisico = tipoItem === 1 && esItemExtraible(emisor, item) && precioUni > 0;
+
+            if (esFisico) {
+                const precioConIVA = Math.round(precioUni * (1 + ivaRate) * 100) / 100;
+                const existente = state.productos.find(p => normalizeName(p.nombre) === normalizeName(nombre));
+                if (existente) {
+                    let actualizado = false;
+                    if (precioConIVA > (Number(existente.precio) || 0)) { existente.precio = precioConIVA; actualizado = true; }
+                    if (tipoDTE === 'compra' && precioUni > 0 && (!existente.costo || precioUni < Number(existente.costo))) { existente.costo = precioUni; actualizado = true; }
+                    productosAgregados.push({ nombre, accion: actualizado ? 'actualizado' : 'sin cambios', precio: precioConIVA, existente: true });
+                } else {
+                    state.productos.push({ id: uid(), sku: item.codigo ? String(item.codigo).trim() : generarSKU(nombre), nombre, categoria: 'Importado DTE', precio: precioConIVA, costo: precioUni, stock: 0, minimo: 5 });
+                    productosAgregados.push({ nombre, accion: 'creado', precio: precioConIVA, existente: false });
+                }
+            } else if (montoBase > 0 && tipoItem === 2 && tipoDTE === 'venta' && ['NIT principal','NIT adicional'].includes(esEmisorPropio(emisor).criterio)) {
+                // SERVICIO O NO FÍSICO → CONSULTORÍA
+                const cliente = tipoDTE === 'venta' ? (receptor.nombre || 'Consumidor Final') : (emisor.nombre || 'Proveedor');
+                const fechaDte = parsed.fecha || today();
+                const condOp = parseInt(json.resumen?.condicionOperacion) || 1;
+                const pagado = condOp === 1;
+
+                // Anti-duplicado: mismo cliente + servicio + fecha
+                const yaExiste = state.consultoria.some(c =>
+                    normalizeName(c.cliente) === normalizeName(cliente) &&
+                    normalizeName(c.servicio).includes(normalizeName(nombre).slice(0, 20)) &&
+                    c.fechaInicio === fechaDte
+                );
+
+                if (!yaExiste) {
+                    const prefijo = tipoItem === 2 ? 'Servicio' : 'Ítem';
+                    state.consultoria.push({
+                        id: uid(),
+                        clave: 'CON-' + String(state.counters.consultoria++).padStart(4, '0'),
+                        cliente: cliente,
+                        servicio: `[${prefijo}] ${nombre}`,
+                        fechaInicio: fechaDte,
+                        fechaFin: fechaDte,
+                        monto: montoBase,
+                        cobrado: pagado ? montoBase : 0,
+                        estado: pagado ? 'completado' : 'activo',
+                        descripcion: `Importado desde ${tipoDTE.toUpperCase()} DTE ${parsed.numeroControl || parsed.uuid || ''}`
+                    });
+                    consultoriaAgregados.push({ nombre, tipo: tipoDTE, monto: montoBase, cliente });
+                }
             }
         });
-        return agregados;
+
+        return { productos: productosAgregados, consultoria: consultoriaAgregados };
     }
 
     function esDteDuplicado(uuid, numeroControl) {
@@ -1241,13 +1212,14 @@ const ERP = (() => {
         const check = (arr) => arr.some(item => { const iu = normalizeUuid(item.uuid || item.resumen?.uuid || ''); const inc = String(item.numeroControl || item.resumen?.numeroControl || '').trim().toUpperCase(); return (u && u === iu) || (nc && nc === inc); });
         return check(state.dteRaw) || check(state.ventas) || check(state.compras);
     }
+
     async function importDTE(e) {
         const files = Array.from(e.target.files);
         if (!files.length) return;
         const tieneConfig = normalizeNit(state.config.nit) || normalizeNit(state.config.nrc) || (state.config.email || '').trim();
         if (!tieneConfig) { toast('⚠️ Configure NIT, NRC o Email antes de importar','warn'); e.target.value = ''; return; }
         const results = [];
-        let ventas = 0, compras = 0, errores = 0, duplicados = 0, productosCreados = 0, productosActualizados = 0;
+        let ventas = 0, compras = 0, errores = 0, duplicados = 0, productosCreados = 0, productosActualizados = 0, consultoriaCreados = 0;
         for (const file of files) {
             try {
                 const text = await file.text();
@@ -1266,23 +1238,33 @@ const ERP = (() => {
                 state.dteRaw.push({ id: uid(), fileName: file.name, importedAt: new Date().toISOString(), tipoDetectado: clasif.tipo, criterioClasificacion: clasif.criterio, raw: json, resumen: { uuid: parsed.uuid, numeroControl: parsed.numeroControl, fecha: parsed.fecha, emisor: parsed.emisorNombre, emisorNit: parsed.emisorNit, receptor: parsed.receptorNombre, receptorNit: parsed.receptorNit, totalGravada: parsed.totalGravada, iva: parsed.iva, total: parsed.total, moneda: parsed.moneda, sello: parsed.sello, tipoDTE: parsed.tipoDTE } });
                 if (clasif.tipo === 'venta') { parsed.folio = state.config.serieV + '-' + String(state.counters.venta++).padStart(5, '0'); state.ventas.push(parsed); ventas++; generarPolizaVenta(parsed); }
                 else { parsed.folio = state.config.serieC + '-' + String(state.counters.compra++).padStart(5, '0'); state.compras.push(parsed); compras++; generarPolizaCompra(parsed); }
-                const prodsExtraidos = extraerProductosInventario(json, clasif.tipo);
-                const creados = prodsExtraidos.filter(p => p.accion === 'creado').length, actualizados = prodsExtraidos.filter(p => p.accion === 'actualizado').length;
-                productosCreados += creados; productosActualizados += actualizados;
-                const prodLabel = prodsExtraidos.length > 0 ? `${creados} nuevo(s)${actualizados > 0 ? `, ${actualizados} act.` : ''}` : '—';
+                const extraidos = extraerItems(json, clasif.tipo, parsed);
+                const prodsCreados = extraidos.productos.filter(p => p.accion === 'creado').length;
+                const prodsActualizados = extraidos.productos.filter(p => p.accion === 'actualizado').length;
+                const consultoriaAgregados = extraidos.consultoria.length;
+                productosCreados += prodsCreados;
+                productosActualizados += prodsActualizados;
+                consultoriaCreados += consultoriaAgregados;
+                const partes = [];
+                if (prodsCreados > 0) partes.push(`📦${prodsCreados}`);
+                if (prodsActualizados > 0) partes.push(`📦↻${prodsActualizados}`);
+                if (consultoriaAgregados > 0) partes.push(`💼${consultoriaAgregados}`);
+                const prodLabel = partes.length > 0 ? partes.join(' ') : '—';
                 results.push({ file: file.name, tipo: clasif.tipo === 'venta' ? '🧾 Venta' : '🛒 Compra', emisor: parsed.emisorNombre, receptor: parsed.receptorNombre, total: parsed.total, status:'✅ OK', criterio: clasif.criterio || '—', productos: prodLabel });
             } catch (err) { errores++; results.push({ file: file.name, tipo:'—', emisor:'—', receptor:'—', total:0, status:'❌ ' + err.message, criterio:'—', productos: '—' }); }
         }
         save(); renderAll(); generateNotifications();
-        logImport('DTE', `${files.length} archivo(s)`, `${ventas}V/${compras}C/${duplicados}dup/${productosCreados}P`, errores ? `✅${ventas+compras}/⚠️${duplicados}/❌${errores}` : `✅${ventas+compras}/⚠️${duplicados}`);
-        showImportResult(results, ventas, compras, errores, duplicados, productosCreados, productosActualizados);
+        logImport('DTE', `${files.length} archivo(s)`, `${ventas}V/${compras}C/${duplicados}dup/${productosCreados}P/${consultoriaCreados}Con`, errores ? `✅${ventas+compras}/⚠️${duplicados}/❌${errores}` : `✅${ventas+compras}/⚠️${duplicados}`);
+        showImportResult(results, ventas, compras, errores, duplicados, productosCreados, productosActualizados, consultoriaCreados);
         let msg = `Importados: ${ventas} ventas, ${compras} compras`;
-        if (productosCreados + productosActualizados > 0) msg += `, ${productosCreados} prod. nuevos`;
+        if (productosCreados + productosActualizados > 0) msg += `, ${productosCreados} prod.`;
+        if (consultoriaCreados > 0) msg += `, ${consultoriaCreados} servicios`;
         if (duplicados > 0) msg += `, ${duplicados} duplicados`;
         if (errores > 0) msg += `, ${errores} errores`;
         toast(msg, errores > 0 ? 'warn' : duplicados > 0 ? 'info' : 'success');
         e.target.value = '';
     }
+
     function parseDTE(json, tipoForzado) {
         const ident = json.identificacion || {}, emisor = json.emisor || {}, receptor = json.receptor || {};
         const cuerpo = json.cuerpoDocumento || [], resumen = json.resumen || {};
@@ -1296,9 +1278,10 @@ const ERP = (() => {
         const condOp = parseInt(resumen.condicionOperacion) || 1;
         return { id: uid(), folio:'', fecha: ident.fecEmi || today(), hora: ident.horEmi || '', vencimiento: condOp === 2 ? addDays(ident.fecEmi || today(), state.config.diasCredito || 30) : (ident.fecEmi || today()), tipo: tipoForzado, uuid: ident.codigoGeneracion || '', numeroControl: ident.numeroControl || '', tipoDTE: ident.tipoDte || '', ambiente: ident.ambiente || '', moneda: ident.tipoMoneda || 'USD', emisorNit: normalizeNit(emisor.nit), emisorNrc: (emisor.nrc || '').toString().trim(), emisorNombre: (emisor.nombre || '').toString().trim(), emisorEmail: (emisor.correo || '').toString().trim(), emisorTel: (emisor.telefono || '').toString().trim(), receptorNit: normalizeNit(receptor.nit), receptorNrc: (receptor.nrc || '').toString().trim(), receptorNombre: (receptor.nombre || '').toString().trim(), receptorEmail: (receptor.correo || '').toString().trim(), receptorTel: (receptor.telefono || '').toString().trim(), cliente: tipoForzado === 'venta' ? (receptor.nombre || '').toString().trim() : (emisor.nombre || '').toString().trim(), proveedor: tipoForzado === 'compra' ? (emisor.nombre || '').toString().trim() : (receptor.nombre || '').toString().trim(), rfc: tipoForzado === 'venta' ? normalizeNit(receptor.nit) : normalizeNit(emisor.nit), metodoPago: condOp === 1 ? 'Contado' : 'Crédito', formaPago: (resumen.pagos && resumen.pagos[0]) ? resumen.pagos[0].codigo || '01' : '01', conceptos, totalGravada, subtotal, iva, total, totalLetras: (resumen.totalLetras || '').toString().trim(), totalExenta: parseFloat(resumen.totalExenta) || 0, totalNoSuj: parseFloat(resumen.totalNoSuj) || 0, sello: (json.selloRecibido || '').toString().trim(), pagos: resumen.pagos || [], condicionOperacion: condOp, pagado: condOp === 1 ? total : 0, estado: tipoForzado === 'venta' ? (condOp === 1 ? 'pagada' : 'emitida') : (condOp === 1 ? 'pagada' : 'registrada'), observaciones:'', origen:'DTE-JSON', contactoId: null };
     }
-    function showImportResult(results, ventas, compras, errores, duplicados = 0, productosCreados = 0, productosActualizados = 0) {
+
+    function showImportResult(results, ventas, compras, errores, duplicados = 0, productosCreados = 0, productosActualizados = 0, consultoriaCreados = 0) {
         $('#import-result-card').style.display = 'block';
-        $('#import-stats').innerHTML = `<div class="info import-stat"><div class="num">${results.length}</div><div class="label">Archivos</div></div><div class="success import-stat"><div class="num">${ventas}</div><div class="label">Ventas</div></div><div class="info import-stat"><div class="num">${compras}</div><div class="label">Compras</div></div><div class="prod import-stat"><div class="num">${productosCreados}</div><div class="label">Productos</div></div><div class="duplicate import-stat"><div class="num">${duplicados}</div><div class="label">Duplicados</div></div><div class="${errores?'error':'success'} import-stat"><div class="num">${errores}</div><div class="label">Errores</div></div>`;
+        $('#import-stats').innerHTML = `<div class="info import-stat"><div class="num">${results.length}</div><div class="label">Archivos</div></div><div class="success import-stat"><div class="num">${ventas}</div><div class="label">Ventas</div></div><div class="info import-stat"><div class="num">${compras}</div><div class="label">Compras</div></div><div class="prod import-stat"><div class="num">${productosCreados}</div><div class="label">📦 Productos</div></div><div class="serv import-stat"><div class="num">${consultoriaCreados}</div><div class="label">💼 Servicios</div></div><div class="duplicate import-stat"><div class="num">${duplicados}</div><div class="label">Duplicados</div></div><div class="${errores?'error':'success'} import-stat"><div class="num">${errores}</div><div class="label">Errores</div></div>`;
         $('#tabla-import-detail tbody').innerHTML = results.map(r => { const cls = r.status.includes('✅') ? 'badge-success' : r.status.includes('⚠️') ? 'badge-warning' : 'badge-danger'; return `<tr><td>${esc(r.file)}</td><td>${esc(r.tipo)}</td><td><span class="badge badge-info">${esc(r.criterio||'—')}</span></td><td>${esc(r.emisor)}</td><td>${esc(r.receptor)}</td><td class="num">${money(r.total)}</td><td><span class="badge badge-orange">${esc(r.productos||'—')}</span></td><td><span class="badge ${cls}">${esc(r.status)}</span></td></tr>`; }).join('');
     }
 
@@ -1308,7 +1291,7 @@ const ERP = (() => {
     function eliminarPolizaFactura(invoiceId) { state.polizas = state.polizas.filter(p => p.invoiceId !== invoiceId); }
     function generarPolizaVenta(inv) { eliminarPolizaFactura(inv.id); if (inv.estado === 'cancelada') return; const l = []; const contado = inv.estado === 'pagada' || inv.metodoPago === 'Contado'; if (contado) l.push({ codigo:'1102.01', concepto:`Cobro ${inv.folio}`, cargo:inv.total, abono:0 }); else l.push({ codigo:'1103', concepto:`CxC ${inv.folio}`, cargo:inv.total, abono:0 }); l.push({ codigo:'4201', concepto:`Ingreso ${inv.folio}`, cargo:0, abono:inv.subtotal }); l.push({ codigo:'2102', concepto:`IVA ${inv.folio}`, cargo:0, abono:inv.iva }); state.polizas.push({ id:uid(), numero:state.counters.poliza++, fecha:inv.fecha, concepto:`Venta ${inv.folio} - ${inv.cliente}`, tipo:'ingreso', referencia:inv.folio, lineas:l, cargo:inv.total, abono:inv.total, auto:true, invoiceId:inv.id, invoiceType:'venta' }); }
     function generarPolizaCompra(inv) { eliminarPolizaFactura(inv.id); if (inv.estado === 'cancelada') return; const l = []; const contado = inv.estado === 'pagada' || inv.metodoPago === 'Contado'; l.push({ codigo:'6115', concepto:`Compra ${inv.folio}`, cargo:inv.subtotal, abono:0 }); l.push({ codigo:'1104', concepto:`IVA ${inv.folio}`, cargo:inv.iva, abono:0 }); if (contado) l.push({ codigo:'1102.01', concepto:`Pago ${inv.folio}`, cargo:0, abono:inv.total }); else l.push({ codigo:'2101', concepto:`CxP ${inv.folio}`, cargo:0, abono:inv.total }); state.polizas.push({ id:uid(), numero:state.counters.poliza++, fecha:inv.fecha, concepto:`Compra ${inv.folio} - ${inv.proveedor}`, tipo:'egreso', referencia:inv.folio, lineas:l, cargo:inv.total, abono:inv.total, auto:true, invoiceId:inv.id, invoiceType:'compra' }); }
-    function generarPolizaNC(nc, f) { const iva = nc.monto / 1.13 * 0.13; const sub = nc.monto - iva; const l = [{ codigo:'4201', concepto:`NC ${nc.folio}`, cargo:sub, abono:0 },{ codigo:'2102', concepto:`IVA NC`, cargo:iva, abono:0 },{ codigo:'1103', concepto:`NC ${nc.folio}`, cargo:0, abono:nc.monto }]; state.polizas.push({ id:uid(), numero:state.counters.poliza++, fecha:nc.fecha, concepto:`NC ${nc.folio}`, tipo:'egreso', referencia:nc.folio, lineas:l, cargo:nc.monto, abono:nc.monto, auto:true, ncId:nc.id }); }
+    function generarPolizaNC(nc, f) { const r = state.config.ivaRate || 0.13; const iva = nc.monto / (1+r) * r; const sub = nc.monto - iva; const l = [{ codigo:'4201', concepto:`NC ${nc.folio}`, cargo:sub, abono:0 },{ codigo:'2102', concepto:`IVA NC`, cargo:iva, abono:0 },{ codigo:'1103', concepto:`NC ${nc.folio}`, cargo:0, abono:nc.monto }]; state.polizas.push({ id:uid(), numero:state.counters.poliza++, fecha:nc.fecha, concepto:`NC ${nc.folio}`, tipo:'egreso', referencia:nc.folio, lineas:l, cargo:nc.monto, abono:nc.monto, auto:true, ncId:nc.id }); }
     function generarPolizaCobroCxC(inv, monto) { const l = [{ codigo:'1102.01', concepto:`Cobro ${inv.folio}`, cargo:monto, abono:0 },{ codigo:'1103', concepto:`Aplic. ${inv.folio}`, cargo:0, abono:monto }]; state.polizas.push({ id:uid(), numero:state.counters.poliza++, fecha:today(), concepto:`Cobro ${inv.folio}`, tipo:'cobro', referencia:inv.folio, lineas:l, cargo:monto, abono:monto, auto:true, invoiceId:inv.id, paymentType:'cobro' }); }
     function generarPolizaPagoCxP(inv, monto) { const l = [{ codigo:'2101', concepto:`Pago ${inv.folio}`, cargo:monto, abono:0 },{ codigo:'1102.01', concepto:`Salida ${inv.folio}`, cargo:0, abono:monto }]; state.polizas.push({ id:uid(), numero:state.counters.poliza++, fecha:today(), concepto:`Pago ${inv.folio}`, tipo:'pago', referencia:inv.folio, lineas:l, cargo:monto, abono:monto, auto:true, invoiceId:inv.id, paymentType:'pago' }); }
     function sincronizarPolizaFactura(tipo, inv) { tipo === 'venta' ? generarPolizaVenta(inv) : generarPolizaCompra(inv); }
@@ -1345,7 +1328,7 @@ const ERP = (() => {
     function openInvoiceModal(tipo, eid=null) { const isV = tipo === 'venta'; const ed = eid ? (isV ? state.ventas : state.compras).find(x => x.id === eid) : null; const isDTE = ed?.origen === 'DTE-JSON'; let fo, fe, vn, nm, ni, me, fo2, cs, sb, iv, tot, est, pg, obs, td; if (ed) { fo = ed.folio; fe = ed.fecha; vn = ed.vencimiento || addDays(ed.fecha, state.config.diasCredito||30); nm = isV ? ed.cliente : ed.proveedor; ni = ed.rfc; me = ed.metodoPago || 'Contado'; fo2 = ed.formaPago || '01'; cs = ed.conceptos || []; sb = ed.subtotal; iv = ed.iva; tot = ed.total; est = ed.estado; pg = ed.pagado||0; obs = ed.observaciones||''; td = ed.tipoDTE||'03'; } else { const ct = isV ? state.counters.venta : state.counters.compra; const sr = isV ? state.config.serieV : state.config.serieC; fo = sr+'-'+String(ct).padStart(5,'0'); fe = today(); vn = addDays(today(), state.config.diasCredito||30); nm=''; ni=''; me='Contado'; fo2='01'; cs=[]; sb=0; iv=0; tot=0; est = isV ? 'emitida' : 'registrada'; pg=0; obs=''; td='03'; } const cf = state.contactos.filter(c => c.tipo === (isV ? 'cliente' : 'proveedor')); openModal(`<div class="modal-header"><h3>${ed?'✏️':'➕'} ${isV?'Venta':'Compra'}${isDTE?' (DTE)':''}</h3><button class="modal-close" onclick="ERP.closeModal()">×</button></div><div class="modal-body">${isDTE?'<div class="alert-contable info"><span class="icon">ℹ️</span><div>DTE: datos fiscales no modificables.</div></div>':''}${ed?'<div class="alert-contable info"><span class="icon">🔄</span><div>Póliza se sincronizará.</div></div>':''}<div class="form-row"><div class="form-group"><label>Folio</label><input type="text" class="form-control" id="inv-folio" value="${esc(fo)}" ${ed?'readonly':''}/></div><div class="form-group"><label>Fecha</label><input type="date" class="form-control" id="inv-fecha" value="${fe}"/></div><div class="form-group"><label>Vence</label><input type="date" class="form-control" id="inv-venc" value="${vn}"/></div></div>${!isDTE&&isV?`<div class="form-group"><label>Tipo</label><select class="form-control" id="inv-tipo-dte"><option value="01" ${td==='01'?'selected':''}>🧾 CF</option><option value="03" ${td==='03'?'selected':''}>📄 CCF</option><option value="11" ${td==='11'?'selected':''}>✈️ Exp</option></select></div>`:''}<div class="form-row"><div class="form-group"><label>${isV?'Cliente':'Proveedor'}</label><input type="text" class="form-control" id="inv-nombre" value="${esc(nm)}" list="cnt-list" ${isDTE?'readonly':''}/><datalist id="cnt-list">${cf.map(c=>`<option value="${esc(c.nombre)}">${esc(c.nit||'')}</option>`).join('')}</datalist></div><div class="form-group"><label>NIT</label><input type="text" class="form-control" id="inv-nit" value="${esc(ni)}" style="text-transform:uppercase" ${isDTE?'readonly':''}/></div></div>${!isDTE?`<div class="form-row"><div class="form-group"><label>Método</label><select class="form-control" id="inv-metodo"><option value="Contado" ${me==='Contado'?'selected':''}>Contado</option><option value="Crédito" ${me==='Crédito'?'selected':''}>Crédito</option></select></div><div class="form-group"><label>Forma</label><select class="form-control" id="inv-forma"><option value="01" ${fo2==='01'?'selected':''}>Efectivo</option><option value="03" ${fo2==='03'?'selected':''}>Transferencia</option><option value="04" ${fo2==='04'?'selected':''}>Tarjeta</option></select></div></div>`:''}<label style="font-size:12px;font-weight:600;text-transform:uppercase;margin-top:8px">Conceptos</label><div id="inv-conceptos" style="margin-top:6px"></div>${!isDTE?'<button class="btn btn-secondary btn-sm" onclick="ERP.addConceptoRow()" style="margin-top:6px">➕</button>':''}<div style="margin-top:16px;padding:12px;background:var(--orange-50);border-radius:6px"><div class="flex-between mb-8"><span>Sub:</span><strong id="inv-subtotal">${money(sb)}</strong></div><div class="flex-between mb-8"><span>IVA:</span><strong id="inv-iva">${money(iv)}</strong></div><div class="flex-between" style="font-size:16px"><strong>Total:</strong><strong id="inv-total" style="color:var(--orange-600)">${money(tot)}</strong></div></div><div class="form-row" style="margin-top:12px"><div class="form-group"><label>Estado</label><select class="form-control" id="inv-estado">${isV?`<option value="emitida" ${est==='emitida'?'selected':''}>Emitida</option><option value="pagada" ${est==='pagada'?'selected':''}>Pagada</option><option value="cancelada" ${est==='cancelada'?'selected':''}>Cancelada</option>`:`<option value="registrada" ${est==='registrada'?'selected':''}>Registrada</option><option value="pagada" ${est==='pagada'?'selected':''}>Pagada</option><option value="cancelada" ${est==='cancelada'?'selected':''}>Cancelada</option>`}</select></div><div class="form-group"><label>Pagado</label><input type="number" class="form-control" id="inv-pagado" value="${pg}" min="0" step="0.01"/></div></div><div class="form-group"><label>Obs.</label><textarea class="form-control" id="inv-obs" rows="2">${esc(obs)}</textarea></div></div><div class="modal-footer"><button class="btn btn-secondary" onclick="ERP.closeModal()">Cancelar</button><button class="btn btn-primary" onclick="ERP.saveInvoice('${tipo}',${ed?`'${eid}'`:'null'})">💾 ${ed?'Guardar':'Crear'}</button></div>`,'modal-lg'); const ct = $('#inv-conceptos'); if (cs.length) cs.forEach(c => addConceptoRow(c)); else if (!isDTE) addConceptoRow(); calcInvoice(); if (!isDTE) $('#inv-nombre').addEventListener('change', e => { const c = state.contactos.find(x => x.nombre === e.target.value); if (c?.nit) $('#inv-nit').value = c.nit; }); }
     function addConceptoRow(d=null) { const c = $('#inv-conceptos'); const r = document.createElement('div'); r.className = 'form-row'; r.style.marginBottom = '8px'; r.innerHTML = `<div class="form-group" style="flex:2;margin:0"><input type="text" class="form-control" placeholder="Desc." data-field="nombre" value="${esc(d?.nombre||'')}"/></div><div class="form-group" style="margin:0"><input type="number" class="form-control" placeholder="Cant." value="${d?.cantidad||1}" min="0" step="0.01" data-field="cantidad" oninput="ERP.calcInvoice()"/></div><div class="form-group" style="margin:0"><input type="number" class="form-control" placeholder="Precio" value="${d?.precioUni||d?.precio||0}" min="0" step="0.01" data-field="precio" oninput="ERP.calcInvoice()"/></div><div style="display:flex;align-items:end"><button class="btn btn-danger btn-icon" onclick="this.closest('.form-row').remove();ERP.calcInvoice()">✕</button></div>`; c.appendChild(r); }
     function calcInvoice() { let s = 0; $$('[data-field="cantidad"]').forEach((el, i) => { const pr = $$('[data-field="precio"]')[i]; if (el && pr) s += (parseFloat(el.value)||0) * (parseFloat(pr.value)||0); }); const iv = s * (state.config.ivaRate||0.13); $('#inv-subtotal').textContent = money(s); $('#inv-iva').textContent = money(iv); $('#inv-total').textContent = money(s+iv); }
-    function saveInvoice(tipo, eid) { const isV = tipo === 'venta'; const fo = $('#inv-folio').value.trim(), fe = $('#inv-fecha').value, vn = $('#inv-venc').value; const nm = $('#inv-nombre').value.trim(), ni = $('#inv-nit').value.trim().toUpperCase(); const est = $('#inv-estado').value, pg = parseFloat($('#inv-pagado').value)||0, obs = $('#inv-obs').value.trim(); if (!nm) return toast('Nombre','error'); if (!fe) return toast('Fecha','error'); const cs = []; $$('[data-field="nombre"]').forEach((el, i) => { const cn = $$('[data-field="cantidad"]')[i]; const pr = $$('[data-field="precio"]')[i]; if (el && cn && pr) { const n = el.value.trim(), q = parseFloat(cn.value)||0, p = parseFloat(pr.value)||0; if (n && q > 0) cs.push({ nombre:n, cantidad:q, precioUni:p, precio:p, ventaGravada:q*p }); } }); if (!cs.length) return toast('Conceptos','error'); const ir = state.config.ivaRate || 0.13; const sb = cs.reduce((s, c) => s + c.cantidad*(c.precioUni||c.precio), 0); const iv = sb*ir; const tot = sb+iv; const isDTE = eid && (isV?state.ventas:state.compras).find(x=>x.id===eid)?.origen === 'DTE-JSON'; let me = 'Contado', fo2 = '01', td = '03'; if (!isDTE) { me = $('#inv-metodo')?.value || 'Contado'; fo2 = $('#inv-forma')?.value || '01'; if (isV && $('#inv-tipo-dte')) td = $('#inv-tipo-dte').value; } const contacto = crearOActualizarContacto(nm, ni, null, null, isV ? 'cliente' : 'proveedor', null, null); if (eid) { const arr = isV?state.ventas:state.compras; const inv = arr.find(x=>x.id===eid); if (!inv) return toast('No encontrada','error'); inv.fecha = fe; inv.vencimiento = vn; inv.estado = est; inv.pagado = pg; inv.observaciones = obs; inv.contactoId = contacto?.id || null; if (!isDTE) { inv.conceptos = cs; inv.subtotal = sb; inv.iva = iv; inv.total = tot; inv.totalGravada = sb; inv.metodoPago = me; inv.formaPago = fo2; if (isV) { inv.cliente = nm; inv.rfc = ni; inv.tipoDTE = td; } else { inv.proveedor = nm; inv.rfc = ni; } } else { if (isV) inv.cliente = nm; else inv.proveedor = nm; } sincronizarPolizaFactura(tipo, inv); toast(`${inv.folio} actualizada`); } else { const inv = { id:uid(), folio:fo, fecha:fe, vencimiento:vn, conceptos:cs, subtotal:sb, iva:iv, total:tot, totalGravada:sb, pagado:pg, estado:est, observaciones:obs, usoCfdi:'DTE-SV', metodoPago:me, formaPago:fo2, uuid:'MANUAL-'+uid().toUpperCase(), numeroControl:'', moneda:state.config.moneda||'USD', origen:'MANUAL', contactoId:contacto?.id || null }; if (isV) { inv.cliente = nm; inv.rfc = ni; inv.tipoDTE = td; state.ventas.push(inv); state.counters.venta++; generarPolizaVenta(inv); } else { inv.proveedor = nm; inv.rfc = ni; state.compras.push(inv); state.counters.compra++; generarPolizaCompra(inv); } toast(`${fo} creada`); } save(); closeModal(); renderAll(); generateNotifications(); }
+    function saveInvoice(tipo, eid) { const isV = tipo === 'venta'; const fo = $('#inv-folio').value.trim(), fe = $('#inv-fecha').value, vn = $('#inv-venc').value; const nm = $('#inv-nombre').value.trim(), ni = $('#inv-nit').value.trim().toUpperCase(); const est = $('#inv-estado').value, pg = parseFloat($('#inv-pagado').value)||0, obs = $('#inv-obs').value.trim(); if (!nm) return toast('Nombre','error'); if (!fe) return toast('Fecha','error'); if (!eid && (isV?state.ventas:state.compras).some(x => x.folio === fo)) return toast('El folio ya existe','error'); const cs = []; $$('[data-field="nombre"]').forEach((el, i) => { const cn = $$('[data-field="cantidad"]')[i]; const pr = $$('[data-field="precio"]')[i]; if (el && cn && pr) { const n = el.value.trim(), q = parseFloat(cn.value)||0, p = parseFloat(pr.value)||0; if (n && q > 0) cs.push({ nombre:n, cantidad:q, precioUni:p, precio:p, ventaGravada:q*p }); } }); if (!cs.length) return toast('Conceptos','error'); const ir = state.config.ivaRate || 0.13; const sb = cs.reduce((s, c) => s + c.cantidad*(c.precioUni||c.precio), 0); const iv = sb*ir; const tot = sb+iv; const isDTE = eid && (isV?state.ventas:state.compras).find(x=>x.id===eid)?.origen === 'DTE-JSON'; let me = 'Contado', fo2 = '01', td = '03'; if (!isDTE) { me = $('#inv-metodo')?.value || 'Contado'; fo2 = $('#inv-forma')?.value || '01'; if (isV && $('#inv-tipo-dte')) td = $('#inv-tipo-dte').value; } const contacto = crearOActualizarContacto(nm, ni, null, null, isV ? 'cliente' : 'proveedor', null, null); if (eid) { const arr = isV?state.ventas:state.compras; const inv = arr.find(x=>x.id===eid); if (!inv) return toast('No encontrada','error'); inv.fecha = fe; inv.vencimiento = vn; inv.estado = est; inv.pagado = pg; inv.observaciones = obs; inv.contactoId = contacto?.id || null; if (!isDTE) { inv.conceptos = cs; inv.subtotal = sb; inv.iva = iv; inv.total = tot; inv.totalGravada = sb; inv.metodoPago = me; inv.formaPago = fo2; if (isV) { inv.cliente = nm; inv.rfc = ni; inv.tipoDTE = td; } else { inv.proveedor = nm; inv.rfc = ni; } } else { if (isV) inv.cliente = nm; else inv.proveedor = nm; } sincronizarPolizaFactura(tipo, inv); toast(`${inv.folio} actualizada`); } else { const inv = { id:uid(), folio:fo, fecha:fe, vencimiento:vn, conceptos:cs, subtotal:sb, iva:iv, total:tot, totalGravada:sb, pagado:pg, estado:est, observaciones:obs, usoCfdi:'DTE-SV', metodoPago:me, formaPago:fo2, uuid:'MANUAL-'+uid().toUpperCase(), numeroControl:'', moneda:state.config.moneda||'USD', origen:'MANUAL', contactoId:contacto?.id || null }; if (isV) { inv.cliente = nm; inv.rfc = ni; inv.tipoDTE = td; state.ventas.push(inv); state.counters.venta++; generarPolizaVenta(inv); } else { inv.proveedor = nm; inv.rfc = ni; state.compras.push(inv); state.counters.compra++; generarPolizaCompra(inv); } toast(`${fo} creada`); } save(); closeModal(); renderAll(); generateNotifications(); }
     function editInvoice(tipo, id) { openInvoiceModal(tipo, id); }
     function toggleEstado(tipo, id) { const arr = tipo === 'venta' ? state.ventas : state.compras; const inv = arr.find(x => x.id === id); if (!inv) return; const est = tipo === 'venta' ? ['emitida','pagada','cancelada'] : ['registrada','pagada','cancelada']; inv.estado = est[(est.indexOf(inv.estado)+1)%est.length]; sincronizarPolizaFactura(tipo, inv); save(); renderAll(); generateNotifications(); toast(`Estado: ${inv.estado}`); }
     function deleteInvoice(tipo, id) { if (!confirm('¿Eliminar factura y póliza?')) return; eliminarPolizaFactura(id); if (tipo === 'venta') state.ventas = state.ventas.filter(v => v.id !== id); else state.compras = state.compras.filter(c => c.id !== id); save(); renderAll(); generateNotifications(); toast('Eliminada'); }
@@ -1355,24 +1338,10 @@ const ERP = (() => {
     function deleteContact(id) { if (!confirm('¿Eliminar?')) return; state.contactos = state.contactos.filter(c => c.id !== id); save(); renderContactos(); }
     function renderContactos() { const rt = (list, id) => { const tb = $(id + ' tbody'); if (!list.length) { tb.innerHTML = '<tr><td colspan="8" class="text-center text-muted" style="padding:30px">Sin registros</td></tr>'; return; } tb.innerHTML = list.map(c => { const fs = state.ventas.filter(v => (v.contactoId === c.id) || (!v.contactoId && v.rfc && normalizeNit(v.rfc) === normalizeNit(c.nit))).concat(state.compras.filter(v => (v.contactoId === c.id) || (!v.contactoId && v.rfc && normalizeNit(v.rfc) === normalizeNit(c.nit)))); const tot = fs.reduce((s, f) => s + f.total, 0); const nitDisplay = c.nit ? `<code>${esc(c.nit)}</code>${c.nitAlternos ? `<br><small class="text-muted">${esc(c.nitAlternos)}</small>` : ''}` : '<span class="badge badge-gray">CF</span>'; return `<tr><td><strong>${esc(c.nombre)}</strong></td><td>${nitDisplay}</td><td>${esc(c.nrc||'—')}</td><td>${esc(c.email||'—')}</td><td>${esc(c.telefono||'—')}</td><td class="num">${fs.length}</td><td class="num">${money(tot)}</td><td class="actions-cell"><button class="btn btn-warning btn-sm" onclick="ERP.editContact('${c.id}')">✏️</button><button class="btn btn-danger btn-sm" onclick="ERP.deleteContact('${c.id}')">🗑️</button></td></tr>`; }).join(''); }; rt(state.contactos.filter(c => c.tipo === 'cliente'), '#tabla-clientes'); rt(state.contactos.filter(c => c.tipo === 'proveedor'), '#tabla-proveedores'); }
     function editContact(id) { const c = state.contactos.find(x => x.id === id); if (c) openContactModal(c); }
-    function exportContactosPDF(tipo) {
-        const list = state.contactos.filter(c => c.tipo === tipo);
-        const titulo = tipo === 'cliente' ? 'LISTADO DE CLIENTES' : 'LISTADO DE PROVEEDORES';
-        const empresa = state.config.razon || 'Mi Empresa';
-        const nitEmp = state.config.nit || '';
-        const fecha = new Date().toLocaleDateString('es-ES', { day:'2-digit', month:'long', year:'numeric' });
-        if (!list.length) { toast(`No hay ${tipo}s para exportar`, 'warn'); return; }
-        let rows = '', granTotal = 0, granFacturas = 0;
-        list.forEach((c, i) => { const facturas = (tipo === 'cliente' ? state.ventas : state.compras).filter(x => x.contactoId === c.id || (x.rfc && normalizeNit(x.rfc) === normalizeNit(c.nit))); const total = facturas.reduce((s, f) => s + f.total, 0); granTotal += total; granFacturas += facturas.length; const nitDisplay = c.nit ? c.nit : '<em style="color:#999">CF</em>'; rows += `<tr><td style="text-align:center">${i+1}</td><td>${esc(c.nombre)}</td><td style="font-family:monospace;font-size:10px">${nitDisplay}</td><td style="font-family:monospace;font-size:10px">${c.nrc || '—'}</td><td style="font-size:10px">${c.email || '—'}</td><td style="font-size:10px">${c.telefono || '—'}</td><td style="text-align:center">${facturas.length}</td><td style="text-align:right;font-weight:600">$${total.toFixed(2)}</td></tr>`; });
-        const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${titulo}</title><style>@page{margin:1.5cm}body{font-family:Arial,sans-serif;color:#111;font-size:11px}.header{display:flex;justify-content:space-between;padding-bottom:12px;border-bottom:3px solid #E66A1F;margin-bottom:16px}.header h1{color:#E66A1F;font-size:20px;margin:0 0 4px}.header .sub{color:#666;font-size:11px}.header .emp{text-align:right;font-size:10px;color:#666}.header .emp strong{color:#111;font-size:12px}.info-box{background:#FFF7EE;padding:10px 14px;border-left:4px solid #E66A1F;margin-bottom:16px;font-size:11px}table{width:100%;border-collapse:collapse;font-size:10px}thead th{background:#E66A1F;color:white;padding:8px 6px;text-align:left;font-weight:600;text-transform:uppercase;font-size:9px}tbody td{padding:6px;border-bottom:1px solid #eee}tbody tr:nth-child(even) td{background:#FFF7EE}tfoot td{padding:10px 6px;background:#FEECD9;font-weight:700;border-top:2px solid #E66A1F;font-size:11px}.footer{margin-top:30px;text-align:center;font-size:9px;color:#999;padding-top:12px;border-top:1px solid #eee}.btn-print{display:block;margin:20px auto;padding:12px 24px;background:#E66A1F;color:white;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer}@media print{.btn-print{display:none}body{font-size:10px}}</style></head><body><div class="header"><div><h1>${titulo}</h1><div class="sub">Generado el ${fecha}</div></div><div class="emp"><strong>${esc(empresa)}</strong><br>${nitEmp ? 'NIT: ' + esc(nitEmp) : ''}<br>Sistema ERP Integral ITCPO</div></div><div class="info-box"><strong>Total de ${tipo}s:</strong> ${list.length} &nbsp;|&nbsp; <strong>Total facturas:</strong> ${granFacturas} &nbsp;|&nbsp; <strong>Monto total:</strong> $${granTotal.toFixed(2)}</div><table><thead><tr><th style="width:30px">#</th><th>Nombre</th><th>NIT</th><th>NRC</th><th>Email</th><th>Teléfono</th><th style="text-align:center;width:60px">Facturas</th><th style="text-align:right;width:80px">Total</th></tr></thead><tbody>${rows}</tbody><tfoot><tr><td colspan="6" style="text-align:right">TOTALES:</td><td style="text-align:center">${granFacturas}</td><td style="text-align:right">$${granTotal.toFixed(2)}</td></tr></tfoot></table><div class="footer">Powered by ITCPO - Carlos Alfredo Castillo Flores © 2026<br>Sistema ERP Integral ITCPO v11.5</div><button class="btn-print" onclick="window.print()">🖨️ Imprimir / Guardar como PDF</button></body></html>`;
-        const w = window.open('', '_blank'); if (!w) { toast('Permita ventanas emergentes','warn'); return; }
-        w.document.write(html); w.document.close();
-        setTimeout(() => { try { w.print(); } catch (e) {} }, 500);
-        toast(`Listado de ${tipo}s generado`);
-    }
+    function exportContactosPDF(tipo) { const list = state.contactos.filter(c => c.tipo === tipo); const titulo = tipo === 'cliente' ? 'LISTADO DE CLIENTES' : 'LISTADO DE PROVEEDORES'; const empresa = state.config.razon || 'Mi Empresa'; const nitEmp = state.config.nit || ''; const fecha = new Date().toLocaleDateString('es-ES', { day:'2-digit', month:'long', year:'numeric' }); if (!list.length) { toast(`No hay ${tipo}s para exportar`, 'warn'); return; } let rows = '', granTotal = 0, granFacturas = 0; list.forEach((c, i) => { const facturas = (tipo === 'cliente' ? state.ventas : state.compras).filter(x => x.contactoId === c.id || (x.rfc && normalizeNit(x.rfc) === normalizeNit(c.nit))); const total = facturas.reduce((s, f) => s + f.total, 0); granTotal += total; granFacturas += facturas.length; const nitDisplay = c.nit ? c.nit : '<em style="color:#999">CF</em>'; rows += `<tr><td style="text-align:center">${i+1}</td><td>${esc(c.nombre)}</td><td style="font-family:monospace;font-size:10px">${nitDisplay}</td><td style="font-family:monospace;font-size:10px">${c.nrc || '—'}</td><td style="font-size:10px">${c.email || '—'}</td><td style="font-size:10px">${c.telefono || '—'}</td><td style="text-align:center">${facturas.length}</td><td style="text-align:right;font-weight:600">$${total.toFixed(2)}</td></tr>`; }); const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${titulo}</title><style>@page{margin:1.5cm}body{font-family:Arial,sans-serif;color:#111;font-size:11px}.header{display:flex;justify-content:space-between;padding-bottom:12px;border-bottom:3px solid #E66A1F;margin-bottom:16px}.header h1{color:#E66A1F;font-size:20px;margin:0 0 4px}.header .sub{color:#666;font-size:11px}.header .emp{text-align:right;font-size:10px;color:#666}.header .emp strong{color:#111;font-size:12px}.info-box{background:#FFF7EE;padding:10px 14px;border-left:4px solid #E66A1F;margin-bottom:16px;font-size:11px}table{width:100%;border-collapse:collapse;font-size:10px}thead th{background:#E66A1F;color:white;padding:8px 6px;text-align:left;font-weight:600;text-transform:uppercase;font-size:9px}tbody td{padding:6px;border-bottom:1px solid #eee}tbody tr:nth-child(even) td{background:#FFF7EE}tfoot td{padding:10px 6px;background:#FEECD9;font-weight:700;border-top:2px solid #E66A1F;font-size:11px}.footer{margin-top:30px;text-align:center;font-size:9px;color:#999;padding-top:12px;border-top:1px solid #eee}.btn-print{display:block;margin:20px auto;padding:12px 24px;background:#E66A1F;color:white;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer}@media print{.btn-print{display:none}body{font-size:10px}}</style></head><body><div class="header"><div><h1>${titulo}</h1><div class="sub">Generado el ${fecha}</div></div><div class="emp"><strong>${esc(empresa)}</strong><br>${nitEmp ? 'NIT: ' + esc(nitEmp) : ''}<br>Sistema ERP Integral ITCPO</div></div><div class="info-box"><strong>Total de ${tipo}s:</strong> ${list.length} &nbsp;|&nbsp; <strong>Total facturas:</strong> ${granFacturas} &nbsp;|&nbsp; <strong>Monto total:</strong> $${granTotal.toFixed(2)}</div><table><thead><tr><th style="width:30px">#</th><th>Nombre</th><th>NIT</th><th>NRC</th><th>Email</th><th>Teléfono</th><th style="text-align:center;width:60px">Facturas</th><th style="text-align:right;width:80px">Total</th></tr></thead><tbody>${rows}</tbody><tfoot><tr><td colspan="6" style="text-align:right">TOTALES:</td><td style="text-align:center">${granFacturas}</td><td style="text-align:right">$${granTotal.toFixed(2)}</td></tr></tfoot></table><div class="footer">Powered by ITCPO - Carlos Alfredo Castillo Flores © 2026<br>Sistema ERP Integral ITCPO v12.0</div><button class="btn-print" onclick="window.print()">🖨️ Imprimir / Guardar como PDF</button></body></html>`; const w = window.open('', '_blank'); if (!w) { toast('Permita ventanas emergentes','warn'); return; } w.document.write(html); w.document.close(); setTimeout(() => { try { w.print(); } catch (e) {} }, 500); toast(`Listado de ${tipo}s generado`); }
 
     function openNotaCreditoModal() { if (!state.ventas.length) return toast('Sin facturas','error'); openModal(`<div class="modal-header"><h3>Nueva NC</h3><button class="modal-close" onclick="ERP.closeModal()">×</button></div><div class="modal-body"><div class="form-row"><div class="form-group"><label>Factura</label><select class="form-control" id="nc-factura">${state.ventas.filter(v=>v.estado!=='cancelada').map(v=>`<option value="${v.id}">${v.folio}-${v.cliente}(${money(v.total)})</option>`).join('')}</select></div><div class="form-group"><label>Fecha</label><input type="date" class="form-control" id="nc-fecha" value="${today()}"/></div></div><div class="form-group"><label>Motivo</label><select class="form-control" id="nc-motivo"><option>Devolución</option><option>Descuento</option><option>Error</option><option>Otro</option></select></div><div class="form-group"><label>Monto</label><input type="number" class="form-control" id="nc-monto" value="0" min="0" step="0.01"/></div></div><div class="modal-footer"><button class="btn btn-secondary" onclick="ERP.closeModal()">Cancelar</button><button class="btn btn-primary" onclick="ERP.saveNotaCredito()">💾</button></div>`); }
-    function saveNotaCredito() { const fid = $('#nc-factura').value; const mo = parseFloat($('#nc-monto').value)||0; if (!fid || mo <= 0) return toast('Inválido','error'); const f = state.ventas.find(v => v.id === fid); const nc = { id:uid(), folio:'NC-'+String(state.counters.nota++).padStart(5,'0'), fecha:$('#nc-fecha').value, facturaId:fid, facturaFolio:f.folio, cliente:f.cliente, motivo:$('#nc-motivo').value, monto:mo }; state.notasCredito.push(nc); generarPolizaNC(nc, f); save(); closeModal(); renderAll(); toast(`NC ${nc.folio}`); }
+    function saveNotaCredito() { const fid = $('#nc-factura').value; const mo = parseFloat($('#nc-monto').value)||0; if (!fid || mo <= 0) return toast('Inválido','error'); const f = state.ventas.find(v => v.id === fid); const prev = state.notasCredito.filter(n => n.facturaId === fid).reduce((a,n)=>a+n.monto,0); if (mo + prev > f.total + 0.005) return toast(`Excede el total de la factura (disponible ${money(f.total-prev)})`,'error'); const nc = { id:uid(), folio:'NC-'+String(state.counters.nota++).padStart(5,'0'), fecha:$('#nc-fecha').value, facturaId:fid, facturaFolio:f.folio, cliente:f.cliente, motivo:$('#nc-motivo').value, monto:mo }; state.notasCredito.push(nc); generarPolizaNC(nc, f); save(); closeModal(); renderAll(); toast(`NC ${nc.folio}`); }
     function renderNotasCredito() { const tb = $('#tabla-notas tbody'); if (!state.notasCredito.length) { tb.innerHTML = '<tr><td colspan="8" class="text-center text-muted" style="padding:30px">Sin notas</td></tr>'; return; } tb.innerHTML = state.notasCredito.map(n => { const pz = state.polizas.find(p => p.ncId === n.id); const pb = pz ? `<span class="badge badge-info">#${pz.numero}</span>` : '—'; return `<tr><td><strong>${esc(n.folio)}</strong></td><td>${fmtDate(n.fecha)}</td><td>${esc(n.facturaFolio)}</td><td>${esc(n.cliente)}</td><td><span class="badge badge-warning">${esc(n.motivo)}</span></td><td class="num" style="color:var(--danger)"><strong>${money(n.monto)}</strong></td><td>${pb}</td><td><button class="btn btn-danger btn-sm" onclick="ERP.deleteNotaCredito('${n.id}')">🗑️</button></td></tr>`; }).join(''); }
     function deleteNotaCredito(id) { if (!confirm('¿Eliminar?')) return; state.polizas = state.polizas.filter(p => p.ncId !== id); state.notasCredito = state.notasCredito.filter(n => n.id !== id); save(); renderAll(); }
 
@@ -1380,35 +1349,7 @@ const ERP = (() => {
     function onInventarioSearchInput() { clearTimeout(inventarioSearchTimeout); inventarioSearchTimeout = setTimeout(renderInventario, 200); }
     function clearInventarioSearch() { const el = $('#search-productos'); if (el) el.value = ''; const catEl = $('#filter-categoria-productos'); if (catEl) catEl.value = ''; const estEl = $('#filter-estado-productos'); if (estEl) estEl.value = ''; renderInventario(); toast('Filtros limpiados','info'); }
     function populateInventarioFilters() { const catSelect = $('#filter-categoria-productos'); if (!catSelect) return; const prevVal = catSelect.value; const cats = [...new Set(state.productos.map(p => String(p.categoria || 'General')).filter(Boolean))].sort(); catSelect.innerHTML = '<option value="">Todas las categorías</option>' + cats.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join(''); if (prevVal && cats.includes(prevVal)) catSelect.value = prevVal; }
-    function renderInventario() {
-        try {
-            populateInventarioFilters();
-            const searchInput = $('#search-productos'), catInput = $('#filter-categoria-productos'), estInput = $('#filter-estado-productos');
-            const sr = searchInput ? String(searchInput.value || '').toLowerCase().trim() : '';
-            const catFilter = catInput ? String(catInput.value || '') : '';
-            const estFilter = estInput ? String(estInput.value || '') : '';
-            $('#inv-total').textContent = state.productos.length;
-            $('#inv-valor').textContent = money(state.productos.reduce((s,p) => s + (Number(p.costo)||0) * (Number(p.stock)||0), 0));
-            $('#inv-ok').textContent = state.productos.filter(p => (Number(p.stock)||0) > (Number(p.minimo)||0)).length;
-            $('#inv-low').textContent = state.productos.filter(p => (Number(p.stock)||0) <= (Number(p.minimo)||0)).length;
-            const filtrados = state.productos.filter(p => {
-                if (sr) { const sku = String(p.sku || '').toLowerCase(); const nombre = String(p.nombre || '').toLowerCase(); const categoria = String(p.categoria || '').toLowerCase(); if (!sku.includes(sr) && !nombre.includes(sr) && !categoria.includes(sr)) return false; }
-                if (catFilter && String(p.categoria || 'General') !== catFilter) return false;
-                if (estFilter) { const stock = Number(p.stock) || 0, minimo = Number(p.minimo) || 0; if (estFilter === 'ok' && stock <= minimo) return false; if (estFilter === 'bajo' && (stock > minimo || stock === 0)) return false; if (estFilter === 'agotado' && stock !== 0) return false; }
-                return true;
-            });
-            const resumen = $('#inventario-resumen');
-            if (resumen) { if (sr || catFilter || estFilter) { resumen.innerHTML = `🔍 Mostrando <strong>${filtrados.length}</strong> de <strong>${state.productos.length}</strong> productos`; } else { resumen.innerHTML = `Mostrando <strong>${state.productos.length}</strong> productos en total`; } }
-            const tb = $('#tabla-productos tbody');
-            if (!tb) return;
-            if (!filtrados.length) { if (!state.productos.length) { tb.innerHTML = '<tr><td colspan="9" class="text-center text-muted" style="padding:30px">Sin productos. Importe DTE o cree manualmente.</td></tr>'; } else { tb.innerHTML = '<tr><td colspan="9" class="text-center text-muted" style="padding:30px">🔍 No se encontraron productos con los filtros aplicados.<br><button class="btn btn-secondary btn-sm" style="margin-top:10px" onclick="ERP.clearInventarioSearch()">Limpiar filtros</button></td></tr>'; } return; }
-            tb.innerHTML = filtrados.map(p => {
-                const stock = Number(p.stock) || 0, minimo = Number(p.minimo) || 0;
-                let badge; if (stock === 0) badge = '<span class="badge badge-danger">❌ Agotado</span>'; else if (stock <= minimo) badge = '<span class="badge badge-warning">⚠️ Bajo</span>'; else badge = '<span class="badge badge-success">✅ OK</span>';
-                return `<tr><td><code>${esc(p.sku || '—')}</code></td><td><strong>${esc(p.nombre || '—')}</strong></td><td><span class="badge badge-orange">${esc(p.categoria || 'General')}</span></td><td class="num">${money(p.precio)}</td><td class="num">${money(p.costo)}</td><td class="num"><strong>${stock}</strong></td><td class="num">${minimo}</td><td>${badge}</td><td class="actions-cell"><button class="btn btn-warning btn-sm" onclick="ERP.editProduct('${p.id}')">✏️</button><button class="btn btn-danger btn-sm" onclick="ERP.deleteProduct('${p.id}')">🗑️</button></td></tr>`;
-            }).join('');
-        } catch (err) { console.error('Error en renderInventario:', err); const tb = $('#tabla-productos tbody'); if (tb) tb.innerHTML = '<tr><td colspan="9" class="text-center text-muted" style="padding:30px;color:var(--danger)">Error al cargar productos. Ver consola.</td></tr>'; }
-    }
+    function renderInventario() { try { populateInventarioFilters(); const searchInput = $('#search-productos'), catInput = $('#filter-categoria-productos'), estInput = $('#filter-estado-productos'); const sr = searchInput ? String(searchInput.value || '').toLowerCase().trim() : ''; const catFilter = catInput ? String(catInput.value || '') : ''; const estFilter = estInput ? String(estInput.value || '') : ''; $('#inv-total').textContent = state.productos.length; $('#inv-valor').textContent = money(state.productos.reduce((s,p) => s + (Number(p.costo)||0) * (Number(p.stock)||0), 0)); $('#inv-ok').textContent = state.productos.filter(p => (Number(p.stock)||0) > (Number(p.minimo)||0)).length; $('#inv-low').textContent = state.productos.filter(p => (Number(p.stock)||0) <= (Number(p.minimo)||0)).length; const filtrados = state.productos.filter(p => { if (sr) { const sku = String(p.sku || '').toLowerCase(); const nombre = String(p.nombre || '').toLowerCase(); const categoria = String(p.categoria || '').toLowerCase(); if (!sku.includes(sr) && !nombre.includes(sr) && !categoria.includes(sr)) return false; } if (catFilter && String(p.categoria || 'General') !== catFilter) return false; if (estFilter) { const stock = Number(p.stock) || 0, minimo = Number(p.minimo) || 0; if (estFilter === 'ok' && stock <= minimo) return false; if (estFilter === 'bajo' && (stock > minimo || stock === 0)) return false; if (estFilter === 'agotado' && stock !== 0) return false; } return true; }); const resumen = $('#inventario-resumen'); if (resumen) { if (sr || catFilter || estFilter) { resumen.innerHTML = `🔍 Mostrando <strong>${filtrados.length}</strong> de <strong>${state.productos.length}</strong> productos`; } else { resumen.innerHTML = `Mostrando <strong>${state.productos.length}</strong> productos en total`; } } const tb = $('#tabla-productos tbody'); if (!tb) return; if (!filtrados.length) { if (!state.productos.length) { tb.innerHTML = '<tr><td colspan="9" class="text-center text-muted" style="padding:30px">Sin productos físicos. Importe DTE o cree manualmente.</td></tr>'; } else { tb.innerHTML = '<tr><td colspan="9" class="text-center text-muted" style="padding:30px">🔍 No se encontraron productos con los filtros aplicados.<br><button class="btn btn-secondary btn-sm" style="margin-top:10px" onclick="ERP.clearInventarioSearch()">Limpiar filtros</button></td></tr>'; } return; } tb.innerHTML = filtrados.map(p => { const stock = Number(p.stock) || 0, minimo = Number(p.minimo) || 0; let badge; if (stock === 0) badge = '<span class="badge badge-danger">❌ Agotado</span>'; else if (stock <= minimo) badge = '<span class="badge badge-warning">⚠️ Bajo</span>'; else badge = '<span class="badge badge-success">✅ OK</span>'; return `<tr><td><code>${esc(p.sku || '—')}</code></td><td><strong>${esc(p.nombre || '—')}</strong></td><td><span class="badge badge-orange">${esc(p.categoria || 'General')}</span></td><td class="num">${money(p.precio)}</td><td class="num">${money(p.costo)}</td><td class="num"><strong>${stock}</strong></td><td class="num">${minimo}</td><td>${badge}</td><td class="actions-cell"><button class="btn btn-warning btn-sm" onclick="ERP.editProduct('${p.id}')">✏️</button><button class="btn btn-danger btn-sm" onclick="ERP.deleteProduct('${p.id}')">🗑️</button></td></tr>`; }).join(''); } catch (err) { console.error('Error en renderInventario:', err); const tb = $('#tabla-productos tbody'); if (tb) tb.innerHTML = '<tr><td colspan="9" class="text-center text-muted" style="padding:30px;color:var(--danger)">Error al cargar productos.</td></tr>'; } }
 
     function openProductModal(p=null) { openModal(`<div class="modal-header"><h3>${p?'✏️':'➕'} Producto</h3><button class="modal-close" onclick="ERP.closeModal()">×</button></div><div class="modal-body"><div class="form-row"><div class="form-group"><label>SKU</label><input type="text" class="form-control" id="prod-sku" value="${esc(p?.sku||'')}"/></div><div class="form-group"><label>Cat.</label><input type="text" class="form-control" id="prod-cat" value="${esc(p?.categoria||'')}"/></div></div><div class="form-group"><label>Nombre</label><input type="text" class="form-control" id="prod-nombre" value="${esc(p?.nombre||'')}"/></div><div class="form-row"><div class="form-group"><label>Precio</label><input type="number" class="form-control" id="prod-precio" value="${p?.precio||0}" step="0.01"/></div><div class="form-group"><label>Costo</label><input type="number" class="form-control" id="prod-costo" value="${p?.costo||0}" step="0.01"/></div><div class="form-group"><label>Stock</label><input type="number" class="form-control" id="prod-stock" value="${p?.stock||0}"/></div><div class="form-group"><label>Mín</label><input type="number" class="form-control" id="prod-min" value="${p?.minimo||5}"/></div></div></div><div class="modal-footer"><button class="btn btn-secondary" onclick="ERP.closeModal()">Cancelar</button><button class="btn btn-primary" onclick="ERP.saveProduct('${p?.id||''}')">💾</button></div>`); }
     function saveProduct(id) { const nm = $('#prod-nombre').value.trim(); if (!nm) return toast('Nombre','error'); const d = { sku:$('#prod-sku').value.trim()||'SKU-'+uid().slice(0,5), nombre:nm, categoria:$('#prod-cat').value.trim()||'General', precio:parseFloat($('#prod-precio').value)||0, costo:parseFloat($('#prod-costo').value)||0, stock:parseInt($('#prod-stock').value)||0, minimo:parseInt($('#prod-min').value)||5 }; if (id) Object.assign(state.productos.find(x => x.id === id), d); else state.productos.push({ id:uid(), ...d }); save(); closeModal(); renderAll(); generateNotifications(); toast('Guardado'); }
@@ -1424,7 +1365,7 @@ const ERP = (() => {
     function saveConsulting(eid) { const cl = $('#con-cliente').value.trim(), sv = $('#con-servicio').value.trim(); if (!cl) return toast('Cliente','error'); if (!sv) return toast('Servicio','error'); const d = { cliente:cl, servicio:sv, fechaInicio:$('#con-inicio').value, fechaFin:$('#con-fin').value, monto:parseFloat($('#con-monto').value)||0, cobrado:parseFloat($('#con-cobrado').value)||0, estado:$('#con-estado').value, descripcion:$('#con-desc').value.trim() }; if (eid) { const ex = state.consultoria.find(x => x.id === eid); if (ex) Object.assign(ex, d); toast('Actualizado'); } else { state.consultoria.push({ id:uid(), clave:'CON-'+String(state.counters.consultoria++).padStart(4,'0'), ...d }); toast('Creado'); } save(); closeModal(); renderConsultoria(); }
     function editConsulting(id) { openConsultingModal(id); }
     function deleteConsulting(id) { if (!confirm('¿Eliminar?')) return; state.consultoria = state.consultoria.filter(c => c.id !== id); save(); renderConsultoria(); }
-    function renderConsultoria() { $('#con-activos').textContent = state.consultoria.filter(c => c.estado === 'activo').length; $('#con-completados').textContent = state.consultoria.filter(c => c.estado === 'completado').length; $('#con-ingresos').textContent = money(state.consultoria.reduce((s,c)=>s+(c.cobrado||0),0)); $('#con-porcobrar').textContent = money(state.consultoria.reduce((s,c)=>s+((c.monto||0)-(c.cobrado||0)),0)); const tb = $('#tabla-consultoria tbody'); if (!state.consultoria.length) { tb.innerHTML = '<tr><td colspan="9" class="text-center text-muted" style="padding:30px">Sin servicios</td></tr>'; return; } tb.innerHTML = state.consultoria.map(c => { const b = c.estado==='activo'?'success':c.estado==='completado'?'info':c.estado==='pausado'?'warning':'danger'; const ic = c.estado==='activo'?'🟢':c.estado==='completado'?'✅':c.estado==='pausado'?'⏸️':'❌'; return `<tr><td><strong>${esc(c.clave)}</strong></td><td>${esc(c.cliente)}</td><td>${esc(c.servicio)}</td><td>${fmtDate(c.fechaInicio)}</td><td>${fmtDate(c.fechaFin)||'—'}</td><td class="num">${money(c.monto)}</td><td class="num">${money(c.cobrado)}</td><td><span class="badge badge-${b}">${ic} ${c.estado}</span></td><td class="actions-cell"><button class="btn btn-warning btn-sm" onclick="ERP.editConsulting('${c.id}')">✏️</button><button class="btn btn-danger btn-sm" onclick="ERP.deleteConsulting('${c.id}')">🗑️</button></td></tr>`; }).join(''); }
+    function renderConsultoria() { $('#con-activos').textContent = state.consultoria.filter(c => c.estado === 'activo').length; $('#con-completados').textContent = state.consultoria.filter(c => c.estado === 'completado').length; $('#con-ingresos').textContent = money(state.consultoria.reduce((s,c)=>s+(c.cobrado||0),0)); $('#con-porcobrar').textContent = money(state.consultoria.reduce((s,c)=>s+((c.monto||0)-(c.cobrado||0)),0)); const tb = $('#tabla-consultoria tbody'); if (!state.consultoria.length) { tb.innerHTML = '<tr><td colspan="9" class="text-center text-muted" style="padding:30px">Sin servicios. Importe DTE o cree manualmente.</td></tr>'; return; } tb.innerHTML = state.consultoria.map(c => { const b = c.estado==='activo'?'success':c.estado==='completado'?'info':c.estado==='pausado'?'warning':'danger'; const ic = c.estado==='activo'?'🟢':c.estado==='completado'?'✅':c.estado==='pausado'?'⏸️':'❌'; return `<tr><td><strong>${esc(c.clave)}</strong></td><td>${esc(c.cliente)}</td><td>${esc(c.servicio)}</td><td>${fmtDate(c.fechaInicio)}</td><td>${fmtDate(c.fechaFin)||'—'}</td><td class="num">${money(c.monto)}</td><td class="num">${money(c.cobrado)}</td><td><span class="badge badge-${b}">${ic} ${c.estado}</span></td><td class="actions-cell"><button class="btn btn-warning btn-sm" onclick="ERP.editConsulting('${c.id}')">✏️</button><button class="btn btn-danger btn-sm" onclick="ERP.deleteConsulting('${c.id}')">🗑️</button></td></tr>`; }).join(''); }
 
     function openJournalModal(eid=null) { const ed = eid ? state.polizas.find(p => p.id === eid) : null; const ls = ed?.lineas || []; const f = ed?.fecha || today(); const co = ed?.concepto || ''; const ti = ed?.tipo || 'diario'; const re = ed?.referencia || ''; const au = ed?.auto === true; openModal(`<div class="modal-header"><h3>${ed?'✏️':'➕'} Póliza</h3><button class="modal-close" onclick="ERP.closeModal()">×</button></div><div class="modal-body">${au?'<div class="alert-contable warn"><span class="icon">⚠️</span><div>Automática: perderá sincronización.</div></div>':''}<div class="form-row"><div class="form-group"><label>Fecha</label><input type="date" class="form-control" id="pol-fecha" value="${f}"/></div><div class="form-group"><label>Tipo</label><select class="form-control" id="pol-tipo"><option value="ingreso" ${ti==='ingreso'?'selected':''}>Ingreso</option><option value="egreso" ${ti==='egreso'?'selected':''}>Egreso</option><option value="diario" ${ti==='diario'?'selected':''}>Diario</option><option value="cobro" ${ti==='cobro'?'selected':''}>Cobro</option><option value="pago" ${ti==='pago'?'selected':''}>Pago</option></select></div><div class="form-group"><label>Ref.</label><input type="text" class="form-control" id="pol-referencia" value="${esc(re)}"/></div></div><div class="form-group"><label>Concepto</label><input type="text" class="form-control" id="pol-concepto" value="${esc(co)}"/></div><label style="font-size:12px;font-weight:600;text-transform:uppercase">Líneas</label><div id="pol-lineas" style="margin-top:8px"></div><button class="btn btn-secondary btn-sm" onclick="ERP.addAsientoLine()" style="margin-top:8px">➕ Línea</button><div class="asiento-totals"><div></div><div style="text-align:right;font-weight:700">TOTALES:</div><div class="num" id="pol-total-cargos">$0.00</div><div class="num" id="pol-total-abonos">$0.00</div><div></div></div><div id="pol-balance-msg" style="margin-top:8px"></div></div><div class="modal-footer"><button class="btn btn-secondary" onclick="ERP.closeModal()">Cancelar</button><button class="btn btn-primary" onclick="ERP.savePoliza('${esc(eid||'')}')">💾</button></div>`,'modal-lg'); if (ls.length) ls.forEach(l => addAsientoLine(l)); else { addAsientoLine(); addAsientoLine(); } calcAsiento(); }
     function addAsientoLine(d=null) { const c = $('#pol-lineas'); const r = document.createElement('div'); r.className = 'asiento-line'; const opts = getMovementAccounts().map(x => `<option value="${esc(x.codigo)}" ${d?.codigo===x.codigo?'selected':''}>${esc(x.codigo)}-${esc(x.nombre)}</option>`).join(''); r.innerHTML = `<div><select class="form-control asiento-cuenta" style="font-size:12px" onchange="ERP.calcAsiento()"><option value="">Cuenta...</option>${opts}</select></div><div><input type="text" class="form-control asiento-concepto" placeholder="Concepto" value="${esc(d?.concepto||'')}" style="font-size:12px"/></div><div><input type="number" class="form-control asiento-cargo" placeholder="Cargo" value="${d?.cargo||''}" min="0" step="0.01" oninput="ERP.calcAsiento()" style="font-size:12px"/></div><div><input type="number" class="form-control asiento-abono" placeholder="Abono" value="${d?.abono||''}" min="0" step="0.01" oninput="ERP.calcAsiento()" style="font-size:12px"/></div><div><button class="btn btn-danger btn-icon" onclick="this.closest('.asiento-line').remove();ERP.calcAsiento()">✕</button></div>`; c.appendChild(r); }
@@ -1440,11 +1381,11 @@ const ERP = (() => {
     function saveAccount(ec) { const co = $('#acc-codigo').value.trim(), no = $('#acc-nombre').value.trim(); if (!co) return toast('Indica código','error'); if (!no) return toast('Indica nombre','error'); const d = { codigo:co, nombre:no, clase:$('#acc-clase').value, tipo:$('#acc-tipo').value, naturaleza:$('#acc-naturaleza').value, nivel:parseInt($('#acc-nivel').value), padre:$('#acc-padre').value||null }; if (ec) { const i = state.catalogo.findIndex(c => c.codigo === ec); if (i >= 0) state.catalogo[i] = { ...state.catalogo[i], ...d }; toast('Actualizada'); } else { if (state.catalogo.some(c => c.codigo === co)) return toast('Código existe','error'); state.catalogo.push(d); toast('Creada'); } save(); closeModal(); renderCatalogo(); }
     function deleteAccount(co) { const a = getAccount(co); if (!a) return; let m = `¿Eliminar "${a.nombre}" (${co})?`; const h = state.catalogo.filter(c => c.padre === co); if (h.length) m += `\n${h.length} hijas también.`; if (state.polizas.some(p => (p.lineas||[]).some(l => l.codigo === co))) m += '\n⚠️ Usada en pólizas.'; if (!confirm(m)) return; const td = new Set([co]); let ch = true; while (ch) { ch = false; state.catalogo.forEach(c => { if (c.padre && td.has(c.padre) && !td.has(c.codigo)) { td.add(c.codigo); ch = true; } }); } state.catalogo = state.catalogo.filter(c => !td.has(c.codigo)); save(); renderCatalogo(); toast('Eliminada'); }
     function exportCatalogoCSV() { const r = [['codigo','nombre','clase','tipo','naturaleza','nivel','padre']]; state.catalogo.sort((a,b)=>a.codigo.localeCompare(b.codigo)).forEach(c => r.push([c.codigo,c.nombre,c.clase,c.tipo,c.naturaleza,c.nivel,c.padre||''])); downloadFile(`Catalogo_${today()}.csv`, r.map(x=>x.map(c=>`"${String(c??'').replace(/"/g,'""')}"`).join(',')).join('\n'),'text/csv'); toast('Exportado'); }
-    function importCatalogoCSV() { const inp = document.createElement('input'); inp.type = 'file'; inp.accept = '.csv'; inp.onchange = async e => { const f = e.target.files[0]; if (!f) return; const t = await f.text(); const ls = t.split(/\r?\n/).filter(l => l.trim()); if (ls.length < 2) return toast('CSV vacío','error'); const hs = ls[0].split(',').map(h => h.trim().toLowerCase().replace(/"/g,'')); const req = ['codigo','nombre','clase','tipo','naturaleza']; const mis = req.filter(r => !hs.includes(r)); if (mis.length) return toast(`Faltan: ${mis.join(',')}`,'error'); const rep = confirm('¿Reemplazar catálogo?'); if (rep) state.catalogo = []; let cnt = 0; for (let i = 1; i < ls.length; i++) { const vs = ls[i].split(',').map(v => v.trim().replace(/^"|"$/g,'')); const row = {}; hs.forEach((h, idx) => row[h] = vs[idx]); if (!row.codigo || !row.nombre) continue; if (state.catalogo.some(c => c.codigo === row.codigo)) continue; state.catalogo.push({ codigo:row.codigo, nombre:row.nombre, clase:row.clase||'Activo', tipo:row.tipo||'movimiento', naturaleza:row.naturaleza||'deudora', nivel:parseInt(row.nivel)||3, padre:row.padre||null }); cnt++; } save(); renderCatalogo(); toast(`${cnt} cuentas`); }; inp.click(); }
+    function importCatalogoCSV() { const inp = document.createElement('input'); inp.type = 'file'; inp.accept = '.csv'; inp.onchange = async e => { const f = e.target.files[0]; if (!f) return; const t = await f.text(); const ls = t.split(/\r?\n/).filter(l => l.trim()); if (ls.length < 2) return toast('CSV vacío','error'); const hs = ls[0].split(',').map(h => h.trim().toLowerCase().replace(/"/g,'')); const req = ['codigo','nombre','clase','tipo','naturaleza']; const mis = req.filter(r => !hs.includes(r)); if (mis.length) return toast(`Faltan: ${mis.join(',')}`,'error'); const rep = confirm('¿Reemplazar catálogo?'); if (rep) state.catalogo = []; let cnt = 0; for (let i = 1; i < ls.length; i++) { const vs = parseCSVLine(ls[i]); const row = {}; hs.forEach((h, idx) => row[h] = vs[idx]); if (!row.codigo || !row.nombre) continue; if (state.catalogo.some(c => c.codigo === row.codigo)) continue; state.catalogo.push({ codigo:row.codigo, nombre:row.nombre, clase:row.clase||'Activo', tipo:row.tipo||'movimiento', naturaleza:row.naturaleza||'deudora', nivel:parseInt(row.nivel)||3, padre:row.padre||null }); cnt++; } save(); renderCatalogo(); toast(`${cnt} cuentas`); }; inp.click(); }
     function resetCatalogo() { if (!confirm('¿Restaurar plan por defecto?')) return; state.catalogo = JSON.parse(JSON.stringify(DEFAULT_CATALOGO)); save(); renderCatalogo(); toast('Restaurado'); }
 
     function refreshDashboard() { renderDashboard(); toast('Actualizado','info'); }
-    function renderDashboard() { const tV = state.ventas.filter(v => v.estado !== 'cancelada').reduce((s,v)=>s+v.total,0); const tC = state.compras.filter(c => c.estado !== 'cancelada').reduce((s,c)=>s+c.total,0); const iva = state.ventas.filter(v=>v.estado==='emitida').reduce((s,v)=>s+v.iva,0) - state.compras.filter(c=>c.estado==='registrada').reduce((s,c)=>s+c.iva,0); const inv = state.productos.reduce((s,p)=>s+p.costo*p.stock,0); const con = state.consultoria.reduce((s,c)=>s+(c.cobrado||0),0); const cxc = state.ventas.filter(v=>v.estado==='emitida').reduce((s,v)=>s+(v.total-(v.pagado||0)),0); $('#kpi-grid').innerHTML = `<div class="kpi-card orange" onclick="ERP.switchView('facturacion')"><div class="icon-bg">💰</div><div class="label">Ventas</div><div class="value">${money(tV)}</div><div class="trend">${state.ventas.length} fact.</div></div><div class="kpi-card blue" onclick="ERP.switchView('compras')"><div class="icon-bg">🛒</div><div class="label">Compras</div><div class="value">${money(tC)}</div><div class="trend">${state.compras.length} fact.</div></div><div class="kpi-card green" onclick="ERP.switchView('reportes')"><div class="icon-bg">📗</div><div class="label">IVA pagar</div><div class="value">${money(iva)}</div><div class="trend">13% SV</div></div><div class="kpi-card orange" onclick="ERP.switchView('inventario')"><div class="icon-bg">📦</div><div class="label">Inventario</div><div class="value">${money(inv)}</div><div class="trend">${state.productos.length} prod.</div></div><div class="kpi-card blue" onclick="ERP.switchView('consultoria')"><div class="icon-bg">💼</div><div class="label">Consultoría</div><div class="value">${money(con)}</div><div class="trend">${state.consultoria.length} proy.</div></div><div class="kpi-card green" onclick="ERP.switchView('cxc')"><div class="icon-bg">💵</div><div class="label">Por cobrar</div><div class="value">${money(cxc)}</div><div class="trend">CxC</div></div>`; renderChartVentasCompras(); renderChartTopProductos(); renderChartIVA(); renderChartConsultoria(); renderRecentMovements(); setTimeout(resizeVisibleCharts, 60); }
+    function renderDashboard() { const tV = state.ventas.filter(v => v.estado !== 'cancelada').reduce((s,v)=>s+v.total,0); const tC = state.compras.filter(c => c.estado !== 'cancelada').reduce((s,c)=>s+c.total,0); const iva = state.ventas.filter(v=>v.estado!=='cancelada').reduce((s,v)=>s+v.iva,0) - state.compras.filter(c=>c.estado!=='cancelada').reduce((s,c)=>s+c.iva,0); const inv = state.productos.reduce((s,p)=>s+p.costo*p.stock,0); const con = state.consultoria.reduce((s,c)=>s+(c.cobrado||0),0); const cxc = state.ventas.filter(v=>v.estado==='emitida').reduce((s,v)=>s+(v.total-(v.pagado||0)),0); $('#kpi-grid').innerHTML = `<div class="kpi-card orange" onclick="ERP.switchView('facturacion')"><div class="icon-bg">💰</div><div class="label">Ventas</div><div class="value">${money(tV)}</div><div class="trend">${state.ventas.length} fact.</div></div><div class="kpi-card blue" onclick="ERP.switchView('compras')"><div class="icon-bg">🛒</div><div class="label">Compras</div><div class="value">${money(tC)}</div><div class="trend">${state.compras.length} fact.</div></div><div class="kpi-card green" onclick="ERP.switchView('reportes')"><div class="icon-bg">📗</div><div class="label">IVA pagar</div><div class="value">${money(iva)}</div><div class="trend">13% SV</div></div><div class="kpi-card orange" onclick="ERP.switchView('inventario')"><div class="icon-bg">📦</div><div class="label">Inventario</div><div class="value">${money(inv)}</div><div class="trend">${state.productos.length} prod.</div></div><div class="kpi-card blue" onclick="ERP.switchView('consultoria')"><div class="icon-bg">💼</div><div class="label">Consultoría</div><div class="value">${money(con)}</div><div class="trend">${state.consultoria.length} proy.</div></div><div class="kpi-card green" onclick="ERP.switchView('cxc')"><div class="icon-bg">💵</div><div class="label">Por cobrar</div><div class="value">${money(cxc)}</div><div class="trend">CxC</div></div>`; renderChartVentasCompras(); renderChartTopProductos(); renderChartIVA(); renderChartConsultoria(); renderRecentMovements(); setTimeout(resizeVisibleCharts, 60); }
     function getMonthlyData() { const now = new Date(); const data = []; for (let i = 5; i >= 0; i--) { const d = new Date(now.getFullYear(), now.getMonth()-i, 1); const y = d.getFullYear(), m = d.getMonth(); const v = state.ventas.filter(x => { const xd = new Date(x.fecha); return xd.getFullYear() === y && xd.getMonth() === m && x.estado !== 'cancelada'; }).reduce((s,x)=>s+x.total,0); const c = state.compras.filter(x => { const xd = new Date(x.fecha); return xd.getFullYear() === y && xd.getMonth() === m && x.estado !== 'cancelada'; }).reduce((s,x)=>s+x.total,0); data.push({ label: MESES[m].slice(0,3)+' '+y, ventas:v, compras:c, y, m }); } return data; }
     function renderChartVentasCompras() { if (typeof Chart === 'undefined') return; const d = getMonthlyData(); if (charts.vc) { try { charts.vc.destroy(); } catch (e) {} } charts.vc = new Chart($('#chart-ventas-compras'), { type:'bar', data:{ labels:d.map(x=>x.label), datasets:[{ label:'Ventas', data:d.map(x=>x.ventas), backgroundColor:'#E66A1F' },{ label:'Compras', data:d.map(x=>x.compras), backgroundColor:'#2563EB' }] }, options:{ responsive:true, maintainAspectRatio:false } }); }
     function renderChartTopProductos() { if (typeof Chart === 'undefined') return; const ag = {}; state.ventas.forEach(v => (v.conceptos||[]).forEach(c => { const ig = c.ventaGravada || (c.cantidad*(c.precioUni||c.precio||0)); ag[c.nombre] = (ag[c.nombre]||0)+ig; })); const tp = Object.entries(ag).sort((a,b)=>b[1]-a[1]).slice(0,5); if (charts.tp) { try { charts.tp.destroy(); } catch (e) {} } charts.tp = new Chart($('#chart-top-productos'), { type:'doughnut', data:{ labels:tp.map(t=>t[0]).length?tp.map(t=>t[0]):['Sin datos'], datasets:[{ data:tp.map(t=>t[1]).length?tp.map(t=>t[1]):[1], backgroundColor:['#E66A1F','#F08A3E','#1D4ED8','#3B82F6','#F5A65B'] }] }, options:{ responsive:true, maintainAspectRatio:false } }); }
@@ -1466,33 +1407,34 @@ const ERP = (() => {
     function loadConfig() { const c = state.config; $('#cfg-razon').value = c.razon||''; $('#cfg-nit').value = c.nit||''; $('#cfg-nrc').value = c.nrc||''; $('#cfg-nits-adicionales').value = c.nitsAdicionales||''; $('#cfg-email').value = c.email||''; $('#cfg-giro').value = c.giro||''; $('#cfg-domicilio').value = c.domicilio||''; $('#cfg-dep').value = c.dep||''; $('#cfg-mun').value = c.mun||''; $('#cfg-tel').value = c.tel||''; $('#cfg-moneda').value = c.moneda||'USD'; $('#cfg-iva').value = ((c.ivaRate||0.13)*100); $('#cfg-credito').value = c.diasCredito||30; $('#cfg-serie-v').value = c.serieV||'V'; $('#cfg-serie-c').value = c.serieC||'C'; const n = $('#config-notice'); if (n) n.style.display = (c.razon && (c.nit || c.nrc || c.email)) ? 'none' : 'flex'; }
     function saveConfig() { state.config = { razon:$('#cfg-razon').value.trim(), nit:$('#cfg-nit').value.trim().toUpperCase(), nitsAdicionales:$('#cfg-nits-adicionales').value.trim().toUpperCase(), nrc:$('#cfg-nrc').value.trim(), email:$('#cfg-email').value.trim(), giro:$('#cfg-giro').value.trim(), domicilio:$('#cfg-domicilio').value.trim(), dep:$('#cfg-dep').value.trim(), mun:$('#cfg-mun').value.trim(), tel:$('#cfg-tel').value.trim(), moneda:$('#cfg-moneda').value, ivaRate:parseFloat($('#cfg-iva').value)/100 || 0.13, diasCredito:parseInt($('#cfg-credito').value) || 30, serieV:$('#cfg-serie-v').value.trim() || 'V', serieC:$('#cfg-serie-c').value.trim() || 'C' }; save(); toast('✅ Guardada'); const n = $('#config-notice'); if (n) n.style.display = (state.config.razon && (state.config.nit || state.config.nrc || state.config.email)) ? 'none' : 'flex'; generateNotifications(); }
 
-    function exportBackup() { downloadFile(`Respaldo_${today()}.json`, JSON.stringify({ version:'11.5', exportedAt:new Date().toISOString(), system:'ERP-ITCPO', data:state }, null, 2), 'application/json'); toast('Respaldo descargado'); }
+    function exportBackup() { state.lastBackup = new Date().toISOString(); save(); downloadFile(`Respaldo_${today()}.json`, JSON.stringify({ version:'12.0', exportedAt:new Date().toISOString(), system:'ERP-ITCPO', data:state }, null, 2), 'application/json'); toast('Respaldo descargado'); }
     function importBackup(e) { const f = e.target.files[0]; if (!f) return; const r = new FileReader(); r.onload = ev => { try { const d = JSON.parse(ev.target.result); if (!d.data) throw new Error('Formato inválido'); if (!confirm('¿Reemplazar datos?')) return; Object.assign(state, d.data); if (!state.catalogo || !state.catalogo.length) state.catalogo = JSON.parse(JSON.stringify(DEFAULT_CATALOGO)); state.contactos.forEach(c => { if (c.nitAlternos === undefined) c.nitAlternos = ''; }); save(); renderAll(); generateNotifications(); populateAllPeriodSelectors(); logImport('Respaldo', f.name, 'Todos', '✅ OK'); toast('Cargado'); } catch (err) { toast('Error: '+err.message,'error'); } }; r.readAsText(f); e.target.value = ''; }
-    async function importCSV(tipo) { const inp = document.createElement('input'); inp.type = 'file'; inp.accept = '.csv'; inp.onchange = async e => { const f = e.target.files[0]; if (!f) return; const t = await f.text(); const ls = t.split(/\r?\n/).filter(l => l.trim()); if (ls.length < 2) return toast('CSV vacío','error'); const hs = ls[0].split(',').map(h => h.trim().toLowerCase()); let cnt = 0; for (let i = 1; i < ls.length; i++) { const vs = ls[i].split(',').map(v => v.trim().replace(/^"|"$/g,'')); const row = {}; hs.forEach((h, idx) => row[h] = vs[idx]); try { if (tipo === 'producto') { state.productos.push({ id:uid(), sku:row.sku||'SKU-'+uid().slice(0,5), nombre:row.nombre||'Producto', categoria:row.categoria||'General', precio:parseFloat(row.precio)||0, costo:parseFloat(row.costo)||0, stock:parseInt(row.stock)||0, minimo:parseInt(row.minimo)||5 }); } else { const sb = parseFloat(row.subtotal)||0; const iv = parseFloat(row.iva)||sb*(state.config.ivaRate||0.13); const tot = parseFloat(row.total)||sb+iv; const nombre = tipo === 'venta' ? (row.cliente||'Cliente') : (row.proveedor||'Proveedor'); const nit = (row.nit||'').toUpperCase(); const contacto = crearOActualizarContacto(nombre, nit, null, null, tipo === 'venta' ? 'cliente' : 'proveedor', null, null); const inv = { id:uid(), folio:row.folio||(tipo==='venta'?state.config.serieV:state.config.serieC)+'-'+String((tipo==='venta'?state.counters.venta++:state.counters.compra++)).padStart(5,'0'), fecha:row.fecha||today(), vencimiento:row.vencimiento||addDays(row.fecha||today(),state.config.diasCredito||30), cliente:tipo==='venta'?nombre:null, proveedor:tipo==='compra'?nombre:null, rfc:nit, usoCfdi:'DTE-SV', tipoDTE:row.tipodte||'03', conceptos:[{ nombre:row.concepto||'Concepto', cantidad:parseFloat(row.cantidad)||1, precioUni:parseFloat(row.precio)||0, precio:parseFloat(row.precio)||0, ventaGravada:(parseFloat(row.cantidad)||1)*(parseFloat(row.precio)||0) }], subtotal:sb, iva:iv, total:tot, totalGravada:sb, pagado:0, estado:tipo==='venta'?'emitida':'registrada', uuid:'CSV-'+uid().toUpperCase(), origen:'CSV', contactoId:contacto?.id||null }; (tipo === 'venta' ? state.ventas : state.compras).push(inv); if (tipo === 'venta') generarPolizaVenta(inv); else generarPolizaCompra(inv); } cnt++; } catch (err) { console.warn(err); } } save(); renderAll(); generateNotifications(); populateAllPeriodSelectors(); logImport('CSV '+tipo, f.name, cnt, '✅ OK'); toast(`${cnt} registros`); }; inp.click(); }
+    async function importCSV(tipo) { const inp = document.createElement('input'); inp.type = 'file'; inp.accept = '.csv'; inp.onchange = async e => { const f = e.target.files[0]; if (!f) return; const t = await f.text(); const ls = t.split(/\r?\n/).filter(l => l.trim()); if (ls.length < 2) return toast('CSV vacío','error'); const hs = ls[0].split(',').map(h => h.trim().toLowerCase()); let cnt = 0; for (let i = 1; i < ls.length; i++) { const vs = parseCSVLine(ls[i]); const row = {}; hs.forEach((h, idx) => row[h] = vs[idx]); try { if (tipo === 'producto') { state.productos.push({ id:uid(), sku:row.sku||'SKU-'+uid().slice(0,5), nombre:row.nombre||'Producto', categoria:row.categoria||'General', precio:parseFloat(row.precio)||0, costo:parseFloat(row.costo)||0, stock:parseInt(row.stock)||0, minimo:parseInt(row.minimo)||5 }); } else { const sb = parseFloat(row.subtotal)||0; const iv = parseFloat(row.iva)||sb*(state.config.ivaRate||0.13); const tot = parseFloat(row.total)||sb+iv; const nombre = tipo === 'venta' ? (row.cliente||'Cliente') : (row.proveedor||'Proveedor'); const nit = (row.nit||'').toUpperCase(); const contacto = crearOActualizarContacto(nombre, nit, null, null, tipo === 'venta' ? 'cliente' : 'proveedor', null, null); const inv = { id:uid(), folio:row.folio||(tipo==='venta'?state.config.serieV:state.config.serieC)+'-'+String((tipo==='venta'?state.counters.venta++:state.counters.compra++)).padStart(5,'0'), fecha:row.fecha||today(), vencimiento:row.vencimiento||addDays(row.fecha||today(),state.config.diasCredito||30), cliente:tipo==='venta'?nombre:null, proveedor:tipo==='compra'?nombre:null, rfc:nit, usoCfdi:'DTE-SV', tipoDTE:row.tipodte||'03', conceptos:[{ nombre:row.concepto||'Concepto', cantidad:parseFloat(row.cantidad)||1, precioUni:parseFloat(row.precio)||0, precio:parseFloat(row.precio)||0, ventaGravada:(parseFloat(row.cantidad)||1)*(parseFloat(row.precio)||0) }], subtotal:sb, iva:iv, total:tot, totalGravada:sb, pagado:0, estado:tipo==='venta'?'emitida':'registrada', uuid:'CSV-'+uid().toUpperCase(), origen:'CSV', contactoId:contacto?.id||null }; (tipo === 'venta' ? state.ventas : state.compras).push(inv); if (tipo === 'venta') generarPolizaVenta(inv); else generarPolizaCompra(inv); } cnt++; } catch (err) { console.warn(err); } } save(); renderAll(); generateNotifications(); populateAllPeriodSelectors(); logImport('CSV '+tipo, f.name, cnt, '✅ OK'); toast(`${cnt} registros`); }; inp.click(); }
 
+    function parseCSVLine(l) { const o = []; let c = '', q = false; for (let i = 0; i < l.length; i++) { const ch = l[i]; if (q) { if (ch === '"' && l[i+1] === '"') { c += '"'; i++; } else if (ch === '"') q = false; else c += ch; } else if (ch === '"') q = true; else if (ch === ',') { o.push(c.trim()); c = ''; } else c += ch; } o.push(c.trim()); return o; }
     function logImport(tipo, archivo, regs, res) { state.importLog.unshift({ fecha:new Date().toISOString(), tipo, archivo, registros:regs, resultado:res }); if (state.importLog.length > 50) state.importLog = state.importLog.slice(0, 50); save(); renderImportLog(); }
     function renderImportLog() { const tb = $('#tabla-importaciones tbody'); if (!tb) return; if (!state.importLog.length) { tb.innerHTML = '<tr><td colspan="5" class="text-center text-muted" style="padding:20px">Sin historial</td></tr>'; return; } tb.innerHTML = state.importLog.map(l => `<tr><td>${fmtDate(l.fecha)}</td><td><span class="badge badge-orange">${esc(l.tipo)}</span></td><td>${esc(l.archivo)}</td><td>${esc(String(l.registros))}</td><td>${esc(l.resultado)}</td></tr>`).join(''); }
     function clearImportLog() { if (!confirm('¿Limpiar?')) return; state.importLog = []; save(); renderImportLog(); }
-    function downloadFile(name, content, mime) { const blob = new Blob([content], { type:mime }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); }
+    function downloadFile(name, content, mime) { const blob = new Blob([(mime === 'text/csv' ? '\ufeff' : '') + content], { type:mime }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); }
 
     function populateMonthFilters() { const opts = '<option value="">Todos</option>' + MESES.map((m, i) => `<option value="${i}">${m}</option>`).join(''); if ($('#filter-mes-ventas')) $('#filter-mes-ventas').innerHTML = opts; if ($('#filter-mes-compras')) $('#filter-mes-compras').innerHTML = opts; const years = new Set(); [...state.ventas, ...state.compras].forEach(v => { if (v.fecha) years.add(new Date(v.fecha).getFullYear()); }); years.add(new Date().getFullYear()); const yearOpts = '<option value="">Todos</option>' + [...years].sort((a,b)=>b-a).map(y => `<option value="${y}">${y}</option>`).join(''); ['#filter-year-ventas','#filter-year-compras'].forEach(sel => { if ($(sel)) { const pv = $(sel).value; $(sel).innerHTML = yearOpts; if (pv && [...years].map(String).includes(pv)) $(sel).value = pv; } }); }
     function quickAction() { openModal(`<div class="modal-header"><h3>⚡ Acción rápida</h3><button class="modal-close" onclick="ERP.closeModal()">×</button></div><div class="modal-body"><div class="card-grid"><button class="btn btn-primary" style="padding:20px;flex-direction:column;gap:8px" onclick="ERP.closeModal();ERP.openInvoiceModal('venta')"><span style="font-size:24px">🧾</span><span>Venta</span></button><button class="btn btn-blue" style="padding:20px;flex-direction:column;gap:8px" onclick="ERP.closeModal();ERP.openInvoiceModal('compra')"><span style="font-size:24px">🛒</span><span>Compra</span></button><button class="btn btn-success" style="padding:20px;flex-direction:column;gap:8px" onclick="ERP.closeModal();ERP.openProductModal()"><span style="font-size:24px">📦</span><span>Producto</span></button><button class="btn btn-secondary" style="padding:20px;flex-direction:column;gap:8px" onclick="ERP.closeModal();ERP.openConsultingModal()"><span style="font-size:24px">💼</span><span>Servicio</span></button><button class="btn btn-secondary" style="padding:20px;flex-direction:column;gap:8px" onclick="ERP.closeModal();ERP.openJournalModal()"><span style="font-size:24px">📒</span><span>Póliza</span></button><button class="btn btn-secondary" style="padding:20px;flex-direction:column;gap:8px" onclick="ERP.closeModal();ERP.switchView('config')"><span style="font-size:24px">⚙️</span><span>Config</span></button></div></div>`); }
     function resetAllData() { if (!confirm('⚠️ ¿Eliminar TODOS los datos operativos?')) return; if (!confirm('🔒 CONFIRMACIÓN FINAL')) return; const cat = JSON.parse(JSON.stringify(state.catalogo)); const cfg = JSON.parse(JSON.stringify(state.config)); state.ventas=[]; state.compras=[]; state.productos=[]; state.polizas=[]; state.consultoria=[]; state.contactos=[]; state.notasCredito=[]; state.importLog=[]; state.notifications=[]; state.dteRaw=[]; state.counters = { venta:1, compra:1, poliza:1, consultoria:1, nota:1 }; state.catalogo = cat; state.config = cfg; save(); renderAll(); generateNotifications(); populateMonthFilters(); populateAllPeriodSelectors(); $('#import-result-card').style.display = 'none'; toast('✅ Datos eliminados'); }
 
-    function generateNotifications() { state.notifications = []; const now = new Date(); if (!state.config.nit || !state.config.razon) state.notifications.push({ type:'warn', title:'⚙️ Configure su NIT', desc:'Necesario para clasificar DTE.', time:now.toISOString(), view:'config' }); state.productos.forEach(p => { if (p.stock <= p.minimo) state.notifications.push({ type:'danger', title:'⚠️ Stock bajo', desc:`${p.nombre}: ${p.stock}`, time:now.toISOString(), view:'inventario' }); }); state.ventas.filter(v => v.estado === 'emitida').forEach(v => { const d = Math.ceil((new Date(v.vencimiento || addDays(v.fecha, state.config.diasCredito||30)) - now) / 86400000); if (d < 0) state.notifications.push({ type:'danger', title:'❌ CxC vencida', desc:`${v.folio} - ${v.cliente}`, time:now.toISOString(), view:'cxc' }); else if (d <= 7) state.notifications.push({ type:'warn', title:'⏰ CxC por vencer', desc:`${v.folio} en ${d}d`, time:now.toISOString(), view:'cxc' }); }); state.compras.filter(c => c.estado === 'registrada').forEach(c => { const d = Math.ceil((new Date(c.vencimiento || addDays(c.fecha, state.config.diasCredito||30)) - now) / 86400000); if (d < 0) state.notifications.push({ type:'danger', title:'❌ CxP vencida', desc:`${c.folio} - ${c.proveedor}`, time:now.toISOString(), view:'cxp' }); else if (d <= 7) state.notifications.push({ type:'warn', title:'⏰ CxP por vencer', desc:`${c.folio} en ${d}d`, time:now.toISOString(), view:'cxp' }); }); renderNotifications(); }
+    function generateNotifications() { state.notifications = []; const now = new Date(); if ((state.ventas.length + state.compras.length) > 0) { const lb = state.lastBackup ? Math.floor((now - new Date(state.lastBackup)) / 86400000) : null; if (lb === null || lb >= 7) state.notifications.push({ type:'warn', title:'💾 Respaldo pendiente', desc: lb === null ? 'Aún no ha descargado ningún respaldo.' : `Último respaldo hace ${lb} días.`, time:now.toISOString(), view:'respaldo' }); } try { const kb = Math.round((localStorage.getItem(STORAGE_KEY)||'').length / 1024); if (kb > 4000) state.notifications.push({ type:'danger', title:'🗄️ Almacenamiento casi lleno', desc:`${kb} KB usados (límite ~5000 KB). Exporte respaldo.`, time:now.toISOString(), view:'respaldo' }); } catch (e) {} if (!state.config.nit || !state.config.razon) state.notifications.push({ type:'warn', title:'⚙️ Configure su NIT', desc:'Necesario para clasificar DTE.', time:now.toISOString(), view:'config' }); state.productos.forEach(p => { if (p.stock <= p.minimo) state.notifications.push({ type:'danger', title:'⚠️ Stock bajo', desc:`${p.nombre}: ${p.stock}`, time:now.toISOString(), view:'inventario' }); }); state.ventas.filter(v => v.estado === 'emitida').forEach(v => { const d = Math.ceil((new Date(v.vencimiento || addDays(v.fecha, state.config.diasCredito||30)) - now) / 86400000); if (d < 0) state.notifications.push({ type:'danger', title:'❌ CxC vencida', desc:`${v.folio} - ${v.cliente}`, time:now.toISOString(), view:'cxc' }); else if (d <= 7) state.notifications.push({ type:'warn', title:'⏰ CxC por vencer', desc:`${v.folio} en ${d}d`, time:now.toISOString(), view:'cxc' }); }); state.compras.filter(c => c.estado === 'registrada').forEach(c => { const d = Math.ceil((new Date(c.vencimiento || addDays(c.fecha, state.config.diasCredito||30)) - now) / 86400000); if (d < 0) state.notifications.push({ type:'danger', title:'❌ CxP vencida', desc:`${c.folio} - ${c.proveedor}`, time:now.toISOString(), view:'cxp' }); else if (d <= 7) state.notifications.push({ type:'warn', title:'⏰ CxP por vencer', desc:`${c.folio} en ${d}d`, time:now.toISOString(), view:'cxp' }); }); renderNotifications(); }
     function renderNotifications() { const list = $('#notif-list'), count = $('#notif-count'); if (!list || !count) return; if (!state.notifications.length) { list.innerHTML = '<div class="notif-empty"><div class="icon">🔔</div><p>Sin notificaciones</p></div>'; count.style.display = 'none'; return; } count.style.display = 'block'; count.textContent = state.notifications.length; list.innerHTML = state.notifications.slice(0, 30).map(n => `<div class="notif-item ${n.type}" onclick="ERP.switchView('${n.view}');ERP.closeNotifPanel()"><div class="title">${esc(n.title)}</div><div class="desc">${esc(n.desc)}</div></div>`).join(''); }
     function clearNotifications() { state.notifications = []; save(); renderNotifications(); toast('Limpiadas','info'); }
     function closeNotifPanel() { $('#notif-panel').classList.remove('active'); }
     function toggleNotifPanel(e) { if (e) e.stopPropagation(); $('#notif-panel').classList.toggle('active'); }
-    function globalSearch(q) { q = q.toLowerCase().trim(); const box = $('#gs-results'); if (!q) { box.classList.remove('active'); return; } const r = []; state.ventas.forEach(v => { if (v.folio.toLowerCase().includes(q) || (v.cliente||'').toLowerCase().includes(q)) r.push({ type:'Venta', label:`${v.folio}-${v.cliente}`, sub:money(v.total), view:'facturacion' }); }); state.compras.forEach(c => { if (c.folio.toLowerCase().includes(q) || (c.proveedor||'').toLowerCase().includes(q)) r.push({ type:'Compra', label:`${c.folio}-${c.proveedor}`, sub:money(c.total), view:'compras' }); }); state.productos.forEach(p => { if (p.nombre.toLowerCase().includes(q) || p.sku.toLowerCase().includes(q)) r.push({ type:'Producto', label:`${p.sku}-${p.nombre}`, sub:`Stock:${p.stock}`, view:'inventario' }); }); state.contactos.forEach(c => { if (c.nombre.toLowerCase().includes(q) || (c.nit||'').toLowerCase().includes(q)) r.push({ type:c.tipo==='cliente'?'Cliente':'Proveedor', label:c.nombre, sub:c.nit||'CF', view:'clientes' }); }); state.dteRaw.forEach(d => { if ((d.resumen.uuid||'').toLowerCase().includes(q) || (d.resumen.numeroControl||'').toLowerCase().includes(q)) r.push({ type:'DTE', label:d.resumen.numeroControl||'DTE', sub:money(d.resumen.total), view:'dte-importados' }); }); box.innerHTML = r.length ? r.slice(0, 10).map(x => `<div class="gs-item" onclick="ERP.switchView('${x.view}');document.getElementById('gs-results').classList.remove('active');document.getElementById('global-search').value='';"><div><strong>${esc(x.label)}</strong><div style="font-size:11px;color:var(--gray-500)">${esc(x.type)}·${esc(x.sub)}</div></div></div>`).join('') : '<div class="gs-item">Sin resultados</div>'; box.classList.add('active'); }
+    function globalSearch(q) { q = q.toLowerCase().trim(); const box = $('#gs-results'); if (!q) { box.classList.remove('active'); return; } const r = []; state.ventas.forEach(v => { if (v.folio.toLowerCase().includes(q) || (v.cliente||'').toLowerCase().includes(q)) r.push({ type:'Venta', label:`${v.folio}-${v.cliente}`, sub:money(v.total), view:'facturacion' }); }); state.compras.forEach(c => { if (c.folio.toLowerCase().includes(q) || (c.proveedor||'').toLowerCase().includes(q)) r.push({ type:'Compra', label:`${c.folio}-${c.proveedor}`, sub:money(c.total), view:'compras' }); }); state.productos.forEach(p => { if (p.nombre.toLowerCase().includes(q) || p.sku.toLowerCase().includes(q)) r.push({ type:'Producto', label:`${p.sku}-${p.nombre}`, sub:`Stock:${p.stock}`, view:'inventario' }); }); state.consultoria.forEach(c => { if (c.servicio.toLowerCase().includes(q) || c.cliente.toLowerCase().includes(q)) r.push({ type:'Servicio', label:`${c.clave}-${c.servicio.slice(0,40)}`, sub:money(c.monto), view:'consultoria' }); }); state.contactos.forEach(c => { if (c.nombre.toLowerCase().includes(q) || (c.nit||'').toLowerCase().includes(q)) r.push({ type:c.tipo==='cliente'?'Cliente':'Proveedor', label:c.nombre, sub:c.nit||'CF', view:'clientes' }); }); state.dteRaw.forEach(d => { if ((d.resumen.uuid||'').toLowerCase().includes(q) || (d.resumen.numeroControl||'').toLowerCase().includes(q)) r.push({ type:'DTE', label:d.resumen.numeroControl||'DTE', sub:money(d.resumen.total), view:'dte-importados' }); }); box.innerHTML = r.length ? r.slice(0, 10).map(x => `<div class="gs-item" onclick="ERP.switchView('${x.view}');document.getElementById('gs-results').classList.remove('active');document.getElementById('global-search').value='';"><div><strong>${esc(x.label)}</strong><div style="font-size:11px;color:var(--gray-500)">${esc(x.type)}·${esc(x.sub)}</div></div></div>`).join('') : '<div class="gs-item">Sin resultados</div>'; box.classList.add('active'); }
 
-    function setupShortcuts() { document.addEventListener('keydown', e => { if (['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)) return; if (e.ctrlKey || e.metaKey) { if (e.key === 'k' || e.key === 'K') { e.preventDefault(); $('#global-search').focus(); } else if (e.key === 'n' || e.key === 'N') { e.preventDefault(); openInvoiceModal('venta'); } else if (e.key === 's' || e.key === 'S') { e.preventDefault(); exportBackup(); } } else { if (e.key === 'F1') { e.preventDefault(); switchView('ayuda'); } else if (e.key === 'Escape') { closeModal(); closeNotifPanel(); $('#gs-results').classList.remove('active'); } else if (e.key === 'd' || e.key === 'D') switchView('dashboard'); else if (e.key === 'f' || e.key === 'F') switchView('facturacion'); else if (e.key === 'c' || e.key === 'C') switchView('compras'); else if (e.key === 'i' || e.key === 'I') switchView('inventario'); else if (e.key === 'r' || e.key === 'R') switchView('reportes'); } }); }
+    function setupShortcuts() { document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); closeNotifPanel(); $('#gs-results').classList.remove('active'); return; } if (['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)) return; if ($('#modal-overlay').classList.contains('active') || e.altKey) return; if (e.ctrlKey || e.metaKey) { if (e.key === 'k' || e.key === 'K') { e.preventDefault(); $('#global-search').focus(); } else if (e.key === 'n' || e.key === 'N') { e.preventDefault(); openInvoiceModal('venta'); } else if (e.key === 's' || e.key === 'S') { e.preventDefault(); exportBackup(); } } else { if (e.key === 'F1') { e.preventDefault(); switchView('ayuda'); } else if (e.key === 'Escape') { closeModal(); closeNotifPanel(); $('#gs-results').classList.remove('active'); } else if (e.key === 'd' || e.key === 'D') switchView('dashboard'); else if (e.key === 'f' || e.key === 'F') switchView('facturacion'); else if (e.key === 'c' || e.key === 'C') switchView('compras'); else if (e.key === 'i' || e.key === 'I') switchView('inventario'); else if (e.key === 'r' || e.key === 'R') switchView('reportes'); } }); }
 
     function renderAll() { renderVentas(); renderCompras(); renderInventario(); renderContabilidad(); renderConsultoria(); renderImportLog(); renderContactos(); renderCxC(); renderCxP(); renderNotasCredito(); renderDTEList(); renderCatalogo(); populateMonthFilters(); if ($('#view-dashboard').classList.contains('active')) renderDashboard(); if ($('#view-reportes').classList.contains('active')) renderReportes(); if ($('#view-flujo-caja').classList.contains('active')) renderFlujoCaja(); }
 
     function init() {
         try {
-            load(); populateMonthFilters();
+            load(); { const antes = state.consultoria.length; state.consultoria = state.consultoria.filter(c => !(/^Importado desde COMPRA/.test(c.descripcion || '') || /^\[Ítem\]/.test(c.servicio || ''))); const q = antes - state.consultoria.length; if (q > 0) setTimeout(() => toast(`Consultoría: se quitaron ${q} registro(s) importados que no cumplían la regla del NIT`, 'info'), 600); } renumerar(); save(); populateMonthFilters();
             $$('.nav-item').forEach(n => n.addEventListener('click', () => switchView(n.dataset.view)));
             $$('#view-reportes .tab').forEach(t => t.addEventListener('click', () => { $$('#view-reportes .tab').forEach(x => x.classList.remove('active')); $$('#view-reportes .tab-content').forEach(x => x.classList.remove('active')); t.classList.add('active'); const target = $(`#tab-${t.dataset.tab}`); if (target) target.classList.add('active'); refreshReports(); }));
             $$('#view-clientes .tab').forEach(t => t.addEventListener('click', () => { $$('#view-clientes .tab').forEach(x => x.classList.remove('active')); $$('#view-clientes .tab-content').forEach(x => x.classList.remove('active')); t.classList.add('active'); const target = $(`#tab-${t.dataset.tab}`); if (target) target.classList.add('active'); }));
@@ -1503,7 +1445,7 @@ const ERP = (() => {
             document.addEventListener('click', e => { const p = $('#notif-panel'); if (p.classList.contains('active') && !e.target.closest('#notif-panel') && !e.target.closest('#btn-notif')) closeNotifPanel(); });
             const dz = $('#dte-drop-zone');
             if (dz) { dz.addEventListener('click', () => $('#dte-input').click()); dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('dragover'); }); dz.addEventListener('dragleave', () => dz.classList.remove('dragover')); dz.addEventListener('drop', e => { e.preventDefault(); dz.classList.remove('dragover'); const dt = e.dataTransfer; if (dt.files.length) importDTE({ target: { files: dt.files, value: '' } }); }); }
-            setupShortcuts(); renderAll(); renderDashboard(); generateNotifications();
+            document.addEventListener('click', e => { const a = e.target.closest('a[href^="#help-"]'); if (!a) return; e.preventDefault(); document.getElementById(a.getAttribute('href').slice(1))?.scrollIntoView({ behavior:'smooth', block:'start' }); }); setupShortcuts(); renderAll(); renderDashboard(); generateNotifications();
             setTimeout(resizeVisibleCharts, 200);
         } catch (err) { console.error('Error init:', err); toast('Error al inicializar. Ver consola.', 'error'); }
     }
